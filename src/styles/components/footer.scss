@@ -1,0 +1,110 @@
+.footer{
+    height: 270px;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+  
+  // BODY EM CIMA
+  .foot{
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+
+  // SETOR CONTATO
+  .foot .contact{
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+    width: 55%;
+    font-family: 'Roboto', sans-serif;  
+  }
+
+  //LOGO
+  .foot .contact .logo {
+    padding: 0px 30px 0px 0px;
+  }
+  .foot .contact .logo img{
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  //ENDERECO
+  .foot .endereco{
+    margin: 0 0 0 20px;  
+  }
+
+  // WHATSAPP E TELEGRAM
+  .foot .contact .WhatsTele{
+    position: absolute;
+    margin: 6px 0 0 0;
+    left: 375px;
+  }
+  .foot .contact .WhatsTele img{
+    height: 50px;
+    border-radius: 30px;
+  }    
+  .foot .contact .WhatsTele #w:hover{    
+    background: #26D366;
+  }
+  .foot .contact .WhatsTele #t:hover{    
+    background: #37AEF3;
+  }
+
+  
+  // SETOR DE MIDIAS SOCIAIS
+  .foot .follow{
+    padding: 45px 0 0 10px;
+    width: 45%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .foot .follow .line{
+    display: flex;
+    padding: 10px 0 0 0;
+    margin-left: -15px;
+    
+  }
+  .foot .follow .line a{
+    margin: 10px;
+    
+  }
+  .foot .follow .line img{
+    height: 50px;
+    border-radius: 30px;  
+  }
+  // BOTOES CONTATO
+  .foot .follow .line #be:hover{
+    background:#0057FF;
+    
+  }
+  .foot .follow .line #insta:hover{
+    background:#D7407F;
+    
+  }
+  .foot .follow .line #git:hover{
+    background:#161B22;
+    
+  }
+  .foot .follow .line #face:hover{
+    background:#0B84EE;
+    
+  }
+  .foot .follow .line #in:hover{
+    background:#0A66C2;
+  }
+  
+  //RODAPÉ
+  .footer .rodape{
+    vertical-align: bottom;
+    width: 100%;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer .rodape .made{
+    padding: 10px;
+  }

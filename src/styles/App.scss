@@ -1,0 +1,74 @@
+@import "./fonts/fonts.scss";
+@import "./animations/animations.scss";
+@import "./threeHost/threeHost.scss";
+@import "./deviceglobal.scss";
+@import "./components/clients.scss";
+@import "./components/front.scss";
+@import "./components/header.scss";
+@import "./components/footer.scss";
+@import "./components/devs.scss";
+@import "./components/scroll.scss";
+@import "./components/loader.scss";
+
+
+$our-orange: #ff6600;
+$our-blue: #003153;
+$our-black: #000000;
+
+html,
+body {  
+  height: 100%;
+  background: black;
+  margin: 0;
+  font-family: "Roboto";
+  color: black; 
+
+}
+.apareca{
+  display: none;
+}
+.sv{
+  font-family: "Icon Font", "Arial", sans-serif !important;
+  color: white !important;
+}
+.stack{
+  font-family: "Icon Font", "Arial", sans-serif !important;
+  color:$our-orange;
+}
+.view{
+  font-family: "Icon Font", "Arial", sans-serif !important;
+  color:$our-blue;
+  box-shadow: yellow;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.custom {
+  font-family: "Custom Font", "Arial", sans-serif !important;  
+  font-size: x-large;  
+}
+a:hover, a:focus, a:active {
+  background-color: transparent;
+  text-decoration: none; 
+}
+//Scroll bar 
+::-webkit-scrollbar
+{
+    width: 0px;
+}
+::-webkit-scrollbar-track-piece
+{
+    background-color: transparent;
+    -webkit-border-radius: 6px;
+}
+//Scroll bar
+//Scroll button
+
+
+.spaceEnjoy{
+  width: 100%;
+  height: 500px;
+  background: transparent;
+}
+
