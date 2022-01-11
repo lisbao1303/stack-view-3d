@@ -21,7 +21,7 @@ class IconScene extends React.Component {
 
     componentDidUpdate(prevProps, prevState) {
         // Pass updated props to 
-        const newValue = this.props.whateverProperty;
+        //const newValue = this.props.whateverProperty;
         //this.viewGL.updateValue(newValue);
     }
 
@@ -37,13 +37,13 @@ class IconScene extends React.Component {
     }
 
     handleResize = () => {
-        //this.viewGL.onWindowResize(window.innerWidth, window.innerHeight);
+        this.viewGL.onWindowResize(window.innerWidth, window.innerHeight);
     };
 
     render() {
         return (
             <div className="canvasContainer">
-                <canvas ref={this.canvasRef} width={500} height={300}/>
+                <canvas ref={this.canvasRef} width={window.innerWidth} height={window.innerHeight}/>
             </div>
         );
     }

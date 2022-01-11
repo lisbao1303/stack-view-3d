@@ -1,5 +1,4 @@
-import React, {useEffect, useState} from 'react';
-import Image from 'next/image'
+import React from 'react';
 
 class Front extends React.Component {
 
@@ -32,12 +31,12 @@ render(){
        
         <div className="icon">
         
-            <Image
+            <img
             id="back"
             src="/viewicons/nodisk.png"
             alt="stackview"
             layout="fill"
-        /><div className="front"><Image
+        /><div className="front"><img
                 id="f"
                 src="/viewicons/disk.png"
                 alt="stackview"

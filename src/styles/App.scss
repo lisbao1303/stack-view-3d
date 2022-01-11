@@ -18,7 +18,7 @@ $our-black: #000000;
 html,
 body {  
   height: 100%;
-  background: black;
+  background: transparent;
   margin: 0;
   font-family: "Roboto";
   color: black; 
@@ -51,6 +51,12 @@ a{
 a:hover, a:focus, a:active {
   background-color: transparent;
   text-decoration: none; 
+}
+//button 
+button{
+  background-color: transparent;
+  border: none;
+  text-align: center;
 }
 //Scroll bar 
 ::-webkit-scrollbar
