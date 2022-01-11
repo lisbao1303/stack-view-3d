@@ -2842,7 +2842,7 @@ class GLTFParser {
 
 		}
 
-		const URL = self.URL || self.webkitURL;
+		const URL = window.self.URL || window.self.webkitURL;
 
 		let sourceURI = source.uri || '';
 		let isObjectURL = false;
