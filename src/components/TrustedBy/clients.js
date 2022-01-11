@@ -2,12 +2,6 @@ import React from 'react';
 
 class Front extends React.Component {
 
-    constructor(props) {
-        super(props);
-        
-          
-      }
-     
 
 render(){
 

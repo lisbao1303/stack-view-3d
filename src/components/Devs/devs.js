@@ -1,6 +1,4 @@
 import React  from 'react';
-import Button from '@material-ui/core/Button';
-import Image from 'next/image'
 
 class Devs extends React.Component {
 
@@ -59,7 +57,7 @@ class Devs extends React.Component {
             </g>
           </svg>
           <div className="imgContainer"> 
-            <Image
+            <img
               id="e"
               src="/devs/elisbao.jpeg"
               alt="elisbao"
@@ -69,7 +67,7 @@ class Devs extends React.Component {
           </div>
         </div>
         <div className="devFoto" onClick={this.showDevInfo}>
-          <Image
+          <img
             id="t"
             src="/devs/thiagao.jpg"
             alt="thiagao"
@@ -85,7 +83,7 @@ class Devs extends React.Component {
           </div>
           <div className="devsMenu">
           <div className="devFoto" onClick={this.showDevInfo}>
-          <Image
+          <img
             id="t"
             src="/devs/thiagao.jpg"
             alt="thiagao"
@@ -93,11 +91,11 @@ class Devs extends React.Component {
             height={130}
           />
         </div>
-            <Button><a className="custom">About</a></Button>
-            <Button><a className="custom">Resume</a></Button>
-            <Button><a className="custom">Skills</a></Button>
+            <button><a className="custom">About</a></button>
+            <button><a className="custom">Resume</a></button>
+            <button><a className="custom">Skills</a></button>
 
-            <Button><a className="custom downloadButton">Download</a></Button>
+            <button><a className="custom downloadbutton">Download</a></button>
           </div>
         </div>
         <div className="devsBody">

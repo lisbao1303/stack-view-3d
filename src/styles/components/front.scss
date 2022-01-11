@@ -71,6 +71,8 @@
     margin-left: 57vw;
   }
   .front .icon #back{  
+    height: 100%;
+   width: 100%;
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
          -moz-animation: fadein 3s; /* Firefox < 16 */
           -ms-animation: fadein 3s; /* Internet Explorer */
@@ -78,10 +80,10 @@
               animation: fadein 3s;
   }
   .front .icon .front{
-    position: relative;
+    position: absolute;
       width: 7.5vw;  
     height: 7.5vw;
-    margin: 6.25vw 0 0 11.5vw;
+    margin: -13.85vw 0 0 11.5vw;
     -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
          -moz-animation: fadein 3s; /* Firefox < 16 */
           -ms-animation: fadein 3s; /* Internet Explorer */
@@ -89,7 +91,9 @@
               animation: fadein 3s;       
     
   }
-  .front .icon .front #f{ 
+  .front .icon .front #f{
+    height: 100%;
+   width: 100%;
     image-rendering: auto;
     animation-name: spin;
     animation-duration: 3s;
