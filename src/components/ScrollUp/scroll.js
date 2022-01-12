@@ -61,7 +61,8 @@ class ScrollUp extends React.Component {
                 text: <> &nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;stackview&nbsp;&nbsp;•&nbsp;&nbsp; •&nbsp;&nbsp; •&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>
             })
         }
-        console.log(this.state.progress);
+        //chato pa bune 
+        //console.log(this.state.progress);
 
     };
 

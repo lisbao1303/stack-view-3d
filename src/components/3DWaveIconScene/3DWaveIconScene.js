@@ -1,5 +1,7 @@
 import React from 'react';
-import {ThreeJSRender} from './js-3D/MainAmbiente.js'; 
+import ReactDOM from 'react-dom';
+import {ThreeJSRender} from './js-3D/MainAmbiente.js';
+import App from '../../App.js';
 
 
 class IconScene extends React.Component {
@@ -7,6 +9,7 @@ class IconScene extends React.Component {
         super(props);
         this.canvasRef = React.createRef();
         this.handler = null;
+        this.controller = null;
     }
 
     // ******************* COMPONENT LIFECYCLE ******************* //
@@ -15,10 +18,7 @@ class IconScene extends React.Component {
         const canvas = this.canvasRef.current;
         this.handler =new ThreeJSRender(canvas);
         this.handler.init();
-        // Init any event listeners
-        //now listeners are managed by the this componenet (change for window for use roow window events)
-        this.handler.renderer.domElement.addEventListener('mousemove', this.handler.onPointerMove.bind(this.handler));
-        this.handler.renderer.domElement.addEventListener('resize', this.handler.onResize.bind(this.handler));
+        window.addEventListener('resize', this.handler.onResize.bind(this.handler));
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -28,9 +28,7 @@ class IconScene extends React.Component {
     }
 
     componentWillUnmount() {
-        // Remove any event listeners
-        this.handler.renderer.domElement.removeEventListener('mousemove', this.handler.onPointerMove.bind(this.handler));
-        this.handler.renderer.domElement.removeEventListener('resize', this.handler.onResize.bind(this.handler));
+        window.removeEventListener('resize', this.handler.onResize.bind(this.handler));
     }
 
     render() {
