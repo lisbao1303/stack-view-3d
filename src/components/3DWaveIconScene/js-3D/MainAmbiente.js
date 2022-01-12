@@ -62,8 +62,11 @@ class ThreeJSRender{
     }
 
     onPointerMove( event ) {
-        this.scene_controller.selector.pointer.x = ( event.x / this.r_canvas.width ) * 2 - 1;
-        this.scene_controller.selector.pointer.y = - ( event.y / this.r_canvas.height ) * 2 + 1;
+        this.scene_controller.selector.pointer.x = ( event.clientX / this.r_canvas.width ) * 2 - 1;
+        this.scene_controller.selector.pointer.y = - ( event.clientY / this.r_canvas.height ) * 2 + 1;
+        //console.log( event.clientX,  event.clientY );
+        //console.log( this.r_canvas.width, this.r_canvas.height );
+        //console.log(this.scene_controller.selector.pointer);
     }
 
     onResize() {
