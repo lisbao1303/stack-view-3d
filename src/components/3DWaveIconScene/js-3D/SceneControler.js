@@ -38,7 +38,7 @@ class SceneControler {
 			this.player_control.lookSpeed = 0.1;
         }
         if(mode == SceneControler.FIRST_PERSON_LIMITED_CONTROL){
-            this.player_control = new FirstPersonLimitedControls( this.scene.cameras[this.scene.active_camera], this.renderer.domElement );
+            this.player_control = new FirstPersonLimitedControls( this.scene.cameras[this.scene.active_camera], window.document );
 			this.player_control.movementSpeed = 100;
 			this.player_control.lookSpeed = 0.1;
         }

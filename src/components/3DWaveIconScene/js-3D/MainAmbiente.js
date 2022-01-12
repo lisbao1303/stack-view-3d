@@ -64,15 +64,16 @@ class ThreeJSRender{
     onPointerMove( event ) {
         this.scene_controller.selector.pointer.x = ( event.clientX / this.r_canvas.width ) * 2 - 1;
         this.scene_controller.selector.pointer.y = - ( event.clientY / this.r_canvas.height ) * 2 + 1;
+        this.scene_controller.player_control.onMouseMove.bind( this.scene_controller.player_control, this.scene_controller.selector.pointer.x,this.scene_controller.selector.pointer.y )();
         //console.log( event.clientX,  event.clientY );
         //console.log( this.r_canvas.width, this.r_canvas.height );
         //console.log(this.scene_controller.selector.pointer);
     }
 
     onResize() {
-        this.scene_wrapper.cameras[this.scene_wrapper.active_camera].aspect = this.r_canvas.width / this.r_canvas.height;
+        this.scene_wrapper.cameras[this.scene_wrapper.active_camera].aspect = window.innerWidth/ window.innerHeight;
         this.scene_wrapper.cameras[this.scene_wrapper.active_camera].updateProjectionMatrix();
-        this.renderer.setSize( this.r_canvas.width, this.r_canvas.height);
+        this.renderer.setSize( window.innerWidth, window.innerHeight);
         this.scene_controller.player_control.handleResize();
         //controller.player_control.update();
     }
