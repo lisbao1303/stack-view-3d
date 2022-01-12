@@ -8,6 +8,8 @@ import Devs from './components/Devs/devs';
 import Clients from './components/TrustedBy/clients';
 import Footer from './components/Footer/footer';
 import IconScene from './components/3DWaveIconScene/3DWaveIconScene';
+import ThreeController from './components/3DController/3DController';
+
 function App() {
   let iconRef= null;
 
@@ -18,10 +20,8 @@ function App() {
       <Header />
       <ScrollUp />
       <Front />
-      <div className="spaceEnjoy"
-      onMouseMove={(event)=>{
-        //console.log(iconRef.handler.onPointerMove);
-        (iconRef.handler.onPointerMove.bind(iconRef.handler,event))();
+      <ThreeController ref={(controler)=>{
+        controler.onMouseMoveI.registerObserver(iconRef.handler.onPointerMove.bind(iconRef.handler));
       }} />
       <Devs />
       <Clients />
