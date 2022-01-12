@@ -122,19 +122,9 @@ class FirstPersonLimitedControls {
 
 		};
 
-		this.onMouseMove = function ( event ) {
-			if ( this.domElement === document ) {
-
-				this.mouseX = event.pageX - this.viewHalfX;
-				this.mouseY = event.pageY - this.viewHalfY;
-				
-			} else {
-				
-				this.mouseX = event.pageX - this.domElement.offsetLeft - this.viewHalfX;
-				this.mouseY = event.pageY - this.domElement.offsetTop - this.viewHalfY;
-				//console.log(this.domElement);
-
-			}
+		this.onMouseMove = function ( x,y ) {
+			this.mouseX = x*100;
+			this.mouseY = -y*100;
 
 		};
 
@@ -319,10 +309,10 @@ class FirstPersonLimitedControls {
 		const _onKeyDown = this.onKeyDown.bind( this );
 		const _onKeyUp = this.onKeyUp.bind( this );
 
-		this.domElement.addEventListener( 'contextmenu', contextmenu );
-		this.domElement.addEventListener( 'mousemove', _onMouseMove );
-		this.domElement.addEventListener( 'mousedown', _onMouseDown );
-		this.domElement.addEventListener( 'mouseup', _onMouseUp );
+		//this.domElement.addEventListener( 'contextmenu', contextmenu );
+		//this.domElement.addEventListener( 'mousemove', _onMouseMove );
+		//this.domElement.addEventListener( 'mousedown', _onMouseDown );
+		//this.domElement.addEventListener( 'mouseup', _onMouseUp );
 
 		window.addEventListener( 'keydown', _onKeyDown );
 		window.addEventListener( 'keyup', _onKeyUp );
