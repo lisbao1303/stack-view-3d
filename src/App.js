@@ -17,6 +17,7 @@ function App() {
       <Front />
       <div className="spaceEnjoy"></div>
       <Devs />
+      <div className="spaceEnjoy"></div>
       <Clients />
       <Footer />
     </div>
