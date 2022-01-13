@@ -20,6 +20,7 @@ class ThreeController extends React.Component {
   
   
   componentDidMount() {
+  
   }
 
   componentWillUnmount() {

@@ -22,7 +22,7 @@ function App() {
       <Front />
       <ThreeController ref={(controler)=>{
         controler.onMouseMoveI.registerObserver(iconRef.handler.onPointerMove.bind(iconRef.handler));
-      }} />
+      }}/>
       <Devs />
       <Clients />
       <Footer />

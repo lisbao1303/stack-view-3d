@@ -1,5 +1,6 @@
 import React from 'react';
-import {ThreeJSRender} from './js-3D/MainAmbiente.js';
+import {ThreeJSRender} from '../../js-3D/MainAmbiente.js';
+import { SceneFactory } from './SceneFactory.js';
 
 class IconScene extends React.Component {
     constructor(props) {
@@ -13,7 +14,8 @@ class IconScene extends React.Component {
     componentDidMount() {
         // Get canvas, pass to custom class
         const canvas = this.canvasRef.current;
-        this.handler =new ThreeJSRender(canvas);
+        const creator = SceneFactory.IconScene;
+        this.handler =new ThreeJSRender(canvas,creator);
         this.handler.init();
         window.addEventListener('resize', this.handler.onResize.bind(this.handler));
     }

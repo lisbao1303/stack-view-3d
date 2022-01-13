@@ -1,7 +1,7 @@
 import * as THREE from 'three/build/three.module.js';
-import { SceneWrapper } from "./SceneWrapper.js";
-import {ModelImporter} from "./Importer.js";
-import { SceneControler } from './SceneControler.js';
+import { SceneWrapper } from "../../js-3D/SceneWrapper.js";
+import {ModelImporter} from "../../js-3D/Importer.js";
+import { SceneControler } from '../../js-3D/SceneControler.js';
 
 class SceneFactory{
     static async IconScene(r_canvas){

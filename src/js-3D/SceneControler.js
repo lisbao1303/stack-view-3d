@@ -6,7 +6,7 @@ import * as THREE from 'three/build/three.module.js';
 class SceneControler {
     static ORBIT_CONTROL = 0;
     static FIRST_PERSON_CONTROL = 1;
-    static FIRST_PERSON_LIMITED_CONTROL = 1;
+    static FIRST_PERSON_CUSTOM_CONTROL = 1;
 
     constructor(scene) {
         this.prev_time = 0;
@@ -37,7 +37,7 @@ class SceneControler {
 			this.player_control.movementSpeed = 100;
 			this.player_control.lookSpeed = 0.1;
         }
-        if(mode == SceneControler.FIRST_PERSON_LIMITED_CONTROL){
+        if(mode == SceneControler.FIRST_PERSON_CUSTOM_CONTROL){
             this.player_control = new FirstPersonLimitedControls( this.scene.cameras[this.scene.active_camera], window.document );
 			this.player_control.movementSpeed = 100;
 			this.player_control.lookSpeed = 0.1;

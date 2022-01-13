@@ -1,12 +1,12 @@
 import {WEBGL} from  'three/examples/jsm/WebGL.js';
-import { SceneFactory } from './SceneFactory.js';
 import { SceneControler } from './SceneControler.js';
 import * as THREE from 'three/build/three.module.js';
 
 
 class ThreeJSRender{
-    constructor(canvas){
+    constructor(canvas,creator){
         this.r_canvas = canvas;
+        this.r_creator = creator;
         this.scene_wrapper = null;
         this.scene_controller = null;
         this.renderer= null;
@@ -37,9 +37,9 @@ class ThreeJSRender{
         //used for static rendered shadows
         //renderer.physicallyCorrectLights = true;
         
-        [this.scene_wrapper, this.scene_controller] = await SceneFactory.IconScene(this.r_canvas);
+        [this.scene_wrapper, this.scene_controller] = await this.r_creator(this.r_canvas);
         this.scene_controller.setRender(this.renderer);
-        this.scene_controller.setControlModel(SceneControler.FIRST_PERSON_LIMITED_CONTROL,this.render.bind(this));
+        this.scene_controller.setControlModel(SceneControler.FIRST_PERSON_CUSTOM_CONTROL,this.render.bind(this));
         this.scene_controller.player_control.limits = {
             x: [-300 , 300],
             y: [74,76],
