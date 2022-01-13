@@ -8,7 +8,6 @@ import IconScene from './components/3DWaveIconScene/3DWaveIconScene';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <IconScene/>
   </React.StrictMode>,
   document.getElementById('root')
 );

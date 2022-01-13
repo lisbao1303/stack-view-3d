@@ -1,12 +1,10 @@
-$our-orange: #ff6600;
-$our-blue: #003153;
-$our-black: #000000;
+@use "../utils/variables" as v;
 
 .header{
     top: 0;
     left: 0;
     right: 0;
-    height: 70px;
+    height: v.$header-height;
     z-index: 999;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
     position: fixed;
@@ -14,7 +12,7 @@ $our-black: #000000;
     justify-content: space-between;
     color: white;
     width: 100%;
-    background-color: $our-black;
+    background-color: v.$our-black;
     opacity: 0;
     animation-name: fadein;
     animation-duration: .5s;
@@ -42,7 +40,7 @@ margin-left: 10px;
   
   }
   .header .menu Button a:hover {
-    background: -webkit-linear-gradient(135deg,$our-blue 0,#0d2f46 50%,$our-orange 50%,#F16436 100%);
+    background: -webkit-linear-gradient(135deg,v.$our-blue 0,#0d2f46 50%,v.$our-orange 50%,#F16436 100%);
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
     }

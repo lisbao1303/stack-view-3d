@@ -1,22 +1,23 @@
 import React from 'react';
-import {ThreeJSRender} from './js/MainAmbiente.js'; 
-
+import {ThreeJSRender} from '../../js-3D/MainAmbiente.js';
+import { SceneFactory } from './SceneFactory.js';
 
 class IconScene extends React.Component {
     constructor(props) {
         super(props);
         this.canvasRef = React.createRef();
+        this.handler = null;
+        this.controller = null;
     }
 
     // ******************* COMPONENT LIFECYCLE ******************* //
     componentDidMount() {
         // Get canvas, pass to custom class
         const canvas = this.canvasRef.current;
-        (new ThreeJSRender(canvas)).init();
-
-        // Init any event listeners
-        window.addEventListener('mousemove', this.mouseMove);
-        window.addEventListener('resize', this.handleResize);
+        const creator = SceneFactory.IconScene;
+        this.handler =new ThreeJSRender(canvas,creator);
+        this.handler.init(ThreeJSRender.RENDER_MODE_BEHIND);
+        window.addEventListener('resize', this.handler.onResize.bind(this.handler));
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -26,19 +27,8 @@ class IconScene extends React.Component {
     }
 
     componentWillUnmount() {
-        // Remove any event listeners
-        window.removeEventListener('mousemove', this.mouseMove);
-        window.removeEventListener('resize', this.handleResize);
+        window.removeEventListener('resize', this.handler.onResize.bind(this.handler));
     }
-
-    // ******************* EVENT LISTENERS ******************* //
-    mouseMove = (event) => {
-        //this.viewGL.onMouseMove();
-    }
-
-    handleResize = () => {
-        this.viewGL.onWindowResize(window.innerWidth, window.innerHeight);
-    };
 
     render() {
         return (

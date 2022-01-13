@@ -7,15 +7,22 @@ import Loader from './components/Loader/loader';
 import Devs from './components/Devs/devs';
 import Clients from './components/TrustedBy/clients';
 import Footer from './components/Footer/footer';
+import IconScene from './components/3DWaveIconScene/3DWaveIconScene';
+import ThreeController from './components/3DController/3DController';
+
 function App() {
+  let iconRef= null;
+
   return (
     <div className="App">
-
+      <IconScene ref={(icon)=> {iconRef=icon;} }/>
       <Loader />
       <Header />
       <ScrollUp />
       <Front />
-      <div className="spaceEnjoy"></div>
+      <ThreeController ref={(controler)=>{
+        controler.onMouseMoveI.registerObserver(iconRef.handler.onPointerMove.bind(iconRef.handler));
+      }}/>
       <Devs />
       <div className="spaceEnjoy"></div>
       <Clients />
