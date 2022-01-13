@@ -24,6 +24,7 @@ function App() {
         controler.onMouseMoveI.registerObserver(iconRef.handler.onPointerMove.bind(iconRef.handler));
       }}/>
       <Devs />
+      <div className="spaceEnjoy"></div>
       <Clients />
       <Footer />
     </div>

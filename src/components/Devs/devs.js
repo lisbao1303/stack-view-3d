@@ -1,18 +1,43 @@
-import React  from 'react';
+import React from 'react';
 
 class Devs extends React.Component {
 
-  constructor(props) {  
+  constructor(props) {
     super(props);
     this.state = {
-      devAbout:false,
-      devResume:false,
-      devSkills:false,     
-
+      devAbout: false,
+      devResume: false,
+      devSkills: false,
+      currentDev: {
+        avatar: "/devs/elisbao.jpeg",
+        about: {
+          name: "",
+          nasc: "",
+          desc: ""
+        },
+        resume: {
+          education: [
+            {svg: "",
+            title: "",
+            where: "",
+            period: ""
+          }
+          ],
+          professional: [
+            {svg: "",
+            title: "",
+            where: "",
+            period: ""
+          }
+          ],
+        },
+        skills: {},
+        cv: "",
+      }
     };
     this.handleScroll = this.handleScroll.bind(this);
   }
-  
+
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
@@ -28,12 +53,26 @@ class Devs extends React.Component {
 
   };
 
-  showDevInfo = () => {
-    console.log("dev info")
+  showAbout = () => {
     this.setState({
-      devAbout:true
+      devAbout: true,
+      devResume: false,
+      devSkills: false,
     })
-
+  }
+  showResume = () => {
+    this.setState({
+      devAbout: false,
+      devResume: true,
+      devSkills: false,
+    })
+  }
+  showSkills = () => {
+    this.setState({
+      devAbout: false,
+      devResume: false,
+      devSkills: true,
+    })
   }
 
   render() {
@@ -56,7 +95,7 @@ class Devs extends React.Component {
               </g>
             </g>
           </svg>
-          <div className="imgContainer"> 
+          <div className="imgContainer">
             <img
               id="e"
               src="/devs/elisbao.jpeg"
@@ -79,31 +118,59 @@ class Devs extends React.Component {
       <div className="aboutDevs">
         <div className="devsSide">
           <div className="devsCardImg">
-
+            <img
+              id="t"
+              src={this.state.currentDev.avatar}
+              alt="currentDev"
+              width={130}
+              height={130}
+            />
           </div>
           <div className="devsMenu">
-          <div className="devFoto" onClick={this.showDevInfo}>
-          <img
-            id="t"
-            src="/devs/thiagao.jpg"
-            alt="thiagao"
-            width={130}
-            height={130}
-          />
-        </div>
-            <button><a className="custom">About</a></button>
-            <button><a className="custom">Resume</a></button>
-            <button><a className="custom">Skills</a></button>
 
-            <button><a className="custom downloadbutton">Download</a></button>
+            <button onClick={this.showAbout} class={this.state.devAbout ? "octagonActv" : "octagon"}><a className='custom'>About</a></button>
+            <button onClick={this.showResume} class={this.state.devResume ? "octagonActv" : "octagon"}><a className="custom">Resume</a></button>
+            <button onClick={this.showSkills} class={this.state.devSkills ? "octagonActv" : "octagon"}><a className="custom">Skills</a></button>
+
+            <button class="downloadbutton"><a className="custom ">Download cv</a></button>
           </div>
         </div>
         <div className="devsBody">
-          {this.state.devAbout && <div  className="devAbout">
-          A fan of engineering, web/mobile development, embedded systems, technology to connect and impact people. I am a knowledge seeker.
+          {this.state.devAbout && <div className="devAbout">
+            <p>{this.state.currentDev.about.name}</p><span>{ }</span>
+
+            A fan of engineering, web/mobile development, embedded systems, technology to connect and impact people. I am a knowledge seeker.
           </div>}
-         { <div  className="devResume"></div>}
-          {<div  className="devSkills"></div>}
+          {this.state.devResume && <div className="devResume">
+<p>EDUCATION</p>
+            {this.state.currentDev.resume.education.map((element) => {
+              return (
+                <div className='cardResume'>
+                  <div className='svg'>{element.svg}</div>
+                  <div className='content'>
+                    <span>{element.title}</span>
+                    <span>{element.where}</span>
+                    <span>{element.period}</span>
+                  </div>
+                </div>
+              )
+            })}
+<p>PROFESSIONAL</p>
+
+{this.state.currentDev.resume.professional.map((element) => {
+              return (
+                <div className='cardResume'>
+                  <div className='svg'>{element.svg}</div>
+                  <div className='content'>
+                    <span>{element.title}</span>
+                    <span>{element.where}</span>
+                    <span>{element.period}</span>
+                  </div>
+                </div>
+              )
+            })}
+          </div>}
+          {<div className="devSkills"></div>}
         </div>
       </div>
     </div>

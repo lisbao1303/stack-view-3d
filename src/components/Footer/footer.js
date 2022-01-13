@@ -1,9 +1,8 @@
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 export default function Footer() {
 
-    const [offsetY, setOffsetY] = useState(0)
 
     return <div className="footer">
         <div className="foot"><div className="contact">
@@ -24,7 +23,7 @@ export default function Footer() {
    <stop offset="0.0117647" stopOpacity="0.478431" stopColor="white"/>
    <stop offset="1" stopOpacity="0.478431" stopColor="white"/>
   </linearGradient>
-  <linearGradient id="color3" gradientUnits="userSpaceOnUse" xaHref="#color2" x1="74.05" y1="81.19" x2="61.23" y2="85.42">
+  <linearGradient id="color3" gradientUnits="userSpaceOnUse" xlinkHref="#color2" x1="74.05" y1="81.19" x2="61.23" y2="85.42">
   </linearGradient>
   <radialGradient id="color4" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.999994 -0 -0 1.00001 0 0)" cx="75.08" cy="75.43" r="120.91" fx="75.08" fy="75.43">
    <stop offset="0" stopOpacity="1" stopColor="#FF9B05"/>
@@ -63,7 +62,7 @@ export default function Footer() {
             </address>
             
             <div className="WhatsTele">
-                    <a href="https://api.whatsapp.com/send?phone=5517988309968">
+                    <button onClick="https://api.whatsapp.com/send?phone=5517988309968">
                         <a> <img
                             href="https://api.whatsapp.com/send?phone=5517988309968"
                             id="w"
@@ -74,9 +73,9 @@ export default function Footer() {
 
                         />
                         </a>
-                    </a>
+                    </button>
 
-                    <a href="https://t.me/stackviewbr">
+                    <button onClick="https://t.me/stackviewbr">
                         <a className="t"><img
                             id="t"
                             alt="telegram"
@@ -85,7 +84,7 @@ export default function Footer() {
                             height="50px"
 
                         />
-                        </a></a>
+                        </a></button>
 
                 </div>
 
@@ -93,53 +92,53 @@ export default function Footer() {
             <div className="follow">
                 <span className="sv" style={{fontSize:"x-large"}}>FOLLOW US</span>
                 <div className="line">
-                    <a href="https://www.behance.net/StackView"><a><img
+                    <button onClick="https://www.behance.net/StackView"><a><img
                         id="be"
                         alt="behance"
                         src="/icons/behance.png"
                         width="50px"
                         height="50px"
 
-                    /></a></a>
-                    <a href="https://www.instagram.com/g_lisbao/"><a><img
+                    /></a></button>
+                    <button onClick="https://www.instagram.com/g_lisbao/"><a><img
                         id="insta"
                         alt="instagram"
                         src="/icons/insta.png"
                         width="50px"
                         height="50px"
 
-                    /></a></a>
-                    <a href="https://github.com/StackView-BR"><a><img
+                    /></a></button>
+                    <button onClick="https://github.com/StackView-BR"><a><img
                         id="git"
                         alt="github"
                         src="/icons/git.png"
                         width="50px"
                         height="50px"
 
-                    /></a></a>
-                    <a href="https://www.facebook.com/lisbao.gabriel/"><a><img
+                    /></a></button>
+                    <button onClick="https://www.facebook.com/lisbao.gabriel/"><a><img
                         id="face"
                         alt="facebook"
                         src="/icons/face.png"
                         width="50px"
                         height="50px"
 
-                    /></a></a>
-                    <a href="https://www.aedin.com/in/gabrielelisbao/"><a><img
+                    /></a></button>
+                    <button onClick="https://www.linkedin.com/in/gabrielelisbao/"><a><img
                         id="in"
-                        alt="aedin"
+                        alt="linkedin"
                         src="/icons/in.png"
                         width="50px"
                         height="50px"                        
 
-                    /></a></a>
+                    /></a></button>
                 </div>
 
             </div></div>
 
         <div className="rodape">
             <div className="rights">&copy;2021+ Stackview BR | All right reserved.</div>
-            <div className="made" style={{fontSize:"x-large"}}><span className="custom">made by </span><a href="#" className="stack"> Stack</a><a href="#" className="view esse aki">View</a></div>
+            <div className="made" style={{fontSize:"x-large"}}><span className="custom">made by </span><a className="stack"> Stack</a><a className="view esse aki">View</a></div>
         </div>
     </div>
 }
