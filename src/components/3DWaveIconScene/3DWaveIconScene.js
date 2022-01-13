@@ -1,8 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import {ThreeJSRender} from './js-3D/MainAmbiente.js';
-import App from '../../App.js';
-
 
 class IconScene extends React.Component {
     constructor(props) {

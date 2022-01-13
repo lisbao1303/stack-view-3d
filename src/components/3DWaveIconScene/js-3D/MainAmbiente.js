@@ -1,8 +1,7 @@
-import * as THREE from '../../../three/build/three.module.js';
-import {WEBGL} from  '../../../three/examples/jsm/WebGL.js';
+import {WEBGL} from  'three/examples/jsm/WebGL.js';
 import { SceneFactory } from './SceneFactory.js';
 import { SceneControler } from './SceneControler.js';
-
+import * as THREE from 'three/build/three.module.js';
 
 
 class ThreeJSRender{

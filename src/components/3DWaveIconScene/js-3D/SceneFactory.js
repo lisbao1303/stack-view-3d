@@ -1,4 +1,4 @@
-import * as THREE from '../../../three/build/three.module.js';
+import * as THREE from 'three/build/three.module.js';
 import { SceneWrapper } from "./SceneWrapper.js";
 import {ModelImporter} from "./Importer.js";
 import { SceneControler } from './SceneControler.js';

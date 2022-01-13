@@ -1,7 +1,7 @@
-import {OrbitControls} from '../../../three/examples/jsm/controls/OrbitControls.js';
-import {FirstPersonControls} from '../../../three/examples/jsm/controls/FirstPersonControls.js';
+import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls.js';
+import {FirstPersonControls} from 'three/examples/jsm/controls/FirstPersonControls.js';
 import {FirstPersonLimitedControls} from './FirstPersonLimitedControls.js';
-import * as THREE from '../../../three/build/three.module.js';
+import * as THREE from 'three/build/three.module.js';
 
 class SceneControler {
     static ORBIT_CONTROL = 0;
