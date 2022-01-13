@@ -34,8 +34,12 @@ class ThreeController extends React.Component {
       <div className="spaceEnjoy" 
       onMouseMove={(event)=> {
         this.onMouseMoveI.onMouseMove(event);
-      }}
-      />
+      }} 
+      >
+        <div className="controller">
+
+        </div>
+      </div>
     )
     
   }

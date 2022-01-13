@@ -1,6 +1,5 @@
 @import "./fonts/fonts.scss";
 @import "./animations/animations.scss";
-@import "./threeHost/threeHost.scss";
 @import "./deviceglobal.scss";
 @import "./components/clients.scss";
 @import "./components/front.scss";
@@ -9,11 +8,8 @@
 @import "./components/devs.scss";
 @import "./components/scroll.scss";
 @import "./components/loader.scss";
-
-
-$our-orange: #ff6600;
-$our-blue: #003153;
-$our-black: #000000;
+@import "./components/controller.scss";
+@import "./components/iconscene.scss";
 
 html,
 body {  
@@ -70,11 +66,4 @@ button{
 }
 //Scroll bar
 //Scroll button
-
-
-.spaceEnjoy{
-  width: 100%;
-  height: 700px;
-  background: transparent;
-}
 
