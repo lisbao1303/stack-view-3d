@@ -12,6 +12,7 @@ class SceneWrapper{
             'default': [],
             'controled': {}
         };
+        this.user_limits = null;
         if (based_scene===undefined){
             this.scene = new THREE.Scene();
         } else {

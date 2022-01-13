@@ -8,7 +8,7 @@ const _lookDirection = new Vector3();
 const _spherical = new Spherical();
 const _target = new Vector3();
 
-class FirstPersonLimitedControls {
+class FirstPersonExportedControls {
 
 	constructor( object, domElement ) {
 
@@ -123,8 +123,8 @@ class FirstPersonLimitedControls {
 		};
 
 		this.onMouseMove = function ( x,y ) {
-			this.mouseX = x*100;
-			this.mouseY = -y*100;
+			this.mouseX = x;
+			this.mouseY = y;
 
 		};
 
@@ -343,4 +343,4 @@ function contextmenu( event ) {
 
 }
 
-export { FirstPersonLimitedControls };
+export { FirstPersonExportedControls };
