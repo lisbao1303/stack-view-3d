@@ -8,7 +8,7 @@ const _lookDirection = new Vector3();
 const _spherical = new Spherical();
 const _target = new Vector3();
 
-class FirstPersonLimitedControls {
+class FirstPersonCustomControls {
 
 	constructor( object, domElement ) {
 
@@ -343,4 +343,4 @@ function contextmenu( event ) {
 
 }
 
-export { FirstPersonLimitedControls };
+export { FirstPersonCustomControls };

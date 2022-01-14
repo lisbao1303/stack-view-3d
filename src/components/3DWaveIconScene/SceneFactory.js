@@ -9,6 +9,12 @@ class SceneFactory{
         iScene.scene.background = new THREE.Color( 0x000000);
         iScene.scene.fog = new THREE.FogExp2( 0x00000, 0.0015);
 
+        iScene.user_limits = {
+            x: [-300 , 300],
+            y: [74,76],
+            z: [200, 1200]
+        }
+
 
         const camera = new THREE.PerspectiveCamera( 50, r_canvas.width / r_canvas.height, 0.1, 1500);
         camera.position.x = 0;

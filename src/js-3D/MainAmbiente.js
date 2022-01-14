@@ -49,15 +49,11 @@ class ThreeJSRender{
             //used for static rendered shadows
             //renderer.physicallyCorrectLights = true;
             
+            //utilizar o canvas facilita na refentencia no react
+            //porem as cooedenadas do canvas não são utilizadas em modo behind
             [this.scene_wrapper, this.scene_controller] = await this.r_creator(this.r_canvas);
             this.scene_controller.setRender(this.renderer);
-            this.scene_controller.setControlModel(SceneControler.FIRST_PERSON_CUSTOM_CONTROL,this.render.bind(this));
-            this.scene_controller.player_control.limits = {
-                x: [-300 , 300],
-                y: [74,76],
-                z: [200, 1200]
-            };
-            //TODO: limits must come from the scenefactory
+            this.scene_controller.setControlModel(SceneControler.FIRST_PERSON_EXPORTED_CONTROL,this.render.bind(this));
 
             this._onPointerMove = this.onPointerMoveBehind;
             this._onResize = this.onResizeBehind;
@@ -65,17 +61,12 @@ class ThreeJSRender{
             this.animate(); //Start Animations
         }
         if (render_mode===ThreeJSRender.RENDER_MODE_FIRST){
-            //TODO: scene asignation
-            //this.scene_controller.setControlModel(SceneControler.FIRST_PERSON_CUSTOM_CONTROL,this.render.bind(this));
-            //this.scene_controller.player_control.limits = {
-            //    x: [-300 , 300],
-            //    y: [74,76],
-            //    z: [200, 1200]
-            //};
+            [this.scene_wrapper, this.scene_controller] = await this.r_creator(this.r_canvas);
+            this.scene_controller.setRender(this.renderer);
+            this.scene_controller.setControlModel(SceneControler.FIRST_PERSON_CUSTOM_CONTROL,this.render.bind(this));
 
-            this._onPointerMove = this.onPointerMoveBehind;
-            this._onResize = this.onResizeBehind;
-            //TODO: limits must come from the scenefactory
+            this._onPointerMove = this.onPointerMoveFirst;
+            this._onResize = this.onResizeFirst;
             this.pointer = this.scene_controller.selector.pointer;
             this.animate(); //Start Animations
         }
@@ -97,13 +88,19 @@ class ThreeJSRender{
     }
     
     onPointerMoveBehind( event ) {
-            //TODO: (x,y) must be in % values 
-            this.scene_controller.selector.pointer.x = ( event.clientX / this.r_canvas.width ) * 2 - 1;
-            this.scene_controller.selector.pointer.y = - ( event.clientY / this.r_canvas.height ) * 2 + 1;
-            this.scene_controller.player_control.onMouseMove.bind( this.scene_controller.player_control, this.scene_controller.selector.pointer.x,this.scene_controller.selector.pointer.y )();
-            //console.log( event.clientX,  event.clientY );
-            //console.log( this.r_canvas.width, this.r_canvas.height );
-            //console.log(this.scene_controller.selector.pointer);
+        //cuidado, as cordendas do mouse estao em relacao a janela
+        //e nao ao canvas, este por sua vez trabalha como um portal
+        //definição do modo behind
+        const x_percent =  (event.clientX / window.innerWidth)* 2 - 1;
+        const y_percent =  -(event.clientY / window.innerHeight)* 2 + 1;
+        this.scene_controller.selector.pointer.x = x_percent;
+        this.scene_controller.selector.pointer.y = y_percent;
+        const c_x = event.clientX- window.innerWidth /2;
+        const c_y = event.clientY-window.innerHeight /2;
+        this.scene_controller.player_control.onMouseMove.bind( this.scene_controller.player_control, c_x, c_y )();
+        //console.log( event.clientX,  event.clientY );
+        //console.log( this.r_canvas.width, this.r_canvas.height );
+        //console.log(this.scene_controller.selector.pointer);
     }
 
     onPointerMoveFirst( event ) {
