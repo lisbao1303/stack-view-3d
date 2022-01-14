@@ -1,0 +1,48 @@
+{
+    "avatar": "/devs/elisbao.jpeg",
+    "about": {
+      "name": "Gabriel Elisbão",
+      "nasc": "1998-03-13",
+      "desc": "A fan of engineering, web/mobile development, embedded systems, technology to connect and impact people. I am a knowledge seeker."
+    },
+    "resume": {
+      "education": [
+        {"svg": "/clientes/ufu.png",
+        "title": "Mechatronics Engineering",
+        "where": "Federal University of Uberlândia",
+        "period": "2017 - 2022"
+      },
+      {"svg": "if.svg",
+        "title": "Information Technology",
+        "where": "Federal Institute of Minas Gerais",
+        "period": "2013 - 2015"
+      }
+      ],
+      "professional": [
+        {"svg": "meta.svg",
+        "title": "Project Manager (Jr. company member)",
+        "where": "Meta Consultoria",
+        "period": "Apr 2019 - Aug 2020"
+      },
+      {"svg": "asa.svg",
+        "title": "FullStack Developer Jr.",
+        "where": "Asa Consultoria",
+        "period": "Mar 2021 - Aug 2021"
+      },
+      {"svg": "kyros.svg",
+        "title": "System Development Analyst",
+        "where": "Kyros Tecnologia",
+        "period": "Aug 2021 - Present"
+      }
+      ]
+    },
+    "skills": [
+        {
+          "svg": "/devs/skills/react.png",
+          "skill": "React",
+            "level":"50%",
+            "xp": "3 years"
+        }
+    ],
+    "cv": "/devs/GabrielElisbao.pdf"
+}

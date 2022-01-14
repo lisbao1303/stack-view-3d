@@ -15,10 +15,10 @@
     src: local("Icon Font"), url("/styles/fonts/XXIX.woff") format("woff");
   }
   @font-face {
-    font-family: "Roboto";
+    font-family: "Roboto Font";
     font-weight: 500;
     font-style: normal;
     font-display: swap; /* Read next point */
     unicode-range: U+000-5FF; /* Download only latin glyphs */
-    src: local("Roboto Font"), url("/styles/fonts/Roboto.ttf") format("ttf");
+    src: local("Roboto Font"), url("/styles/fonts/Roboto.ttf") format("truetype");
   }
