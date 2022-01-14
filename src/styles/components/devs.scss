@@ -189,10 +189,16 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
 .cardResume .svg{
   width: 32%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
   background-color: transparent;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -10px inset, rgba(0, 0, 0, 0.3) 0px 16px 30px -16px inset;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+}
+.cardResume .svg img{
+  margin-top: -20%;
 }
 .devResume{
   height: 100%;
@@ -236,3 +242,32 @@ font-weight: 800;
   font-weight: 800;
   font-size: 30px;
 }
+
+
+
+
+.progress
+  {width: 100px;
+  max-width: 260px;
+  height: 6px;
+  margin: 20px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+}
+  
+  .progress-bar
+    {display: block;
+      margin: 0 !important;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite;
+    }
+@keyframes progress-animation
+  {
+    0%
+    {background-position: 100%;}
+  100%
+    {background-position: 0;}
+  }

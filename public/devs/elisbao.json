@@ -7,7 +7,7 @@
     },
     "resume": {
       "education": [
-        {"svg": "ufu.svg",
+        {"svg": "/clientes/ufu.png",
         "title": "Mechatronics Engineering",
         "where": "Federal University of Uberlândia",
         "period": "2017 - 2022"
@@ -36,6 +36,12 @@
       }
       ]
     },
-    "skills": [],
-    "cv": ""
+    "skills": [
+        {
+            "skill": "React",
+            "level":"50%",
+            "xp": "3 years"
+        }
+    ],
+    "cv": "/devs/GabrielElisbao.pdf"
 }
