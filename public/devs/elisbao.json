@@ -38,7 +38,8 @@
     },
     "skills": [
         {
-            "skill": "React",
+          "svg": "/devs/skills/react.png",
+          "skill": "React",
             "level":"50%",
             "xp": "3 years"
         }

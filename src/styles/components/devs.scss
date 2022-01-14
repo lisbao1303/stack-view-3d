@@ -184,7 +184,7 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
 }
 
 .cardResume:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
 }
 .cardResume .svg{
   width: 32%;
@@ -249,8 +249,8 @@ font-weight: 800;
 .progress
   {width: 100px;
   max-width: 260px;
-  height: 6px;
-  margin: 20px;
+  height: 6px !important;
+  margin: 5px 5px 0 0px;
   background: #e1e4e8;
   border-radius: 3px;
   overflow: hidden;
@@ -259,11 +259,71 @@ font-weight: 800;
   .progress-bar
     {display: block;
       margin: 0 !important;
-    height: 100%;
+  border-radius: 3px;
+  height: 100%;
     background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
-    background-size: 300% 100%;
+background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);  
+background-size: 300% 100%;
     animation: progress-animation 2s linear infinite;
     }
+
+.cardSkill{
+  background-color: transparent;
+  height: 110px;
+  width: 200px; 
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  //justify-content: center;
+  flex-direction: row;
+  margin: 10px;
+}
+.cardSkill .content{
+  display: flex;
+  flex-direction: column;
+  height: 55%;
+  width: 100%;
+  font-size: 15px;
+  margin: 0 0 0 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+}
+.cardSkill .content span{
+  margin: 0px 0  0 35px;
+}
+
+.cardSkill .content span:nth-child(1) {
+  margin-top: 4px;
+  font-weight: 800;
+  }
+  .cardSkill .content span:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    margin-right: 4px;
+  font-weight: 800;
+  background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+  background: linear-gradient(90deg, rgba(228,85,2,1) 0%, rgba(94,0,226,1) 17%, rgba(13,0,154,1) 31%, rgba(6,87,173,1) 48%, rgba(255,119,0,1) 65%, rgba(124,0,255,1) 84%, rgba(8,0,255,1) 100%, rgba(0,212,255,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    }
+
+.cardSkill .content:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.cardSkill .svg{
+  width: 60px !important;
+  height: 60px !important;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex !important;
+  background-color: rgb(20, 30, 48);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -10px inset, rgba(0, 0, 0, 0.3) 0px 16px 30px -16px inset;
+  border-radius: 30px;
+}
+
 @keyframes progress-animation
   {
     0%

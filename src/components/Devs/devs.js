@@ -35,9 +35,10 @@ class Devs extends React.Component {
         },
         skills: [
           {
-            "skill": "",
-            "level":"",
-            "xp": ""
+           svg: "",
+            skill: "",
+            level:"",
+            xp: ""
         }
         ],
         cv: "",
@@ -234,17 +235,20 @@ class Devs extends React.Component {
           {this.state.devSkills && <div className="devSkills">
             <div className='cards'>{this.state.currentDev.skills.map((element) => {
               return (
-                <div className='cardResume'>
-                  <div className='svg'></div>
-                  <div className='content'>
-                    
-                    <span>{element.skill}</span>
-                    <span><div class="progress">
+                <div className='cardSkill'>
+                <div className='svg'><img src={element.svg}
+            alt="icon"
+            width={60}
+            height={45}></img></div>
+                <div className='content'>
+                  <span>{element.skill}</span>
+                  <span><div class="progress">
                       <span class="progress-bar" style={{"width" : element.level}}></span>
-                    </div></span>
-                    <span>{element.xp}</span>
-                  </div>
+                    </div>{element.level}</span>
+                  <span>{element.xp}</span>
                 </div>
+              </div>              
+               
               )
             })}</div>
           </div>}
