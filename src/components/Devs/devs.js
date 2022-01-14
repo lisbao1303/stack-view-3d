@@ -5,7 +5,7 @@ class Devs extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      devAbout: false,
+      devAbout: true,
       devResume: false,
       devSkills: false,
       currentDev: {
@@ -17,21 +17,23 @@ class Devs extends React.Component {
         },
         resume: {
           education: [
-            {svg: "",
-            title: "",
-            where: "",
-            period: ""
-          }
+            {
+              svg: "",
+              title: "",
+              where: "",
+              period: ""
+            }
           ],
           professional: [
-            {svg: "",
-            title: "",
-            where: "",
-            period: ""
-          }
+            {
+              svg: "",
+              title: "",
+              where: "",
+              period: ""
+            }
           ],
         },
-        skills: {},
+        skills: [],
         cv: "",
       }
     };
@@ -41,6 +43,12 @@ class Devs extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    this.getJSONFromApi('/devs/elisbao.json').then((json) => {
+      this.setState({
+        currentDev: json
+      })
+    })
+
   }
 
   componentWillUnmount() {
@@ -52,6 +60,16 @@ class Devs extends React.Component {
     });
 
   };
+
+  async getJSONFromApi(route) {
+    try {
+      let response = await fetch(route);
+      let responseJson = await response.json();
+      return responseJson;
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   showAbout = () => {
     this.setState({
@@ -75,13 +93,45 @@ class Devs extends React.Component {
     })
   }
 
+  showDevInfo = (e) =>{
+    let id = e.target.id;
+    if (id === 'elisbao'){
+      this.getJSONFromApi('/devs/elisbao.json').then((json) => {
+        this.setState({
+          currentDev: json
+        })
+      })
+    }else{
+      this.getJSONFromApi('/devs/thiagao.json').then((json) => {
+        this.setState({
+          currentDev: json
+        })
+      })
+    }
+
+  }
+
+  getAge = (dateString) => {
+    var today = new Date();
+    var birthDate = new Date(dateString);
+    console.log(today)
+    console.log(birthDate)
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age--;
+    }
+    return age;
+  }
+
+
   render() {
 
     return <div className="devs">
       <div className="listDevs">
         <div className="title sv">We,</div>
-        <div className="devFoto" onClick={this.showDevInfo}>
-          <svg width="150" height="150" fillRule="evenodd" xmlSpace="preserve" shapeRendering="geometricPrecision" textRendering="geometricPrecision" imageRendering="optimizeQuality" clipRule="evenodd">
+        <div id="elisbao" className="devFoto" onClick={this.showDevInfo}>
+          {/* <svg width="150" height="150" fillRule="evenodd" xmlSpace="preserve" shapeRendering="geometricPrecision" textRendering="geometricPrecision" imageRendering="optimizeQuality" clipRule="evenodd">
             <g id="eye" transform="
             translate(24 24)
 
@@ -94,10 +144,10 @@ class Devs extends React.Component {
                 <path fill="url(#color3)" className="fil4" d="M73.13 78.39l-6.67 10.79c-3.24,-2 -5.67,-5.08 -6.87,-8.7l12.05 -3.98c0.27,0.82 0.81,1.47 1.49,1.89z" />
               </g>
             </g>
-          </svg>
-          <div className="imgContainer">
+          </svg> */}
+          <div className="imgContainer" id='elisbao'>
             <img
-              id="e"
+              id="elisbao"
               src="/devs/elisbao.jpeg"
               alt="elisbao"
               width={120}
@@ -105,9 +155,9 @@ class Devs extends React.Component {
             />
           </div>
         </div>
-        <div className="devFoto" onClick={this.showDevInfo}>
+        <div id="thiagao" className="devFoto" onClick={this.showDevInfo}>
           <img
-            id="t"
+            id="thiagao"
             src="/devs/thiagao.jpg"
             alt="thiagao"
             width={120}
@@ -137,13 +187,12 @@ class Devs extends React.Component {
         </div>
         <div className="devsBody">
           {this.state.devAbout && <div className="devAbout">
-            <p>{this.state.currentDev.about.name}</p><span>{ }</span>
-
-            A fan of engineering, web/mobile development, embedded systems, technology to connect and impact people. I am a knowledge seeker.
+            <p>{this.state.currentDev.about.name}, <span>{this.getAge(this.state.currentDev.about.nasc)}</span></p>
+            {this.state.currentDev.about.desc}
           </div>}
           {this.state.devResume && <div className="devResume">
-<p>EDUCATION</p>
-            {this.state.currentDev.resume.education.map((element) => {
+            <p>EDUCATION</p>
+            <div className='cards'>{this.state.currentDev.resume.education.map((element) => {
               return (
                 <div className='cardResume'>
                   <div className='svg'>{element.svg}</div>
@@ -154,10 +203,10 @@ class Devs extends React.Component {
                   </div>
                 </div>
               )
-            })}
-<p>PROFESSIONAL</p>
+            })}</div>
 
-{this.state.currentDev.resume.professional.map((element) => {
+            <p>EXPERIENCE</p>
+            <div className='cards'>{this.state.currentDev.resume.professional.map((element) => {
               return (
                 <div className='cardResume'>
                   <div className='svg'>{element.svg}</div>
@@ -168,7 +217,9 @@ class Devs extends React.Component {
                   </div>
                 </div>
               )
-            })}
+            })}</div>
+
+
           </div>}
           {<div className="devSkills"></div>}
         </div>

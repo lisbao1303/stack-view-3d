@@ -1,0 +1,28 @@
+{
+    "avatar": "/devs/thiagao.jpg",
+    "about": {
+      "name": "Thiago Souza",
+      "nasc": "",
+      "desc": ""
+    },
+    "resume": {
+      "education": [
+        {"svg": "",
+        "title": "",
+        "where": "",
+        "period": ""
+      }
+     
+      ],
+      "professional": [
+        {"svg": "",
+        "title": "",
+        "where": "",
+        "period": ""
+      }
+      
+      ]
+    },
+    "skills": [],
+    "cv": ""
+}

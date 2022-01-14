@@ -174,35 +174,65 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
 .cardResume{
   background-color: #fff;
   height: 110px;
-  width: 280px;
+  width: 270px;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   display: flex;
   flex-direction: row;
-  margin: 30px;
+  margin: 10px;
 }
 
 .cardResume:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .cardResume .svg{
-  width: 30%;
+  width: 32%;
   height: 100%;
-  background-color: green;
+  background-color: transparent;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
+.devResume{
+  height: 100%;
+}
+.devResume .cards{
+  display: flex;
+  flex-wrap:wrap;
+  overflow-y: auto;
+  max-height: 37%;
+  margin-left: 10px;
+}
+.devResume p{
+  font-family: "Icon Font";
+  font-size: 20px;
+  margin: 20px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .cardResume .content{
   display: flex;
+  height: 100%;
+  font-size: 15px;
   flex-direction: column;
 }
 
 .cardResume .content span {
-margin: 5px;
+margin: 4px;
 }
 
 
 .cardResume .content span:nth-child(1) {
 font-weight: 800;
+}
+.devAbout{
+  margin: 20px;
+  color: #fff;
+}
+
+.devAbout p{
+  font-weight: 800;
+  font-size: 30px;
 }
