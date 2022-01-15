@@ -108,10 +108,12 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
   height: 0;
   right: 0;
   transition: all 0.2s;
-  border-bottom:25px solid  rgb(255, 144, 104);  
+  border-bottom:0x solid  rgb(255, 144, 104);  
 }
 .octagon:hover:before {
   border-right: 35px solid #000;
+  border-bottom: 25px solid  rgb(255, 144, 104);  
+
 }
 
 .octagon:after{
@@ -121,11 +123,12 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
   transition: all 0.2s;
   width: 20px;
   right: 0;
-  border-top: 25px solid rgb(255, 144, 104);
+  border-top: 0px solid rgb(255, 144, 104);
   height: 0;
 }
 .octagon:hover:after{
   border-right: 35px solid #000;
+  border-top: 25px solid rgb(255, 144, 104);
 }
 .downloadbutton{
   width: 80%;

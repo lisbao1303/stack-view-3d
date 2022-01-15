@@ -50,9 +50,9 @@ render(){
         </div>
         
         <div className="fdd">
-            <div className="f custom"><a href="#">Engineering</a></div>
-            <div className="d custom"><a href="#">design</a></div>
-            <div className="m custom" ><a href="#">fullstack development</a></div>
+            <div className="f custom">Engineering</div>
+            <div className="d custom">design</div>
+            <div className="m custom" >fullstack development</div>
         </div>
     </div>
 }
