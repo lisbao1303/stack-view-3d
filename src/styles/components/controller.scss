@@ -2,7 +2,7 @@
 
 .spaceEnjoy{
     width: 100%;
-    height: calc(100vh - #{v.$header-height});
+    height: calc(100vh - v.$header-height);
     background: transparent;
 }
 

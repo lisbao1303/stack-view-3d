@@ -59,6 +59,7 @@ class ThreeJSRender{
             this._onResize = this.onResizeBehind;
             this.pointer = this.scene_controller.selector.pointer;
             this.animate(); //Start Animations
+
         }
         if (render_mode===ThreeJSRender.RENDER_MODE_FIRST){
             [this.scene_wrapper, this.scene_controller] = await this.r_creator(this.r_canvas);
@@ -68,7 +69,8 @@ class ThreeJSRender{
             this._onPointerMove = this.onPointerMoveFirst;
             this._onResize = this.onResizeFirst;
             this.pointer = this.scene_controller.selector.pointer;
-            this.animate(); //Start Animations
+            this.animate(); //Start 
+            
         }
         
     }
