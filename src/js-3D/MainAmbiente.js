@@ -40,14 +40,18 @@ class ThreeJSRender{
             antialias: true}
         );  
         this.renderer.setSize( this.r_canvas.width, this.r_canvas.height );
-        
+
+        //to save resources we are not using shadows 
+
         //used for runtime rendered shadows
-        this.renderer.shadowMap.enabled = true;
-        this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
-        this.renderer.shadowMapSoft = true;
+        //this.renderer.shadowMap.enabled = false;
+        //this.renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+        //this.renderer.shadowMapSoft = true;
+
+        //used for static rendered shadows
+        //renderer.physicallyCorrectLights = true;
+        
         if (render_mode===ThreeJSRender.RENDER_MODE_BEHIND){    
-            //used for static rendered shadows
-            //renderer.physicallyCorrectLights = true;
             
             //utilizar o canvas facilita na refentencia no react
             //porem as cooedenadas do canvas não são utilizadas em modo behind

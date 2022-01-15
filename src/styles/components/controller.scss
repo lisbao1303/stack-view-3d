@@ -13,4 +13,10 @@
     border-radius: 10px;
     border-color: white;
     border-style: solid;
+    visibility: hidden;
 }
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }

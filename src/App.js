@@ -23,13 +23,21 @@ function App() {
       <ThreeController ref={(controler)=>{
         controler.onMouseMoveI.registerObserver(iconRef.handler.onPointerMove.bind(iconRef.handler));
       }}/>
-      <Devs />
+
+      {/* so pra dar espaco se quiser mudar, a vontade */}
       <div style={{
         width: '100%',
-        height: '30px'
-      }}>
-        
-      </div>
+        height: '100px'
+      }}/>
+      
+      <Devs />
+
+      {/* so pra dar espaco se quiser mudar, a vontade */}
+      <div style={{
+        width: '100%',
+        height: '100px'
+      }}/>
+
       <Clients />
       <Footer />
     </div>

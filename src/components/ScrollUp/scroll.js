@@ -9,11 +9,12 @@ class ScrollUp extends React.Component {
         this.state = {
             progress: "0%",
             text: <> &nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;stackview&nbsp;&nbsp;•&nbsp;&nbsp; •&nbsp;&nbsp; •&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>,
-            rotate: 0
+            rotate: 0,
+            show_controls: false,
         };
 
 
-        this.handleScroll = this.handleScroll.bind(this);
+        this.handleScroll = this.scrollListener.bind(this);
 
     }
 
@@ -46,21 +47,38 @@ class ScrollUp extends React.Component {
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     }
-    handleScroll(event) {
-        let totalHeight = document.body.scrollHeight - window.innerHeight;
-        this.setState({
-            progress: ((window.pageYOffset / totalHeight) * 100) * 4,
-            rotate: ((window.pageYOffset / totalHeight) * 100) * 360 / 100,
-        });
-        if (this.state.progress > 30) {
-            this.setState({
-                text: <>back to the start  &nbsp;&nbsp;• &nbsp;&nbsp; Scroll Up  &nbsp;&nbsp;•&nbsp;&nbsp; Scroll Up &nbsp;&nbsp;•&nbsp; &nbsp;</>
-            })
-        } else {
-            this.setState({
-                text: <> &nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;stackview&nbsp;&nbsp;•&nbsp;&nbsp; •&nbsp;&nbsp; •&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>
-            })
+
+    componentDidUpdate(prevProps, prevState) {
+        const inInterval = (min, v, max) => v>=min && v<=max || v>=max && v<=min;
+        if (!this.state.show_controls){
+            if (inInterval(prevState.progress, 130, this.state.progress)){
+                document.body.classList.add("stop-scrolling");
+                setTimeout(()=>{
+                    document.body.classList.remove("stop-scrolling");
+                }, 5000);
+                this.setState({
+                    show_controls: true
+                });
+            }
         }
+    }
+
+    scrollListener(event) {
+        const totalHeight = document.body.scrollHeight - window.innerHeight;
+        // da documentação 
+        //Because this.props and this.state may be updated asynchronously, you should not rely on their values for calculating the next state
+        // vou mudar para função anonima
+        this.setState((p_state)=>{
+            let new_state = {};
+            new_state.progress = (window.pageYOffset / totalHeight) * 100 * 4;
+            new_state.rotate= ((window.pageYOffset / totalHeight) * 100) * 360 / 100;
+            if (new_state.progress > 30) {
+                new_state.text= <>back to the start  &nbsp;&nbsp;• &nbsp;&nbsp; Scroll Up  &nbsp;&nbsp;•&nbsp;&nbsp; Scroll Up &nbsp;&nbsp;•&nbsp; &nbsp;</>
+            } else {
+                new_state.text= <> &nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;stackview&nbsp;&nbsp;•&nbsp;&nbsp; •&nbsp;&nbsp; •&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>
+            }
+            return new_state;
+        });
         //chato pa bune 
         //console.log(this.state.progress);
 
