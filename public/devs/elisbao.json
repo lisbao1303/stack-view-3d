@@ -7,29 +7,29 @@
     },
     "resume": {
       "education": [
-        {"svg": "/clientes/ufu.png",
+        {"svg": "/devs/resume/ufu.png",
         "title": "Mechatronics Engineering",
         "where": "Federal University of Uberlândia",
         "period": "2017 - 2022"
       },
-      {"svg": "if.svg",
+      {"svg": "/devs/resume/if.svg",
         "title": "Information Technology",
         "where": "Federal Institute of Minas Gerais",
         "period": "2013 - 2015"
       }
       ],
       "professional": [
-        {"svg": "meta.svg",
+        {"svg": "/devs/resume/meta.svg",
         "title": "Project Manager (Jr. company member)",
         "where": "Meta Consultoria",
         "period": "Apr 2019 - Aug 2020"
       },
-      {"svg": "asa.svg",
+      {"svg": "/devs/resume/asa.svg",
         "title": "FullStack Developer Jr.",
         "where": "Asa Consultoria",
         "period": "Mar 2021 - Aug 2021"
       },
-      {"svg": "kyros.svg",
+      {"svg": "/devs/resume/kyros.svg",
         "title": "System Development Analyst",
         "where": "Kyros Tecnologia",
         "period": "Aug 2021 - Present"

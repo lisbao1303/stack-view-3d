@@ -183,11 +183,11 @@ class Devs extends React.Component {
           </div>
           <div className="devsMenu">
 
-            <button onClick={this.showAbout} class={this.state.devAbout ? "octagonActv" : "octagon"}><a className='custom'>About</a></button>
-            <button onClick={this.showResume} class={this.state.devResume ? "octagonActv" : "octagon"}><a className="custom">Resume</a></button>
-            <button onClick={this.showSkills} class={this.state.devSkills ? "octagonActv" : "octagon"}><a className="custom">Skills</a></button>
+            <button onClick={this.showAbout} class={this.state.devAbout ? "octagonActv" : "octagon"}><span className='custom'>About</span></button>
+            <button onClick={this.showResume} class={this.state.devResume ? "octagonActv" : "octagon"}><span className="custom">Resume</span></button>
+            <button onClick={this.showSkills} class={this.state.devSkills ? "octagonActv" : "octagon"}><span className="custom">Skills</span></button>
 
-            <button class="downloadbutton" onClick={() => window.open(this.state.currentDev.cv)}><a className="custom ">Download cv</a></button>
+            <button class="downloadbutton" onClick={() => window.open(this.state.currentDev.cv)}><span className="custom ">Download cv</span></button>
           </div>
         </div>
         <div className="devsBody">
@@ -238,7 +238,7 @@ class Devs extends React.Component {
                 <div className='cardSkill'>
                 <div className='svg'><img src={element.svg}
             alt="icon"
-            width={60}
+            width={45}
             height={45}></img></div>
                 <div className='content'>
                   <span>{element.skill}</span>
