@@ -214,9 +214,7 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
   font-family: "Icon Font";
   font-size: 20px;
   margin: 20px;
-  background: #eee;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #eee;
 }
 .cardResume .content{
   display: flex;
