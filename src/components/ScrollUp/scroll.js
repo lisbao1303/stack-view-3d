@@ -11,10 +11,22 @@ class ScrollUp extends React.Component {
             text: <> &nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;stackview&nbsp;&nbsp;•&nbsp;&nbsp; •&nbsp;&nbsp; •&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>,
             rotate: 0,
             show_controls: false,
+            move: this.handleContact
         };
 
-
         this.handleScroll = this.scrollListener.bind(this);
+
+        this.tooltipControlsObserverI = {
+            observers: [],
+            onShowControlsMove: (event)=> {
+                this.tooltipControlsObserverI.observers.forEach((observer)=>{
+                observer(event);
+              });
+            },
+            registerObserver: (observer)=> {
+              this.tooltipControlsObserverI.observers.push(observer);
+            }
+        };
 
     }
 
@@ -22,37 +34,41 @@ class ScrollUp extends React.Component {
         const scroll = Scroll.animateScroll;
         scroll.scrollToTop();
     }
-    handleContact = () => {
+
+    handleBottom = () => {
         const scroll = Scroll.animateScroll;
         scroll.scrollToBottom();
-
     }
 
+    
     handleClick = (e) => {
         if (this.state.open) {
             this.setState({
-
+                
             })
         } else {
             this.setState({
-
+                
             })
-
+            
         }
     }
+
+
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
     }
-
+    
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll);
     }
-
+    
     componentDidUpdate(prevProps, prevState) {
         const inInterval = (min, v, max) => v>=min && v<=max || v>=max && v<=min;
         if (!this.state.show_controls){
-            if (inInterval(prevState.progress, 130, this.state.progress)){
+            if (inInterval(prevState.progress, 100, this.state.progress)){
                 document.body.classList.add("stop-scrolling");
+                this.tooltipControlsObserverI.onShowControlsMove();
                 setTimeout(()=>{
                     document.body.classList.remove("stop-scrolling");
                 }, 5000);
@@ -73,9 +89,11 @@ class ScrollUp extends React.Component {
             new_state.progress = (window.pageYOffset / totalHeight) * 100 * 4;
             new_state.rotate= ((window.pageYOffset / totalHeight) * 100) * 360 / 100;
             if (new_state.progress > 30) {
-                new_state.text= <>back to the start  &nbsp;&nbsp;• &nbsp;&nbsp; Scroll Up  &nbsp;&nbsp;•&nbsp;&nbsp; Scroll Up &nbsp;&nbsp;•&nbsp; &nbsp;</>
+                new_state.text= <> back to the start  &nbsp;&nbsp;• &nbsp;&nbsp; Scroll Up  &nbsp;&nbsp;•&nbsp;&nbsp; Scroll Up &nbsp;&nbsp;•&nbsp; &nbsp;</>;
+                new_state.move= this.handleUp;
             } else {
                 new_state.text= <> &nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;stackview&nbsp;&nbsp;•&nbsp;&nbsp; •&nbsp;&nbsp; •&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>
+                new_state.move= this.handleBottom;
             }
             return new_state;
         });
@@ -98,7 +116,7 @@ class ScrollUp extends React.Component {
 
                     </defs>
                     <circle cx="100" cy="100" r="63.662" stroke="white" strokeWidth="3" strokeDasharray={this.state.progress + ", 400"} fill="none" />
-                    <g onClick={this.handleUp} id="ScrollText">
+                    <g onClick={() => {if (this.state.move!== null) this.state.move();}} id="ScrollText">
                         <path
                             d="M50,100a50,50 0 1,0 100,0a50,50 0 1,0 -100,0"
                             fill="none"
