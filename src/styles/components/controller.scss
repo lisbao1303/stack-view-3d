@@ -7,6 +7,11 @@ $controller-primary: #FFFFFFFF;
     width: 100%;
     height: calc(100vh - v.$header-height);
     background: transparent;
+    opacity: 0;
+}
+
+.spaceEnjoy:hover{
+    opacity: 1;
 }
 
 .controller{
@@ -18,17 +23,12 @@ $controller-primary: #FFFFFFFF;
     margin: 2.5%;
     border-radius: 10px;
     border-style: solid;
-    border-color: #FFFFFF00;
+    border-color: #FFFFFFFF;
     visibility: hidden;
     animation-name: flashing;
     animation-duration: 5s;
     animation-play-state: paused;
 }
-
-.controller:hover{
-    border-color: white;
-}
-
 
 @keyframes flashing {
     from {
@@ -62,7 +62,8 @@ $controller-primary: #FFFFFFFF;
     font-family: "Custom Font";
     font-weight: normal;
     font-size: 20px;
-    margin: 20px 30px;    
+    margin: 20px 30px;  
+    opacity: 1;  
 
     overflow: hidden; 
     border-right: .15em solid #{$controller-trransparent}; 
@@ -91,7 +92,7 @@ $controller-primary: #FFFFFFFF;
 
 .control-mode{
     justify-content: bottom;
-    visibility: hidden;
+    margin: 30px 10px;
 }
 
 .stop-scrolling {
