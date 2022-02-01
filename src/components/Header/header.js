@@ -99,7 +99,7 @@ class Header extends React.Component {
 
 
     return (
-      <div>
+
 
         <div className="header" style={{ backgroundColor: this.state.back }} position="fixed">
 
@@ -129,7 +129,7 @@ class Header extends React.Component {
             <div className="menu">
               <img
                 id="icon"
-                src="/viewicons/preview.png"
+                src="/viewicons/iconStackView.svg"
                 alt="stackview"
                 height="100px"
                 width="100px"
@@ -178,7 +178,6 @@ class Header extends React.Component {
         </div>
 
 
-      </div>
     );
   }
 
