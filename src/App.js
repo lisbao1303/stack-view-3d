@@ -48,7 +48,7 @@ class App extends React.Component {
         {/* so pra dar espaco se quiser mudar, a vontade */}
         <div style={{
           width: '100%',
-          height: '100px'
+          height: '90px'
         }}/>
 
         <Clients />
