@@ -315,12 +315,17 @@
     vertical-align: bottom!important;
     width: 100%!important;  
     display: flex!important;    
-    
     justify-content: space-between!important;
   }
   .footer .rodape .made{
     padding: 10px!important;
+    text-align: right;
   }
+
+  .footer .rodape .rights{
+    margin-left: 10px;
+  }
+
 
   //// fade in view
 @keyframes fadeinv {
@@ -459,7 +464,7 @@ margin: 0 !important;
 
 
 .tabsDevs  .octActv{
-  width: 33%;
+  width: 33.33%;
   height: 50px;
   background: conic-gradient(#1f4488, rgb(36, 59, 85) ,#141e30 30%,#141e30 70%, rgb(36, 59, 85), #1f4488);;
   border-top-right-radius: 10px;
@@ -469,7 +474,7 @@ margin: 0 !important;
 }
 
 .oct {
-  width: 33%;
+  width: 33.33%;
   height: 50px;
   background: transparent;
   position: relative;

@@ -58,7 +58,7 @@ class SceneControler {
         this.scene.animations.default.forEach(animation => {
             animation(this.scene);
         });
-        if (this.mixer !=== null) {
+        if (this.mixer !== null) {
             const dt = (time - this.prev_time)/1000;
             if (!isNaN(dt)){
                 this.mixer.update(dt);
