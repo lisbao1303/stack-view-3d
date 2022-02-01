@@ -7,7 +7,7 @@
     },
     "resume": {
       "education": [
-        {"svg": "/devs/resume/ufu.png",
+        {"svg": "/devs/resume/ufu.svg",
         "title": "Mechatronics Engineering",
         "where": "Federal University of Uberlândia",
         "period": "2017 - 2022"
@@ -38,7 +38,7 @@
     },
     "skills": [
         {
-          "svg": "/devs/skills/react.png",
+          "svg": "/devs/skills/react.svg",
           "skill": "React",
             "level":"50%",
             "xp": "3 years"
