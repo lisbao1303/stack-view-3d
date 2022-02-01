@@ -170,6 +170,11 @@ class Devs extends React.Component {
           />
         </div>
       </div>
+      <div className='somenteMobile tabsDevs'>
+      <button onClick={this.showAbout} class={this.state.devAbout ? "octActv" : "oct"}><span className='custom'>About</span></button>
+            <button onClick={this.showResume} class={this.state.devResume ? "octActv" : "oct"}><span className="custom">Resume</span></button>
+            <button onClick={this.showSkills} class={this.state.devSkills ? "octActv" : "oct"}><span className="custom">Skills</span></button>
+        </div>
       <div className="aboutDevs">
         <div className="devsSide">
           <div className="devsCardImg">
@@ -191,8 +196,9 @@ class Devs extends React.Component {
           </div>
         </div>
         <div className="devsBody">
+        <p className='titleDevAbout'>{this.state.currentDev.about.name}, <span>{this.getAge(this.state.currentDev.about.nasc)}</span></p>
+
           {this.state.devAbout && <div className="devAbout">
-            <p>{this.state.currentDev.about.name}, <span>{this.getAge(this.state.currentDev.about.nasc)}</span></p>
             {this.state.currentDev.about.desc}
           </div>}
           {this.state.devResume && <div className="devResume">
@@ -253,6 +259,9 @@ class Devs extends React.Component {
             })}</div>
           </div>}
         </div>
+      </div>
+      <div className='somenteMobile downloadMobilebutton'>
+      <button class="downloadbutton" onClick={() => window.open(this.state.currentDev.cv)}><span className="custom ">Download cv</span></button>
       </div>
     </div>
   }
