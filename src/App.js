@@ -25,7 +25,7 @@ class App extends React.Component {
   }
 
   //TODO: Important remover os observers eles consomem memoria 
-  //se no futuro usarmos algum componente que nao seja o ThreeController
+  //se no futuro usarmos algum componente que nao seja o ThreeController gaydms
 
   render() {
     return (
