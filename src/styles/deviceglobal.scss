@@ -1,98 +1,98 @@
 @media (max-width: 991px) {
   .bar {
-    display: none;
+    display: none!important;
   }
   .fakebar {
-    display: none;
+    display: none!important;
   }
   .progress {
-    display: none;
+    display: none!important;
   }
   .suma{
-        display: none;
+        display: none!important;
       }
       .apareca{
-        display: block;
+        display: block!important;
       }
     .front{
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        background-size: auto 100%;
+        display: block!important;
+        margin-left: auto!important;
+        margin-right: auto!important;
+        background-size: auto 100%!important;
         
     }
     
     .header .navicon{
-      z-index: 999;
-      box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28);
-      background-color: white;
-      height: auto;
-      width: 70px;
-      transform: rotate(-90deg);
+      z-index: 999!important;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28)!important;
+      background-color: white!important;
+      height: auto!important;
+      width: 70px!important;
+      transform: rotate(-90deg)!important;
      
     }
     .header .navicon .center{
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      margin: 0!important;
+      position: absolute!important;
+      top: 50%!important;
+      left: 50%!important;
+      -ms-transform: translate(-50%, -50%)!important;
+      transform: translate(-50%, -50%)!important;
     }
     .header .navicon a{
-      font-size: xx-large;
-      -webkit-transition:  1000ms linear;
-      -ms-transition:  1000ms linear;
-      transition:  1000ms linear;
-      margin-left: 2px;
+      font-size: xx-large!important;
+      -webkit-transition:  1000ms linear!important;
+      -ms-transition:  1000ms linear!important;
+      transition:  1000ms linear!important;
+      margin-left: 2px!important;
     }
     .header .navicon .center .stack{
       
-        -webkit-animation: fadeins 2s; /* Safari, Chrome and Opera > 12.1 */
-           -moz-animation: fadeins 2s; /* Firefox < 16 */
-            -ms-animation: fadeins 2s; /* Internet Explorer */
-             -o-animation: fadeins 2s; /* Opera < 12.1 */
-                animation: fadeins 2s;
+        -webkit-animation: fadeins 2s!important; /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: fadeins 2s!important; /* Firefox < 16 */
+            -ms-animation: fadeins 2s!important; /* Internet Explorer */
+             -o-animation: fadeins 2s!important; /* Opera < 12.1 */
+                animation: fadeins 2s!important;
     }
     .header .navicon .center .view{
      
-        -webkit-animation: fadeinv 2s; /* Safari, Chrome and Opera > 12.1 */
-           -moz-animation: fadeinv 2s; /* Firefox < 16 */
-            -ms-animation: fadeinv 2s; /* Internet Explorer */
-             -o-animation: fadeinv 2s; /* Opera < 12.1 */
-                animation: fadeinv 2s;
+        -webkit-animation: fadeinv 2s!important; /* Safari, Chrome and Opera > 12.1 */
+           -moz-animation: fadeinv 2s!important; /* Firefox < 16 */
+            -ms-animation: fadeinv 2s!important; /* Internet Explorer */
+             -o-animation: fadeinv 2s!important; /* Opera < 12.1 */
+                animation: fadeinv 2s!important;
     }
     .collapso{
-      position: absolute;
-      top:0px;
-      left: 0;
-      bottom: 0;
-      right: 0px;
-      background-color: black;
-      width: auto;
-      height: 150vh;
-      -webkit-transition:  200ms linear;
-    -ms-transition:  200ms linear;
-    transition:  200ms linear;
+      position: absolute!important;
+      top:0px!important;
+      left: 0!important;
+      bottom: 0!important;
+      right: 0px!important;
+      background-color: black!important;
+      width: auto!important;
+      height: 150vh!important;
+      -webkit-transition:  200ms linear!important;
+    -ms-transition:  200ms linear!important;
+    transition:  200ms linear!important;
     }
     .collapso .menu{     
-      display: block;
-      text-align: left;
-      font-family: 'Roboto', sans-serif;      
-      height: auto;    
+      display: block!important;
+      text-align: left!important;
+      font-family: 'Roboto', sans-serif!important;      
+      height: auto!important;    
     }
     .collapso .menu img{     
-      margin: 0 auto;
-      left: 0;
-      right: 0;
-      text-align: center;           
+      margin: 0 auto!important;
+      left: 0!important;
+      right: 0!important;
+      text-align: center!important;           
     }
     
     .collapso .menu .links{      
-      display: block;
-      left:0;      
-      margin-left: -60px;
-      padding-top: 0vh;
+      display: block!important;
+      left:0!important;      
+      margin-left: -60px!important;
+      padding-top:0vh!important;
           
     }
     .collapso .menu .links a{
@@ -101,319 +101,385 @@
 
     }
     .collapso .menu .info{      
-      font-size: 2vh !important;
-      left:0;
-      width: 200px;        
-      margin-left: -10px;     
+      left:0!important;
+      width: 100%;
+      margin-left: -60px !important;
     }
     .collapso .menu .info a{
-      font-size: 3vh !important;
     }
     .collapso .menu .w {
-      display: flex;
-      margin-top: 3vh;
-      margin-left: -10px;
-      margin-right: auto;
+      display: flex!important;
+      margin-top: 3vh!important;
+      margin-left: 0px!important;
+      margin-right: auto!important;
     }
-    .collapso .menu .w #w{
-      
-      animation-name: buth;
-animation-delay: 2s;
-animation-duration: 2s;
-animation-iteration-count: infinite;
-animation-fill-mode: backwards;
-background: #26D366;   
-    }
-    .collapso .menu .w #t{
-      
-      animation-name: buth;
-animation-delay: 2s;
-animation-duration: 2s;
-animation-iteration-count: infinite;
-animation-fill-mode: backwards;
-background: #37AEF3;      
-    }
+
     .collapso .menu .w img{
-      position: relative;
-      margin-left: 0;
-      margin-right: 0;
-      padding-right: 0px;
-      text-align: center;   
-      height: 10vh;
-      width:10vh;
-      padding: 0;
-      margin-left: 10px;
-     border-radius:5vh;
+      position: relative!important;
+      margin-left: 0!important;
+      margin-right: 0!important;
+      padding-right: 0px!important;
+      text-align: center!important;   
+      height: 10vh!important;
+      width:10vh!important;
+      padding: 0!important;
+      margin-left: 10px!important;
+     border-radius:5vh!important;
     }
     
     .collapso .stackview{
-      background-color: white;
-      height: 100vh;
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 70px;           
+      background-color: white!important;
+      height: 100vh!important;
+      position: absolute!important;
+      right: 0!important;
+      top: 0!important;
+      width: 70px!important;           
     }
     .collapso .stackview .rotate{
-      top:40%;      
-    margin: 0;
-    position: absolute;    
-    -ms-transform: translate(-25%, 50%) rotate(-90deg);
-    transform: translate(-37%, 50%) rotate(-90deg);
+      top:40%!important;      
+    margin: 0!important;
+    position: absolute!important;    
+    -ms-transform: translate(-25%, 50%) rotate(-90deg)!important;
+    transform: translate(-37%, 50%) rotate(-90deg)!important;
     }
     .collapso .stackview .rotate a{
-      font-size: 50px;
+      font-size: 50px!important;
 
     }
   .front .stack{
-    position: relative;    
-    top: 15vh;   
-    padding: 10px;
-    margin: 0;
-    height: fit-content;
-    width: 100%;
-    font-size: 10vh;  
+    position: relative!important;    
+    margin: auto!important;
+    height: fit-content!important;
+    width: 100%!important;
+    font-size: 10vh!important;  
+    padding-top: 18vh !important;
+
   }
   .front .stack .s{
-    display: flex;
-    justify-content: center;
-    margin-left: -2vh;
+    display: flex!important;
+    justify-content: center!important;
+    margin-left: -2vh!important;
+    
   }
   .front .stack .v{
-    display: flex;
-    justify-content: center;
-    margin-left: 14.1vh;
-    margin-top: -4vh;
+    display: flex!important;
+    justify-content: center!important;
+    margin-left: 14.1vh!important;
+    margin-top: -4vh!important;
   
   }  
   .front .fdd{
-    position: relative;
-    top: 18vh;
-    padding: 0;
-    margin-left: 12vw;
-    width: auto;
-    display: block;
+    position: relative!important;
+    padding: 0!important;
+    margin-left: 12vw!important;
+    width: auto!important;
+    display: block!important;
   }  
   .front .fdd div a{
-    font-size: xx-large;
+    font-size: xx-large!important;
   }
   .front .icon{
-    position: relative;
-    margin: 0 auto;
-    height: 40vw;
-    width: 61vw;
-    top: 15vh;    
+    position: relative!important;
+    margin: 0 auto!important;
+    height: 40vw!important;
+    width: 61vw!important;
+    top: 15vh!important;    
   }
   .front .icon #back{
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+    position: absolute!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    left: 0!important;
+    right: 0!important;
   }
   .front .icon .front{
-    top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-    position: relative;
-    width: 15vw;
-    height: 15vw;
-    margin: 0 auto;
+    top: 50%!important;
+  -ms-transform: translateY(-50%)!important;
+  transform: translateY(-50%)!important;
+    position: relative!important;
+    width: 15vw!important;
+    height: 15vw!important;
+    margin: 0 auto!important;
   }
   .front .icon .front #f{
-    height: 7.5vh;
-    position: relative;
+
   }
 
   .footer{
-    height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+    height: fit-content !important;
+  display: block!important;
+  margin-left: auto!important;
+  margin-right: auto!important;
   }
   .foot{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;
+    display: block !important;
+  margin-left: auto!important;
+  margin-right: auto!important;
+  padding: 0px!important;
+  margin: 0 0 10px 0;
   }
   .foot .contact{
-    display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
-  padding: 0px;
-  margin-left: 5vw; 
+    display: block!important;
+  width: auto!important;
+  padding: 0px!important;
+  margin: 0 !important; 
   }
   .foot .contact .logo {
-    padding: 0px;
-    display: none;
-    justify-content: center;
+    padding: 0px!important;
+    display: none!important;
+    justify-content: center!important;
   }
   .foot .contact .card {
-    padding: 0px;
-    margin-right: 3vw;
+    padding: 0px!important;
+    margin-right: 3vw!important;
   }
   .foot .contact .card img{
-    height: 50px;
-    border-radius: 30px;
+    height: 50px!important;
+    border-radius: 30px!important;
   }
   .foot .contact .card a{
-    top: 0;
-    padding: 0;
+    top: 0!important;
+    padding: 0!important;
   }
   .foot .contact .card .social{
-    margin-left: 0px;
-    padding: 10px 10px 0 0;
-    display: flex;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0px!important;
+    padding: 10px 10px 0 0!important;
+    display: flex!important;
+    justify-content: space-between!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
   }
   .foot .contact .card .social a{
-    margin: 0px;
+    margin: 0px!important;
   }
   .foot .contact .card .social .w{
-    padding: 0px 0px 0 0;
-    margin-top: 0px;
-    margin-right: 0vw;
-  margin-bottom: 0px;
-  margin-left: 0px;
+    padding: 0px 0px 0 0!important;
+    margin-top: 0px!important;
+    margin-right: 0vw!important;
+  margin-bottom: 0px!important;
+  margin-left: 0px!important;
   }
   .foot .contact .card .social .w a{
-    margin-left: 10px;
+    margin-left: 10px!important;
   }
   .foot .contact .logo img{
-    width: auto;
-    height: auto;
-    max-width: 150px;
-    max-height: 150px;
+    width: auto!important;
+    height: auto!important;
+    max-width: 150px!important;
+    max-height: 150px!important;
   }
   
   .foot .follow{
-    text-align: center;
-  padding: 0px 0 30px 0;
-  width: 100%;
+    text-align: center!important;
+  padding: 0px 0 30px 0!important;
+  width: 100%!important;
+
   }
   
   .foot .follow .line{
-    width: 100%;
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px 0 0 0;
+    width: 100%!important;
+  display: block!important;
+    margin-left: auto!important;
+    margin-right: auto!important;
+    padding: 20px 0 0 0!important;
     
   }
   .foot .follow .line a{
-    margin: 0px;
-    padding: 10px 0px 10px 10px;
+    margin: 0px!important;
+    padding: 10px 0px 10px 10px!important;
   }
   
   .foot .follow .line #be:hover{
-    height: 50px;
-    background: #0057FF;
+    height: 50px!important;
+    background: #0057FF!important;
   }
   .foot .follow .line #face:hover{
-    height: 50px;
-    background: #0B84EE;
+    height: 50px!important;
+    background: #0B84EE!important;
   }
   .foot .follow .line #git:hover{
-    height: 50px;
-    background: #161B22;
+    height: 50px!important;
+    background: #161B22!important;
   }
   .foot .follow .line #insta:hover{
-    height: 50px;
-    background: #D7407F;
+    height: 50px!important;
+    background: #D7407F!important;
   }
   .foot .follow .line #in:hover{
-    height: 50px;
-    background: #0A66C2;
+    height: 50px!important;
+    background: #0A66C2!important;
   }
  
   
   .footer .rodape{
-    vertical-align: bottom;
-    width: 100%;  
-    display: flex;    
+    vertical-align: bottom!important;
+    width: 100%!important;  
+    display: flex!important;    
     
-    justify-content: space-between;
+    justify-content: space-between!important;
   }
   .footer .rodape .made{
-    padding: 10px;
+    padding: 10px!important;
   }
 
   //// fade in view
 @keyframes fadeinv {
-  from { opacity: 0;
-    margin-top: 4vh;
+  from { opacity: 0!important;
+    margin-top: 4vh!important;
   }
-  to   { opacity: 1;
-    margin-top: -4vh;
+  to   { opacity: 1!important;
+    margin-top: -4vh!important;
    }
 }
 
 /* Firefox < 16 */
 @-moz-keyframes fadeinv {
-  from { opacity: 0;
-    margin-top: 4vh;
+  from { opacity: 0!important;
+    margin-top: 4vh!important;
   }
-  to   { opacity: 1;
-    margin-top: -4vh;
+  to   { opacity: 1!important;
+    margin-top: -4vh!important;
    }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadeinv {
-  from { opacity: 0;
-    margin-top:4vh;
+  from { opacity: 0!important;
+    margin-top:4vh!important;
   }
-  to   { opacity: 1;
-    margin-top: -4vh;
+  to   { opacity: 1!important;
+    margin-top: -4vh!important;
    }
 }
 
 .clientes{ 
-  position: relative;
-  padding: 0px;
-  background: black;
+  position: relative!important;
+  padding: 0px!important;
+  background: black!important;
 
 }
 .clientes .orange{  
-  margin-top: 0px;
-  height: 80px;
+  margin-top: 0px!important;
+  height: 80px!important;
 }
 .clientes .blue{
-  position: absolute;
-  margin-top: 0px;
-  height: 6px;
-  width: 100%;
+  position: absolute!important;
+  margin-top: 0px!important;
+  height: 6px!important;
+  width: 100%!important;
 }
 .clientes .sv{
-  float: left;
-  width: 90%;
-  padding: 10px 0 50px 0;
-  position: relative;
-  font-size: 200%;
+  float: left!important;
+  width: 90%!important;
+  padding: 10px 0 50px 0!important;
+  position: relative!important;
+  font-size: 200%!important;
 }
 .clientes .orange{
-  background: none;
+  background: none!important;
 }
 .clientes .clogo{
-  padding: 10px 0 0 0;
+  padding: 10px 0 0 0!important;
 }
 
 .clientes .clogo img{
-  padding: 0 0px 40px 0;
+  padding: 0 0px 40px 0!important;
 }
 .clientes .clogo .bat{
-  width: 30vw;
-  height: auto;
+  width: 30vw!important;
+  height: auto!important;
 
 }
 .clientes .clogo .ufu{
-  width: 20vw;
-  height: auto;
+  width: 20vw!important;
+  height: auto!important;
+}
+
+
+  .WhatsTele{
+    position:  relative !important;
+    margin: 10px 0 10px 10px !important;
+    left: auto !important;
+  }
+  .WhatsTele a {
+    margin-left: 10px;
+  }
+
+.endereco{
+  margin: 0 0 0 20px !important;
+  padding-top: 20px;
+  text-align: left !important;    
+}
+
+.endereco p{
+margin: 0 !important;
+}
+.ScrollButton{
+  display: none !important;
+}
+
+.devs{
 
 }
+.listDevs{
+  display: flex;
+  flex-wrap: wrap;
+
 }
+.title {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.devsSide{
+  display: none !important;
+}
+.devsBody {
+  height: 100% !important;
+  width: 100% !important;
+  background: linear-gradient(to bottom, #141e30, #243b55) !important;
+  border-radius: 0 !important;
+  padding-bottom: 10px;
+}
+.aboutDevs{
+  height: fit-content !important;
+}
+
+.somenteMobile{
+  display: block !important;
+}
+.downloadMobilebutton{
+  height: auto ;
+  width: 100% !important;
+}
+
+.tabsDevs{
+  display: flex;
+}
+
+
+.tabsDevs  .octActv{
+  width: 33%;
+  height: 50px;
+  background: conic-gradient(#1f4488, rgb(36, 59, 85) ,#141e30 30%,#141e30 70%, rgb(36, 59, 85), #1f4488);;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.oct {
+  width: 33%;
+  height: 50px;
+  background: transparent;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.oct:hover{
+background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
+}
+
+}
+
+
