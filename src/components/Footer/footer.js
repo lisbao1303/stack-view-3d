@@ -138,7 +138,7 @@ export default function Footer() {
             </div></div>
 
         <div className="rodape">
-            <div className="rights">&copy;2021+ Stackview BR | All right reserved.</div>
+            <div className="rights">&copy;2021+ Stackview BR | All rights reserved.</div>
             <div className="made" style={{ fontSize: "x-large" }}><span className="custom">made by </span><span className="stack"> Stack</span><span className="view esse aki">View</span></div>
         </div>
     </div>
