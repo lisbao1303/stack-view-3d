@@ -222,6 +222,7 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
 .cardResume .content{
   display: flex;
   height: 100%;
+  width: 68%;
   font-size: 15px;
   flex-direction: column;
 }
@@ -268,7 +269,7 @@ font-weight: 800;
   border-radius: 3px;
   height: 100%;
     background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
-background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);  
+//background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);  
 background-size: 300% 100%;
     animation: progress-animation 2s linear infinite;
     }
@@ -309,7 +310,7 @@ background-size: 300% 100%;
     flex-direction: row;
     margin-right: 4px;
   font-weight: 800;
-  background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+  //background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
   background: linear-gradient(90deg, rgba(228,85,2,1) 0%, rgba(94,0,226,1) 17%, rgba(13,0,154,1) 31%, rgba(6,87,173,1) 48%, rgba(255,119,0,1) 65%, rgba(124,0,255,1) 84%, rgba(8,0,255,1) 100%, rgba(0,212,255,1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -328,6 +329,13 @@ background-size: 300% 100%;
   background-color: rgb(20, 30, 48);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -10px inset, rgba(0, 0, 0, 0.3) 0px 16px 30px -16px inset;
   border-radius: 30px;
+}
+
+.devSkills  p{
+  font-family: "Icon Font";
+  font-size: 20px;
+  margin: 20px;
+  color: #eee;
 }
 
 @keyframes progress-animation

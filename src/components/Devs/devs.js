@@ -33,14 +33,29 @@ class Devs extends React.Component {
             }
           ],
         },
-        skills: [
-          {
-           svg: "",
+        skills: {
+          frontend: [{
+            svg: "",
             skill: "",
-            level:"",
+            level: "",
             xp: ""
+          }],
+          backend: [{
+            svg: "",
+            skill: "",
+            level: "",
+            xp: ""
+          }],
+          other: [{
+            svg: "",
+            skill: "",
+            level: "",
+            xp: ""
+          }],
         }
-        ],
+
+
+        ,
         cv: "",
       }
     };
@@ -171,10 +186,10 @@ class Devs extends React.Component {
         </div>
       </div>
       <div className='somenteMobile tabsDevs'>
-      <button onClick={this.showAbout} class={this.state.devAbout ? "octActv" : "oct"}><span className='custom'>About</span></button>
-            <button onClick={this.showResume} class={this.state.devResume ? "octActv" : "oct"}><span className="custom">Resume</span></button>
-            <button onClick={this.showSkills} class={this.state.devSkills ? "octActv" : "oct"}><span className="custom">Skills</span></button>
-        </div>
+        <button onClick={this.showAbout} class={this.state.devAbout ? "octActv" : "oct"}><span className='custom'>About</span></button>
+        <button onClick={this.showResume} class={this.state.devResume ? "octActv" : "oct"}><span className="custom">Resume</span></button>
+        <button onClick={this.showSkills} class={this.state.devSkills ? "octActv" : "oct"}><span className="custom">Skills</span></button>
+      </div>
       <div className="aboutDevs">
         <div className="devsSide">
           <div className="devsCardImg">
@@ -196,7 +211,7 @@ class Devs extends React.Component {
           </div>
         </div>
         <div className="devsBody">
-        <p className='titleDevAbout'>{this.state.currentDev.about.name}, <span>{this.getAge(this.state.currentDev.about.nasc)}</span></p>
+          <p className='titleDevAbout'>{this.state.currentDev.about.name}, <span>{this.getAge(this.state.currentDev.about.nasc)}</span></p>
 
           {this.state.devAbout && <div className="devAbout">
             {this.state.currentDev.about.desc}
@@ -207,9 +222,9 @@ class Devs extends React.Component {
               return (
                 <div className='cardResume'>
                   <div className='svg'><img src={element.svg}
-              alt="icon"
-              width={60}
-              height={60}></img></div>
+                    alt="icon"
+                    width={60}
+                    height={60}></img></div>
                   <div className='content'>
                     <span>{element.title}</span>
                     <span>{element.where}</span>
@@ -224,9 +239,9 @@ class Devs extends React.Component {
               return (
                 <div className='cardResume'>
                   <div className='svg'><img src={element.svg}
-              alt="icon"
-              width={60}
-              height={60}></img></div>
+                    alt="icon"
+                    width={60}
+                    height={60}></img></div>
                   <div className='content'>
                     <span>{element.title}</span>
                     <span>{element.where}</span>
@@ -239,29 +254,69 @@ class Devs extends React.Component {
 
           </div>}
           {this.state.devSkills && <div className="devSkills">
-            <div className='cards'>{this.state.currentDev.skills.map((element) => {
+            <p>FRONT END</p>
+            <div className='cards'>{this.state.currentDev.skills.frontend.map((element) => {
               return (
                 <div className='cardSkill'>
-                <div className='svg'><img src={element.svg}
-            alt="icon"
-            width={45}
-            height={45}></img></div>
-                <div className='content'>
-                  <span>{element.skill}</span>
-                  <span><div class="progress">
-                      <span class="progress-bar" style={{"width" : element.level}}></span>
+                  <div className='svg'><img src={element.svg}
+                    alt="icon"
+                    width={45}
+                    height={45}></img></div>
+                  <div className='content'>
+                    <span>{element.skill}</span>
+                    <span><div class="progress">
+                      <span class="progress-bar" style={{ "width": element.level }}></span>
                     </div>{element.level}</span>
-                  <span>{element.xp}</span>
+                    <span>{element.xp}</span>
+                  </div>
                 </div>
-              </div>              
-               
+
               )
             })}</div>
+            <p>BACK END</p>
+            <div className='cards'>{this.state.currentDev.skills.backend.map((element) => {
+              return (
+                <div className='cardSkill'>
+                  <div className='svg'><img src={element.svg}
+                    alt="icon"
+                    width={45}
+                    height={45}></img></div>
+                  <div className='content'>
+                    <span>{element.skill}</span>
+                    <span><div class="progress">
+                      <span class="progress-bar" style={{ "width": element.level }}></span>
+                    </div>{element.level}</span>
+                    <span>{element.xp}</span>
+                  </div>
+                </div>
+
+              )
+            })}</div>
+            <p>OTHER SKILLS</p>
+            <div className='cards'>{this.state.currentDev.skills.other.map((element) => {
+              return (
+                <div className='cardSkill'>
+                  <div className='svg'><img src={element.svg}
+                    alt="icon"
+                    width={45}
+                    height={45}></img></div>
+                  <div className='content'>
+                    <span>{element.skill}</span>
+                    <span><div class="progress">
+                      <span class="progress-bar" style={{ "width": element.level }}></span>
+                    </div>{element.level}</span>
+                    <span>{element.xp}</span>
+                  </div>
+                </div>
+
+              )
+            })}</div>
+
           </div>}
         </div>
       </div>
       <div className='somenteMobile downloadMobilebutton'>
-      <button class="downloadbutton" onClick={() => window.open(this.state.currentDev.cv)}><span className="custom ">Download cv</span></button>
+        <button class="downloadbutton" onClick={() => window.open(this.state.currentDev.cv)}><span className="custom ">Download cv</span></button>
       </div>
     </div>
   }
