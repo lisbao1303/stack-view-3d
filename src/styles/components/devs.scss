@@ -310,7 +310,7 @@ font-weight: 800;
   {width: 40px;
   max-width: 100px;
   height: 3px !important;
-  margin: 3px 5px 0 0px;
+  margin: 5px 5px 0 0px;
   background: #e1e4e8;
   border-radius: 3px;
   overflow: hidden;
@@ -340,30 +340,31 @@ background-size: 300% 100%;
     }
 .cardSkill{
   background-color: transparent;
-  height: 38.4px;
-  width: 100px; 
+  height: 50px;
+  width: 122px; 
   transition: 0.3s;
   display: flex;
   align-items: center;
   //justify-content: center;
   position: relative;
   flex-direction: row;
-  margin: 8px;
+  margin: 4px;
 }
 .cardSkill .content{
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
-  font-size: 10px;
-  margin: 0 0 0 9px;
+  font-size: 13px;
+  margin: 0 !important;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 10px 10px 10px 20px ;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 }
 .cardSkill .content span{
-  margin: 0px 0  0 35px;
+  margin: 0 0  0 52px;
+  height: 15px;
 }
 
 .cardSkill .content span:nth-child(1) {
@@ -377,7 +378,7 @@ background-size: 300% 100%;
   font-weight: 800;
   //background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
   background: linear-gradient(90deg, rgba(228,85,2,1) 0%, rgba(94,0,226,1) 17%, rgba(13,0,154,1) 31%, rgba(6,87,173,1) 48%, rgba(255,119,0,1) 65%, rgba(124,0,255,1) 84%, rgba(8,0,255,1) 100%, rgba(0,212,255,1) 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
     }
 
@@ -385,8 +386,8 @@ background-size: 300% 100%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .cardSkill .svg{
-  width: 40px !important;
-  height: 40px !important;
+  width: 50px !important;
+  height: 50px !important;
   position: absolute;
   justify-content: center;
   align-items: center;
@@ -397,8 +398,8 @@ background-size: 300% 100%;
 border-bottom-left-radius: 10px;
 border-bottom-right-radius: 20px;
 border-top-right-radius: 0px;
-border-top-left-radius: 10px;
-  margin-top: 1px;
+border-top-left-radius: 5px;
+  margin-top: 0;
 }
 
 .devSkills  p{

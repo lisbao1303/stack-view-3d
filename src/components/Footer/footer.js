@@ -56,13 +56,13 @@ export default function Footer() {
                             Email: <br />contact@stackview.com.br
                         </a>
                     </p>
-                    <br className='somenteMobile'/>
+                    <br className='somenteMobile' />
                 </article>
                 Address:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil
 
             </address>
 
-            <div className="WhatsTele">
+            <div className="WhatsTele suma">
 
                 <a
                     href="https://api.whatsapp.com/send?phone=5534984102434"
@@ -140,7 +140,21 @@ export default function Footer() {
 
         <div className="rodape">
             <div className="rights">&copy;2021+ Stackview BR | All rights reserved.</div>
-            <div className="made" style={{ fontSize: "x-large" }}><span className="custom">made by </span><span className="stack"> Stack</span><span className="view esse aki">View</span></div>
+            <div className="made" ><span className="custom">made by </span><span className="stack"> Stack</span><span className="view esse aki">View</span></div>
+        </div>
+        <div className='floatWhatsTele somenteMobile'>
+            <a
+                href="https://api.whatsapp.com/send?phone=5534984102434"
+            > <img
+                    id="w"
+                    alt="whatsapp"
+                    src="/icons/whats.png"
+                    width="70px"
+                    height="70px"
+
+                />
+            </a>
+
         </div>
     </div>
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Front extends React.Component {
+class Clientes extends React.Component {
 
 
 render(){
@@ -14,8 +14,8 @@ render(){
         className="bat"
         alt="souzaSV"
         src="/clientes/bat.png"
-        width="150vw"
-        height="81.5vw"
+        width="150px"
+        height="81.5px"
         
     />
     <img
@@ -36,4 +36,4 @@ render(){
 
 }
 
-export default Front;
+export default Clientes;
