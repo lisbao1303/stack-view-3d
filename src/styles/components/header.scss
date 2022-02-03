@@ -34,12 +34,8 @@
       
   
   }
-  .header .menu Button a {
   
-  
-  
-  }
-  .header .menu Button a:hover {
+  .header .menu Button :hover {
     background: -webkit-linear-gradient(135deg,v.$our-blue 0,#0d2f46 50%,v.$our-orange 50%,#F16436 100%);
     -webkit-background-clip: text;  
     -webkit-text-fill-color: transparent;
