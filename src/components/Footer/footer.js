@@ -48,14 +48,15 @@ export default function Footer() {
             <address className="endereco">
                 <article className="contato">
                     <p>
-                        <a href="tel:+5517988309968">
+                        <a className='phone' href="tel:+5517988309968">
                             Phone: <br /> +5517988309968
                         </a>
                         <br /><br />
-                        <a href="mailto:contact@stackview.com.br">
+                        <a className='email' href="mailto:contact@stackview.com.br">
                             Email: <br />contact@stackview.com.br
                         </a>
                     </p>
+                    <br className='somenteMobile'/>
                 </article>
                 Address:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil
 
