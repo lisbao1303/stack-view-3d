@@ -6,7 +6,7 @@
     display: none!important;
   }
   .progress {
-    display: none!important;
+    //display: none!important;
   }
   .suma{
         display: none!important;
@@ -25,10 +25,11 @@
     .header .navicon{
       z-index: 999!important;
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0 4px 8px rgba(0, 0, 0, 0.28)!important;
-      background-color: white!important;
+      background-color: #000;
       height: auto!important;
       width: 70px!important;
       transform: rotate(-90deg)!important;
+      
      
     }
     .header .navicon .center{
@@ -68,52 +69,68 @@
       left: 0!important;
       bottom: 0!important;
       right: 0px!important;
-      background-color: black!important;
+      background:linear-gradient(to bottom, black 60%, black 60%, rgb(36, 59, 85));
+
       width: auto!important;
-      height: 150vh!important;
+      height: 100vh!important;
       -webkit-transition:  200ms linear!important;
     -ms-transition:  200ms linear!important;
     transition:  200ms linear!important;
     }
+    .header .menu {
+      padding: 0 !important;
+
+    }
+
+  
     .collapso .menu{     
       display: block!important;
-      text-align: left!important;
+      text-align: center !important;
       font-family: 'Roboto', sans-serif!important;      
       height: auto!important;    
     }
-    .collapso .menu img{     
-      margin: 0 auto!important;
-      left: 0!important;
-      right: 0!important;
-      text-align: center!important;           
+    .collapso .menu img{ 
+
+      margin: 0 70px 0 0 ;
+
+
     }
     
     .collapso .menu .links{      
-      display: block!important;
+      display: flex!important;
+      flex-direction: column;
       left:0!important;      
       margin-left: -60px!important;
       padding-top:0vh!important;
           
     }
-    .collapso .menu .links a{
-      font-size: 5vh !important;
-      
+    .collapso .menu .links button a,
+    .collapso .menu .links button span{
+      font-size: 5vh;
+      margin: 0 24px 0 0 ;
 
     }
     .collapso .menu .info{      
       left:0!important;
-      width: 100%;
-      margin-left: -60px !important;
+      width: calc(100% - 70px);
+      text-align: left;
     }
     .collapso .menu .info a{
     }
     .collapso .menu .w {
       display: flex!important;
-      margin-top: 3vh!important;
+      margin-top: 4vh!important;
       margin-left: 0px!important;
-      margin-right: auto!important;
+
     }
 
+    .collapso .menu .w #w:hover{    
+      background: #26D366;
+    }
+    .collapso .menu .w #t:hover{    
+      background: #37AEF3;
+    }
+    
     .collapso .menu .w img{
       position: relative!important;
       margin-left: 0!important;
@@ -123,6 +140,9 @@
       height: 10vh!important;
       width:10vh!important;
       padding: 0!important;
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+      animation: float 6s ease-in-out infinite;
       margin-left: 10px!important;
      border-radius:5vh!important;
     }
@@ -322,10 +342,6 @@
     text-align: right;
   }
 
-  .footer .rodape .rights{
-    margin-left: 10px;
-  }
-
 
   //// fade in view
 @keyframes fadeinv {
@@ -423,9 +439,6 @@ margin: 0 !important;
   display: none !important;
 }
 
-.devs{
-
-}
 .listDevs{
   display: flex;
   flex-wrap: wrap;
@@ -461,7 +474,9 @@ margin: 0 !important;
 .tabsDevs{
   display: flex;
 }
-
+button {
+  outline: none;
+  }
 
 .tabsDevs  .octActv{
   width: 33.33%;
@@ -481,10 +496,29 @@ margin: 0 !important;
   transition: all 0.2s;
 }
 
-.oct:hover{
+.oct:hover,
+.oct :active::after,
+.oct:focus{
 background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
+border-top-right-radius: 10px;
+border-top-left-radius: 10px;
 }
 
+.cardResume{
+  width: 170px !important;
+  height: 80px !important;
 }
+.cardResume .svg img{
+  margin-top: -20%;
+  transform: scale(0.7);
+}
+.cardResume .content{
+  font-size: 10px !important;
+  margin: 2px 0 0 2px;
+}
+.cardResume .content span {
+  margin: 2px !important;
+  }
 
+}
 

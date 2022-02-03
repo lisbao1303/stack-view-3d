@@ -58,8 +58,60 @@
     align-items: center;    
     background:black;
     border: white;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    position: relative;
     
   }
+
+  .devFoto img:nth-child(1){
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    transform: scale(2);
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+  }
+ 
+  .devFotoAct{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 75px;
+    justify-content: center;
+    align-items: center;    
+    background:black;
+    border: white;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+    
+  }
+  .devFotoAct img:nth-child(2){
+    filter: grayscale(90%);	
+    border-radius:75px;
+  }
+img{
+transition: all 0.5s ease-in-out;
+
+}
+  .devFotoAct img:nth-child(1){
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    opacity: 0.6;
+    transform: scale(1);
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+  }
+
 .devsCardImg{
     width: 150px;
     height: 150px;
@@ -69,7 +121,7 @@
     border-radius: 75px;
     justify-content: center;
     align-items: center;    
-    background:linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));;
+    background:linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
     border: white;
     
 }
@@ -209,10 +261,11 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
 .devResume .cards{
   display: flex;
   flex-wrap:wrap;
-  overflow-y: auto;
+  overflow-y:auto;
   max-height: 37%;
   margin-left: 10px;
 }
+
 .devResume p{
   font-family: "Icon Font";
   font-size: 20px;
@@ -254,10 +307,10 @@ font-weight: 800;
 
 
 .progress
-  {width: 100px;
-  max-width: 260px;
-  height: 6px !important;
-  margin: 5px 5px 0 0px;
+  {width: 40px;
+  max-width: 100px;
+  height: 3px !important;
+  margin: 3px 5px 0 0px;
   background: #e1e4e8;
   border-radius: 3px;
   overflow: hidden;
@@ -273,25 +326,37 @@ font-weight: 800;
 background-size: 300% 100%;
     animation: progress-animation 2s linear infinite;
     }
-
+    .devSkills{
+      height: 100%;
+    }
+    .devSkills .cards{
+      background: rgb(36, 59, 85);
+      border-radius: 20px;
+      display: flex;
+      flex-wrap:wrap;
+      overflow-y: auto;
+      height: 22%;
+      margin:0 10px 0 10px;
+    }
 .cardSkill{
   background-color: transparent;
-  height: 110px;
-  width: 200px; 
+  height: 38.4px;
+  width: 100px; 
   transition: 0.3s;
   display: flex;
   align-items: center;
   //justify-content: center;
+  position: relative;
   flex-direction: row;
-  margin: 10px;
+  margin: 8px;
 }
 .cardSkill .content{
   display: flex;
   flex-direction: column;
-  height: 55%;
+  height: 100%;
   width: 100%;
-  font-size: 15px;
-  margin: 0 0 0 30px;
+  font-size: 10px;
+  margin: 0 0 0 9px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -302,7 +367,7 @@ background-size: 300% 100%;
 }
 
 .cardSkill .content span:nth-child(1) {
-  margin-top: 4px;
+  margin-top: 2px;
   font-weight: 800;
   }
   .cardSkill .content span:nth-child(2) {
@@ -320,21 +385,26 @@ background-size: 300% 100%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .cardSkill .svg{
-  width: 60px !important;
-  height: 60px !important;
+  width: 40px !important;
+  height: 40px !important;
   position: absolute;
   justify-content: center;
   align-items: center;
   display: flex !important;
-  background-color: rgb(20, 30, 48);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -10px inset, rgba(0, 0, 0, 0.3) 0px 16px 30px -16px inset;
-  border-radius: 30px;
+  background-color: rgb(36, 59, 85);
+  //box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -10px inset, rgba(0, 0, 0, 0.3) 0px 16px 30px -16px inset;
+  //border-radius: 16px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 0px;
+border-top-left-radius: 10px;
+  margin-top: 1px;
 }
 
 .devSkills  p{
   font-family: "Icon Font";
   font-size: 20px;
-  margin: 20px;
+  margin: 10px;
   color: #eee;
 }
 
