@@ -1685,12 +1685,12 @@ function Footer() {
             className: "contato",
             children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("p", {
               children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("a", {
-                href: "tel:+5517988309968",
+                href: "tel:+5534984102434",
                 children: ["Phone: ", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxDEV)("br", {}, void 0, false, {
                   fileName: _jsxFileName,
                   lineNumber: 52,
                   columnNumber: 36
-                }, this), " +5517988309968"]
+                }, this), " +5534984102434"]
               }, void 0, true, {
                 fileName: _jsxFileName,
                 lineNumber: 51,
@@ -2628,12 +2628,12 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
               className: "endereco",
               children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("p", {
                 children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("a", {
-                  href: "tel:+5517988309968",
+                  href: "tel:+5534984102434",
                   children: ["Phone: ", /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("br", {}, void 0, false, {
                     fileName: _jsxFileName,
                     lineNumber: 145,
                     columnNumber: 32
-                  }, this), " +5517988309968"]
+                  }, this), " +5534984102434"]
                 }, void 0, true, {
                   fileName: _jsxFileName,
                   lineNumber: 144,
@@ -2678,7 +2678,7 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
             }, this), /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("div", {
               className: "w",
               children: [/*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("a", {
-                href: "https://api.whatsapp.com/send?phone=5517988309968",
+                href: "https://api.whatsapp.com/send?phone=5534984102434",
                 children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("a", {
                   children: /*#__PURE__*/(0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxDEV)("img", {
                     id: "w",

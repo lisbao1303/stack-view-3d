@@ -144,8 +144,8 @@ class Header extends React.Component {
               <address className="endereco">
 
                 <p>
-                  <a href="tel:+5517988309968">
-                    Phone: <br /> +5517988309968
+                  <a href="tel:+5534984102434">
+                    Phone: <br /> +5534984102434
                   </a>
                   <br /><br />
                   <a href="mailto:contact@stackview.com.br">

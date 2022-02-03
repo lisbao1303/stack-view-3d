@@ -48,8 +48,8 @@ export default function Footer() {
             <address className="endereco">
                 <article className="contato">
                     <p>
-                        <a className='phone' href="tel:+5517988309968">
-                            Phone: <br /> +5517988309968
+                        <a className='phone' href="tel:+5534984102434">
+                            Phone: <br /> +5534984102434
                         </a>
                         <br /><br />
                         <a className='email' href="mailto:contact@stackview.com.br">
