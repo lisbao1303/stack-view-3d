@@ -57,14 +57,38 @@ button{
   cursor: pointer;
 }
 //Scroll bar 
-::-webkit-scrollbar
-{
-    width: 0px;
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
 }
-::-webkit-scrollbar-track-piece
-{
-    background-color: transparent;
-    -webkit-border-radius: 6px;
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $our-orange;
 }
 //Scroll bar
 //Scroll button
+.somenteMobile{
+  display: none;
+}
+
+button:hover, button:focus {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  }
+
+  a:hover, a:focus, div:hover, div:focus {
+
+    -webkit-tap-highlight-color: transparent !important;
+    }

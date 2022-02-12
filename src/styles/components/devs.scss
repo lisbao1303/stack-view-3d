@@ -58,8 +58,60 @@
     align-items: center;    
     background:black;
     border: white;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    position: relative;
     
   }
+
+  .devFoto img:nth-child(1){
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    transform: scale(2);
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+  }
+ 
+  .devFotoAct{
+    margin: 20px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    cursor: pointer;
+    border-radius: 75px;
+    justify-content: center;
+    align-items: center;    
+    background:black;
+    border: white;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+    position: relative;
+    
+  }
+  .devFotoAct img:nth-child(2){
+    filter: grayscale(90%);	
+    border-radius:75px;
+  }
+img{
+transition: all 0.5s ease-in-out;
+
+}
+  .devFotoAct img:nth-child(1){
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    opacity: 0.6;
+    transform: scale(1);
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+  }
+
 .devsCardImg{
     width: 150px;
     height: 150px;
@@ -69,7 +121,7 @@
     border-radius: 75px;
     justify-content: center;
     align-items: center;    
-    background:linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));;
+    background:linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
     border: white;
     
 }
@@ -209,10 +261,11 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
 .devResume .cards{
   display: flex;
   flex-wrap:wrap;
-  overflow-y: auto;
+  overflow-y:auto;
   max-height: 37%;
   margin-left: 10px;
 }
+
 .devResume p{
   font-family: "Icon Font";
   font-size: 20px;
@@ -222,6 +275,7 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
 .cardResume .content{
   display: flex;
   height: 100%;
+  width: 68%;
   font-size: 15px;
   flex-direction: column;
 }
@@ -243,14 +297,19 @@ font-weight: 800;
   font-weight: 800;
   font-size: 30px;
 }
-
-
+.titleDevAbout
+{
+  margin: 20px;
+  color: #fff;
+  font-weight: 800;
+  font-size: 30px;
+}
 
 
 .progress
-  {width: 100px;
-  max-width: 260px;
-  height: 6px !important;
+  {width: 40px;
+  max-width: 100px;
+  height: 3px !important;
   margin: 5px 5px 0 0px;
   background: #e1e4e8;
   border-radius: 3px;
@@ -263,40 +322,53 @@ font-weight: 800;
   border-radius: 3px;
   height: 100%;
     background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
-background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);  
+//background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);  
 background-size: 300% 100%;
     animation: progress-animation 2s linear infinite;
     }
-
+    .devSkills{
+      height: 100%;
+    }
+    .devSkills .cards{
+      background: rgb(36, 59, 85);
+      border-radius: 20px;
+      display: flex;
+      flex-wrap:wrap;
+      overflow-y: auto;
+      height: 22%;
+      margin:0 10px 0 10px;
+    }
 .cardSkill{
   background-color: transparent;
-  height: 110px;
-  width: 200px; 
+  height: 50px;
+  width: 122px; 
   transition: 0.3s;
   display: flex;
   align-items: center;
   //justify-content: center;
+  position: relative;
   flex-direction: row;
-  margin: 10px;
+  margin: 4px;
 }
 .cardSkill .content{
   display: flex;
   flex-direction: column;
-  height: 55%;
+  height: 100%;
   width: 100%;
-  font-size: 15px;
-  margin: 0 0 0 30px;
+  font-size: 13px;
+  margin: 0 !important;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 10px 10px 10px 20px ;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 }
 .cardSkill .content span{
-  margin: 0px 0  0 35px;
+  margin: 0 0  0 52px;
+  height: 15px;
 }
 
 .cardSkill .content span:nth-child(1) {
-  margin-top: 4px;
+  margin-top: 2px;
   font-weight: 800;
   }
   .cardSkill .content span:nth-child(2) {
@@ -304,9 +376,9 @@ background-size: 300% 100%;
     flex-direction: row;
     margin-right: 4px;
   font-weight: 800;
-  background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+  //background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
   background: linear-gradient(90deg, rgba(228,85,2,1) 0%, rgba(94,0,226,1) 17%, rgba(13,0,154,1) 31%, rgba(6,87,173,1) 48%, rgba(255,119,0,1) 65%, rgba(124,0,255,1) 84%, rgba(8,0,255,1) 100%, rgba(0,212,255,1) 100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
     }
 
@@ -314,15 +386,27 @@ background-size: 300% 100%;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 .cardSkill .svg{
-  width: 60px !important;
-  height: 60px !important;
+  width: 50px !important;
+  height: 50px !important;
   position: absolute;
   justify-content: center;
   align-items: center;
   display: flex !important;
-  background-color: rgb(20, 30, 48);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -10px inset, rgba(0, 0, 0, 0.3) 0px 16px 30px -16px inset;
-  border-radius: 30px;
+  background-color: rgb(36, 59, 85);
+  //box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -10px inset, rgba(0, 0, 0, 0.3) 0px 16px 30px -16px inset;
+  //border-radius: 16px;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 0px;
+border-top-left-radius: 5px;
+  margin-top: 0;
+}
+
+.devSkills  p{
+  font-family: "Icon Font";
+  font-size: 20px;
+  margin: 10px;
+  color: #eee;
 }
 
 @keyframes progress-animation

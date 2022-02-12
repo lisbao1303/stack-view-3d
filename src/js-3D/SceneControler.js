@@ -27,25 +27,25 @@ class SceneControler {
     };
     
     setControlModel(mode, render_callback) {
-        if(mode == SceneControler.ORBIT_CONTROL){
+        if(mode === SceneControler.ORBIT_CONTROL){
             this.player_control = new OrbitControls(this.scene.cameras[this.scene.active_camera], this.renderer.domElement);
             //this.player_control.addEventListener( 'change', render_callback ); // use if there is no animation loop
             this.player_control.minDistance = 2;
             this.player_control.maxDistance = 10000;
             //this.player_control.update();
         }
-        if(mode == SceneControler.FIRST_PERSON_CONTROL){
+        if(mode === SceneControler.FIRST_PERSON_CONTROL){
             this.player_control = new FirstPersonControls( this.scene.cameras[this.scene.active_camera], this.renderer.domElement );
 			this.player_control.movementSpeed = 100;
 			this.player_control.lookSpeed = 0.1;
         }
-        if(mode == SceneControler.FIRST_PERSON_CUSTOM_CONTROL){
+        if(mode === SceneControler.FIRST_PERSON_CUSTOM_CONTROL){
             this.player_control = new FirstPersonCustomControls( this.scene.cameras[this.scene.active_camera], window.document );
 			this.player_control.movementSpeed = 100;
 			this.player_control.lookSpeed = 0.1;
             this.player_control.limits =this.scene.user_limits;
         }
-        if(mode == SceneControler.FIRST_PERSON_EXPORTED_CONTROL){
+        if(mode === SceneControler.FIRST_PERSON_EXPORTED_CONTROL){
             this.player_control = new FirstPersonExportedControls( this.scene.cameras[this.scene.active_camera], window.document );
 			this.player_control.movementSpeed = 100;
 			this.player_control.lookSpeed = 0.02;

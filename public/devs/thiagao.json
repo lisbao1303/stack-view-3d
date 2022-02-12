@@ -23,13 +23,31 @@
       
       ]
     },
-    "skills": [
+    "skills": {
+      "frontend": [
         {
-          "svg": "",
-            "skill": "",
-            "level":"",
-            "xp": ""
+          "svg": "/devs/skills/react.svg",
+          "skill": "React",
+          "level": "75%",
+          "xp": "3 years"
         }
-    ],
-    "cv": ""
+      ],
+      "backend": [
+        {
+          "svg": "/devs/skills/node.svg",
+          "skill": "NodeJs",
+          "level": "75%",
+          "xp": "3 years"
+        }
+      ],
+      "other": [
+        {
+          "svg": "/devs/skills/matlab.svg",
+          "skill": "MATLAB",
+          "level": "75%",
+          "xp": "3 years"
+        }
+      ]
+    },
+    "cv": "/devs/Thiagao.pdf"
 }
