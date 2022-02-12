@@ -67,10 +67,10 @@ class ScrollUp extends React.Component {
         const inInterval = (min, v, max) => v>=min && v<=max || v>=max && v<=min;
         if (!this.state.show_controls){
             if (inInterval(prevState.progress, 100, this.state.progress)){
-                document.body.classList.add("stop-scrolling");
+                
                 this.tooltipControlsObserverI.onShowControlsMove();
                 setTimeout(()=>{
-                    document.body.classList.remove("stop-scrolling");
+                    //
                 }, 5000);
                 this.setState({
                     show_controls: true
