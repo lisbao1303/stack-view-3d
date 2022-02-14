@@ -2,25 +2,31 @@
     "avatar": "/devs/thiagao.jpg",
     "about": {
       "name": "Thiago Souza",
-      "nasc": "",
-      "desc": ""
+      "nasc": "1999-11-30",
+      "desc": "I'm interested in everything that involves machines and how they work from scratch. Nowadays I spent most of my leisure time studying modern languages, frameworks and cloud solutions. It's not a surprise how can I understand machines without speack its language? Furthermore, I work well in big and small teams and I can't live without playing sports"
     },
     "resume": {
       "education": [
-        {"svg": "",
-        "title": "",
-        "where": "",
-        "period": ""
-      }
-     
+        {
+          "svg": "/devs/resume/ufu.svg",
+          "title": "Mechatronics Engineering",
+          "where": "Federal University of Uberlândia",
+          "period": "2017 - 2022"
+        },
+        {
+          "svg": "/devs/resume/senai-logo.svg",
+          "title": "Industrial Mechanical Technician",
+          "where": "SENAI Uberlândia - CFP Celso Charuri",
+          "period": "2014 - 2016"
+        }
       ],
       "professional": [
-        {"svg": "",
-        "title": "",
-        "where": "",
-        "period": ""
-      }
-      
+        {
+          "svg": "/devs/resume/meta.svg",
+          "title": "Project Director (Jr. company member)",
+          "where": "Meta Consultoria",
+          "period": "2018 - 2020"
+        }
       ]
     },
     "skills": {
@@ -49,5 +55,5 @@
         }
       ]
     },
-    "cv": "/devs/Thiagao.pdf"
+    "cv": "/devs/CV_Thiago.pdf"
 }

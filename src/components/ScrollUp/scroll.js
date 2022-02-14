@@ -11,6 +11,7 @@ class ScrollUp extends React.Component {
             text: <> &nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;stackview&nbsp;&nbsp;•&nbsp;&nbsp; •&nbsp;&nbsp; •&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>,
             rotate: 0,
             show_controls: false,
+            blocked: false,
             move: this.handleContact
         };
 
@@ -40,20 +41,12 @@ class ScrollUp extends React.Component {
         scroll.scrollToBottom();
     }
 
-    
-    handleClick = (e) => {
-        if (this.state.open) {
-            this.setState({
-                
-            })
-        } else {
-            this.setState({
-                
-            })
-            
-        }
+    handleGoTo = (percent) => {
+        const scroll = Scroll.animateScroll;
+        const totalHeight = document.body.scrollHeight - window.innerHeight;
+        const value = totalHeight * ( percent / (100 * 4));
+        scroll.scrollTo(value);
     }
-
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
@@ -67,11 +60,7 @@ class ScrollUp extends React.Component {
         const inInterval = (min, v, max) => v>=min && v<=max || v>=max && v<=min;
         if (!this.state.show_controls){
             if (inInterval(prevState.progress, 100, this.state.progress)){
-                document.body.classList.add("stop-scrolling");
                 this.tooltipControlsObserverI.onShowControlsMove();
-                setTimeout(()=>{
-                    document.body.classList.remove("stop-scrolling");
-                }, 5000);
                 this.setState({
                     show_controls: true
                 });

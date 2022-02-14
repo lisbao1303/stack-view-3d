@@ -74,6 +74,27 @@ $controller-primary: #FFFFFFFF;
         cursor 1s step-end paused 10;
 }
 
+@media only screen and (max-width: 600px) {
+    .tooltip{
+    text-align: left;
+    color: $controller-trransparent;
+    font-family: "Custom Font";
+    font-weight: normal;
+    font-size: 20px;
+    margin: 20px 30px;  
+    opacity: 1;  
+
+    overflow: hidden; 
+    border-right: .15em solid #{$controller-trransparent}; 
+    white-space: nowrap;
+    letter-spacing: .1em; 
+      animation:
+        tooltip 10s steps(80, end) paused , 
+        cursor paused;
+    }
+  }
+
+
 @keyframes tooltip {
     from {
         color: $controller-primary; 
@@ -93,9 +114,4 @@ $controller-primary: #FFFFFFFF;
 .control-mode{
     justify-content: bottom;
     margin: 30px 10px;
-}
-
-.stop-scrolling {
-    height: 100%;
-    overflow: hidden;
 }

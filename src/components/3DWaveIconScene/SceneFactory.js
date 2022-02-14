@@ -25,15 +25,15 @@ class SceneFactory{
         iScene.cameras.push(camera);
         iScene.active_camera = 0;
         
-        let g_model= new ModelImporter(process.env.PUBLIC_URL+ '/3DAssets/main-scene-mod-wave.gltf');
+        let g_model= new ModelImporter(process.env.PUBLIC_URL+ '/3DAssets/main-scene-flat-wave.gltf');
         await g_model.loadModel();
-        g_model.scene.position.set(0,0,700);
+        g_model.scene.position.set(-10,0,700);
         iScene.imported_scenes['ground']=g_model.scene;
         
         let iController = new SceneControler(iScene);
         iController.mixer = new THREE.AnimationMixer( g_model.scene);
         const clips = g_model.animations;
-        const wave = THREE.AnimationClip.findByName( clips, 'KeyAction.001' );
+        const wave = THREE.AnimationClip.findByName( clips, 'KeyAction' );
         const anim = iController.mixer.clipAction( wave );
         anim.setLoop(THREE.LoopOnce);
         iScene.animations.controled['wave']=anim;

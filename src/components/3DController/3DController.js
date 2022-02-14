@@ -49,22 +49,43 @@ class ThreeController extends React.Component {
 
 
   render() {
-    
-    return (
-      <div className="spaceEnjoy" 
-      onMouseMove={(event)=> {
-        this.onMouseMoveI.onMouseMove(event);
-      }} 
-      >
-        <div className="controller" ref={this.controlerRef}>
-          <text className="tooltip" ref={this.tooltipRef}>You can use this area for iteract with the scene - Enjoy it - &#128512;</text>
-          <img className='control-mode' ref={this.sgvRef}  width="200" height="100"
-          xmlns="http://www.w3.org/2000/svg" src={process.env.PUBLIC_URL + '/Assets/ControllerGuide.svg'}/>
-        
-        </div>
+    const isMobile = window.innerWidth <= 500;
+    if (isMobile){
+      return (
+        <div className="spaceEnjoy" 
+        onMouseMove={(event)=> {
+          this.onMouseMoveI.onMouseMove(event);
+        }} 
+        >
+          <div className="controller" ref={this.controlerRef}>
+            
+            <text className="tooltip" ref={this.tooltipRef}>Enjoy Area - &#128512;</text>
+            <img className='control-mode' ref={this.sgvRef}  width="200" height="100"
+            xmlns="http://www.w3.org/2000/svg" src={process.env.PUBLIC_URL + '/Assets/ControllerGuide.svg'}/>
+          
+          </div>
 
-      </div>
-    )
+        </div>
+      )
+    } else {
+      return (
+        <div className="spaceEnjoy" 
+        onMouseMove={(event)=> {
+          this.onMouseMoveI.onMouseMove(event);
+        }} 
+        >
+          <div className="controller" ref={this.controlerRef}>
+            
+            <text className="tooltip" ref={this.tooltipRef}>You can use this area for iteract with the scene - Enjoy it - &#128512;</text>
+            <img className='control-mode' ref={this.sgvRef}  width="200" height="100"
+            xmlns="http://www.w3.org/2000/svg" src={process.env.PUBLIC_URL + '/Assets/ControllerGuide.svg'}/>
+          
+          </div>
+
+        </div>
+      )
+      
+    }
     
   }
 }
