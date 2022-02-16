@@ -33,12 +33,12 @@ render(){
         
             <img
             id="back"
-            src="/viewicons/nodisk.png"
+            src="/viewicons/nodisk.svg"
             alt="stackview"
             layout="fill"
         /><div className="front"><img
                 id="f"
-                src="/viewicons/disk.png"
+                src="/viewicons/disk.svg"
                 alt="stackview"
                 layout="fill"
                 
