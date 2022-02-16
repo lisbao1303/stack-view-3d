@@ -48,20 +48,21 @@ export default function Footer() {
             <address className="endereco">
                 <article className="contato">
                     <p>
-                        <a href="tel:+5517988309968">
-                            Phone: <br /> +5517988309968
+                        <a className='phone' href="tel:+5534984102434">
+                            Phone: <br /> +5534984102434
                         </a>
                         <br /><br />
-                        <a href="mailto:contact@stackview.com.br">
+                        <a className='email' href="mailto:contact@stackview.com.br">
                             Email: <br />contact@stackview.com.br
                         </a>
                     </p>
+                    <br className='somenteMobile' />
                 </article>
                 Address:  <br />Av. João Naves de Ávila, 2121<br /> Santa Mônica, Uberlândia - MG, 38408-100, Brasil
 
             </address>
 
-            <div className="WhatsTele">
+            <div className="WhatsTele suma">
 
                 <a
                     href="https://api.whatsapp.com/send?phone=5534984102434"
@@ -139,7 +140,21 @@ export default function Footer() {
 
         <div className="rodape">
             <div className="rights">&copy;2021+ Stackview BR | All rights reserved.</div>
-            <div className="made" style={{ fontSize: "x-large" }}><span className="custom">made by </span><span className="stack"> Stack</span><span className="view esse aki">View</span></div>
+            <div className="made" ><span className="custom">made by </span><span className="stack"> Stack</span><span className="view esse aki">View</span></div>
+        </div>
+        <div className='floatWhatsTele somenteMobile'>
+            <a
+                href="https://api.whatsapp.com/send?phone=5534984102434"
+            > <img
+                    id="w"
+                    alt="whatsapp"
+                    src="/icons/whats.png"
+                    width="70px"
+                    height="70px"
+
+                />
+            </a>
+
         </div>
     </div>
 }
