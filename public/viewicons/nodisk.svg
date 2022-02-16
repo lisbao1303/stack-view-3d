@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2019 (64 Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="950px" height="623px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 950 623"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil1 {fill:url(#id0)}
+    .fil0 {fill:url(#id1)}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="584.63" y1="153.75" x2="349.83" y2="658.89">
+   <stop offset="0" style="stop-opacity:1; stop-color:#000014"/>
+   <stop offset="0.568627" style="stop-opacity:1; stop-color:#040F43"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#091E73"/>
+  </linearGradient>
+  <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="369.37" y1="472.18" x2="595.85" y2="-36.82">
+   <stop offset="0" style="stop-opacity:1; stop-color:#003153"/>
+   <stop offset="0.611765" style="stop-opacity:1; stop-color:#04558E"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#0879C9"/>
+  </linearGradient>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2362730150048">
+   <path class="fil0" d="M446.37 115.06c29.44,-0.33 60.41,1.98 86.55,9.17 18.66,5.01 34.53,12.08 47.6,21.19 0.08,0.05 0.15,0.1 0.22,0.15 52.44,33.17 87.38,92.5 87.38,160.17 0,45.29 -15.65,86.84 -41.72,119.32 -1.65,2.05 -1.8,4.83 -0.39,7.06 1.41,2.22 3.95,3.21 6.45,2.52 104.14,-28.89 209.1,-81.3 314.88,-157.23 1.43,-1.02 2.27,-2.47 2.46,-4.24 0.19,-1.76 -0.3,-3.37 -1.47,-4.68 -315.08,-358.01 -625.59,-357.32 -931.5,2.05 -1.95,2.29 -1.94,5.63 0.02,7.9 1.97,2.28 5.24,2.7 7.69,0.99 158.98,-110.56 299.55,-165.35 421.72,-164.37 0.04,0 0.07,0 0.11,0z"/>
+   <path class="fil1" d="M503.47 508.93c-29.44,0.34 -60.42,-1.97 -86.55,-9.16 -18.66,-5.01 -34.53,-12.08 -47.61,-21.2 -0.07,-0.05 -0.14,-0.09 -0.21,-0.14 -52.44,-33.18 -87.38,-92.51 -87.38,-160.18 0,-45.28 15.65,-86.84 41.72,-119.32 1.64,-2.04 1.8,-4.83 0.39,-7.05 -1.41,-2.22 -3.96,-3.22 -6.45,-2.52 -104.14,28.88 -209.1,81.29 -314.88,157.23 -1.43,1.02 -2.27,2.46 -2.46,4.23 -0.19,1.77 0.3,3.37 1.47,4.69 315.08,358 625.59,357.31 931.5,-2.06 1.95,-2.28 1.93,-5.63 -0.02,-7.9 -1.97,-2.28 -5.24,-2.7 -7.7,-0.99 -158.98,110.57 -299.54,165.35 -421.71,164.37 -0.04,0 -0.07,0 -0.11,0z"/>
+  </g>
+ </g>
+</svg>
