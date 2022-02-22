@@ -1,158 +1,154 @@
-/// DEVS 
-.devs{
-    background: transparent;
-    display: block;
-  }
-  .aboutDevs{
-    width: 100%;
-    height: 100vh;
-    background: transparent;
-    display: flex;    
-  }
-  .devsSide{
-    height: 100%;
-    width: 25%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background:black;
-  }
-  .devsBody{
-    height: 100%;
-    width: 70%;
-    background:linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-  }
-  
-  .devsMenu{
-    display: block;
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .listDevs{
-    width: 100%;
-    height: auto;
-    background: transparent;
-    justify-content: center;
-    display: flex;
-  }
-
-  .listDevs .title{
-    float: left;
-    font-size: xxx-large !important;
-  }
-
-  .devFoto img{
-    border-radius:60px;
-  }
-  .devFoto{
-    margin: 20px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    cursor: pointer;
-    border-radius: 75px;
-    justify-content: center;
-    align-items: center;    
-    background:black;
-    border: white;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
-    position: relative;
-    
-  }
-
-  .devFoto img:nth-child(1){
-    position: absolute;
-    display: flex;
-    z-index: 1;
-    transform: scale(2);
-    opacity: 0;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-  }
- 
-  .devFotoAct{
-    margin: 20px;
-    width: 150px;
-    height: 150px;
-    display: flex;
-    cursor: pointer;
-    border-radius: 75px;
-    justify-content: center;
-    align-items: center;    
-    background:black;
-    border: white;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
-    position: relative;
-    
-  }
-  .devFotoAct img:nth-child(2){
-    filter: grayscale(90%);	
-    border-radius:75px;
-  }
-img{
-transition: all 0.5s ease-in-out;
-
+/// DEVS
+.devs {
+  background: transparent;
+  display: block;
 }
-  .devFotoAct img:nth-child(1){
-    position: absolute;
-    display: flex;
-    z-index: 1;
-    opacity: 0.6;
-    transform: scale(1);
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-  }
+.aboutDevs {
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+}
+.devsSide {
+  height: 100%;
+  width: 25%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: black;
+}
+.devsBody {
+  height: 100%;
+  width: 70%;
+  background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
 
-.devsCardImg{
-    width: 150px;
-    height: 150px;
-    display: flex;
-    margin: 25px 0 25px 0;
-    cursor: pointer;
-    border-radius: 75px;
-    justify-content: center;
-    align-items: center;    
-    background:linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
-    border: white;
-    
+.devsMenu {
+  display: block;
+  width: 100%;
+  justify-content: center;
+}
+
+.listDevs {
+  width: 100%;
+  height: auto;
+  background: transparent;
+  justify-content: center;
+  display: flex;
+}
+
+.listDevs .title {
+  float: left;
+  font-size: xxx-large !important;
+}
+
+.devFoto img {
+  border-radius: 60px;
+}
+.devFoto {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 75px;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  border: white;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  position: relative;
+}
+
+.devFoto img:nth-child(1) {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  transform: scale(2);
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.devFotoAct {
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 75px;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  border: white;
+  box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  position: relative;
+}
+.devFotoAct img:nth-child(2) {
+  filter: grayscale(90%);
+  border-radius: 75px;
+}
+.devFotoAct:hover img:nth-child(1) {
+  opacity: 1;
+}
+.devs img {
+  transition: all 0.5s ease-in-out;
+}
+.devFotoAct img:nth-child(1) {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  opacity: 0.6;
+  transform: scale(1);
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+
+.devsCardImg {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  margin: 25px 0 25px 0;
+  cursor: pointer;
+  border-radius: 75px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgb(20, 30, 48), rgb(36, 59, 85));
+  border: white;
 }
 .devsCardImg img {
   border-radius: 65px;
 }
 
+.imgContainer {
+  margin-top: 3px;
+  position: absolute;
+}
+// .devs button {
+//   padding: 25px;
+//   background-color: turquoise;
+// }
 
- 
-  .imgContainer{
-    margin-top: 3px;
-    position: absolute;
-
-  }
-  // .devs button {
-  //   padding: 25px;
-  //   background-color: turquoise;
-  // }
-  
 .octagon {
-    width: 100%;
-    height: 50px;
-    background: black;
-    position: relative;
-    transition: all 0.2s;
+  width: 100%;
+  height: 50px;
+  background: black;
+  position: relative;
+  transition: all 0.2s;
 }
 
-.octagon:hover{
-background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
+.octagon:hover {
+  background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
 }
-.octagon:before{
+.octagon:before {
   content: "";
   position: absolute;
   top: 0;
@@ -160,15 +156,14 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
   height: 0;
   right: 0;
   transition: all 0.2s;
-  border-bottom:0x solid  rgb(255, 144, 104);  
+  border-bottom: 0x solid rgb(255, 144, 104);
 }
 .octagon:hover:before {
   border-right: 35px solid #000;
-  border-bottom: 25px solid  rgb(255, 144, 104);  
-
+  border-bottom: 25px solid rgb(255, 144, 104);
 }
 
-.octagon:after{
+.octagon:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -178,11 +173,11 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
   border-top: 0px solid rgb(255, 144, 104);
   height: 0;
 }
-.octagon:hover:after{
+.octagon:hover:after {
   border-right: 35px solid #000;
   border-top: 25px solid rgb(255, 144, 104);
 }
-.downloadbutton{
+.downloadbutton {
   width: 80%;
   border-radius: 25px;
   height: 50px;
@@ -193,7 +188,7 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
   transition: all 0.2s;
 }
 
-.octagonActv{
+.octagonActv {
   width: 100%;
   height: 50px;
   background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
@@ -209,11 +204,11 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
   height: 0;
   right: 0;
   transition: all 0.2s;
-  border-bottom:25px solid rgb(255, 144, 104);  
+  border-bottom: 25px solid rgb(255, 144, 104);
   border-right: 35px solid #000;
 }
 
-.octagonActv::after{
+.octagonActv::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -225,13 +220,12 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
   height: 0;
 }
 
-
-.cardResume{
+.cardResume {
   background-color: #fff;
   height: 110px;
   width: 270px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   display: flex;
   flex-direction: row;
@@ -239,9 +233,9 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
 }
 
 .cardResume:hover {
-  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
 }
-.cardResume .svg{
+.cardResume .svg {
   width: 32%;
   height: 100%;
   justify-content: center;
@@ -252,27 +246,27 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-.cardResume .svg img{
+.cardResume .svg img {
   margin-top: -20%;
 }
-.devResume{
+.devResume {
   height: 100%;
 }
-.devResume .cards{
+.devResume .cards {
   display: flex;
-  flex-wrap:wrap;
-  overflow-y:auto;
+  flex-wrap: wrap;
+  overflow-y: auto;
   max-height: 37%;
   margin-left: 10px;
 }
 
-.devResume p{
+.devResume p {
   font-family: "Icon Font";
   font-size: 20px;
   margin: 20px;
   color: #eee;
 }
-.cardResume .content{
+.cardResume .content {
   display: flex;
   height: 100%;
   width: 68%;
@@ -281,33 +275,29 @@ background: linear-gradient(to right, rgb(255, 75, 31), rgb(255, 144, 104));
 }
 
 .cardResume .content span {
-margin: 4px;
+  margin: 4px;
 }
-
 
 .cardResume .content span:nth-child(1) {
-font-weight: 800;
+  font-weight: 800;
 }
-.devAbout{
+.devAbout {
   margin: 20px;
   color: #fff;
 }
 
-.devAbout p{
+.devAbout p {
   font-weight: 800;
   font-size: 30px;
 }
-.titleDevAbout
-{
+.titleDevAbout {
   margin: 20px;
   color: #fff;
   font-weight: 800;
   font-size: 30px;
 }
 
-
-.progress
-  {
+.progress {
   width: 70px;
   max-width: 150px;
   height: 4px !important;
@@ -316,35 +306,35 @@ font-weight: 800;
   border-radius: 2px;
   overflow: hidden;
 }
-  
-  .progress-bar
-    {display: block;
-      margin: 0 !important;
+
+.progress-bar {
+  display: block;
+  margin: 0 !important;
   border-radius: 2px;
   height: 100%;
-    background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
-//background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);  
-background-size: 300% 100%;
-    animation: progress-animation 2s linear infinite;
-    }
-    .devSkills{
-      height: 100%;
-    }
-    .devSkills .cards{
-      background: rgb(36, 59, 85);
-      border-radius: 20px;
-      display: flex;
-      flex-wrap:wrap;
-      overflow-y: auto;
-      height: 18%;
-      padding: 10px 0 10px 0;
-      margin:0 10px 0 10px;
-    }
-   
-.cardSkill{
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+  //background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);
+  background-size: 300% 100%;
+  animation: progress-animation 2s linear infinite;
+}
+.devSkills {
+  height: 100%;
+}
+.devSkills .cards {
+  background: rgb(36, 59, 85);
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  height: 18%;
+  padding: 10px 0 10px 0;
+  margin: 0 10px 0 10px;
+}
+
+.cardSkill {
   background-color: transparent;
   height: 50px;
-  width: 150px; 
+  width: 150px;
   transition: 0.3s;
   display: flex;
   align-items: center;
@@ -353,7 +343,7 @@ background-size: 300% 100%;
   flex-direction: row;
   margin: 4px;
 }
-.cardSkill .content{
+.cardSkill .content {
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -361,34 +351,43 @@ background-size: 300% 100%;
   font-size: 13px;
   margin: 0 !important;
   background-color: #fff;
-  border-radius: 10px 10px 10px 20px ;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-
+  border-radius: 10px 10px 10px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.cardSkill .content span{
-  margin: 0 0  0 52px;
+.cardSkill .content span {
+  margin: 0 0 0 52px;
   height: 15px;
 }
 
 .cardSkill .content span:nth-child(1) {
   margin-top: 2px;
   font-weight: 800;
-  }
-  .cardSkill .content span:nth-child(2) {
-    display: flex;
-    flex-direction: row;
-    margin-right: 4px;
+}
+.cardSkill .content span:nth-child(2) {
+  display: flex;
+  flex-direction: row;
+  margin-right: 4px;
   font-weight: 800;
   //background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
-  background: linear-gradient(90deg, rgba(228,85,2,1) 0%, rgba(94,0,226,1) 17%, rgba(13,0,154,1) 31%, rgba(6,87,173,1) 48%, rgba(255,119,0,1) 65%, rgba(124,0,255,1) 84%, rgba(8,0,255,1) 100%, rgba(0,212,255,1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(228, 85, 2, 1) 0%,
+    rgba(94, 0, 226, 1) 17%,
+    rgba(13, 0, 154, 1) 31%,
+    rgba(6, 87, 173, 1) 48%,
+    rgba(255, 119, 0, 1) 65%,
+    rgba(124, 0, 255, 1) 84%,
+    rgba(8, 0, 255, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
-    }
+}
 
 .cardSkill .content:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-.cardSkill .svg{
+.cardSkill .svg {
   width: 50px !important;
   height: 50px !important;
   position: absolute;
@@ -398,24 +397,25 @@ background-size: 300% 100%;
   background-color: rgb(36, 59, 85);
   //box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -10px inset, rgba(0, 0, 0, 0.3) 0px 16px 30px -16px inset;
   //border-radius: 16px;
-border-bottom-left-radius: 10px;
-border-bottom-right-radius: 20px;
-border-top-right-radius: 0px;
-border-top-left-radius: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 5px;
   margin-top: 0;
 }
 
-.devSkills  p{
+.devSkills p {
   font-family: "Icon Font";
   font-size: 20px;
   margin: 10px;
   color: #eee;
 }
 
-@keyframes progress-animation
-  {
-    0%
-    {background-position: 100%;}
-  100%
-    {background-position: 0;}
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
   }
+  100% {
+    background-position: 0;
+  }
+}
