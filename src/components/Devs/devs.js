@@ -146,11 +146,12 @@ class Devs extends React.Component {
 
 
   render() {
+    const {currentDev} = this.state;
 
     return <div className="devs">
       <div className="listDevs">
         <div className="title sv">We,</div>
-        <div id="elisbao" className={this.state.currentDev.avatar !== "/devs/elisbao.jpeg"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
+        <div id="elisbao" className={currentDev.avatar !== "/devs/elisbao.jpeg"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
        <img
               id="elisbao"
               src="/viewicons/iconStackView.svg"
@@ -166,7 +167,7 @@ class Devs extends React.Component {
               height={120}
             />
         </div>
-        <div id="thiagao" className={this.state.currentDev.avatar !== "/devs/thiagao.jpg"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
+        <div id="thiagao" className={currentDev.avatar !== "/devs/thiagao.jpg"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
 <img
               id="thiagao"
               src="/viewicons/iconStackView.svg"
@@ -193,7 +194,7 @@ class Devs extends React.Component {
           <div className="devsCardImg">
             <img
               id="t"
-              src={this.state.currentDev.avatar}
+              src={currentDev.avatar}
               alt="currentDev"
               width={130}
               height={130}
@@ -205,18 +206,18 @@ class Devs extends React.Component {
             <button onClick={this.showResume} class={this.state.devResume ? "octagonActv" : "octagon"}><span className="custom">Resume</span></button>
             <button onClick={this.showSkills} class={this.state.devSkills ? "octagonActv" : "octagon"}><span className="custom">Skills</span></button>
 
-            <button class="downloadbutton" onClick={() => window.open(this.state.currentDev.cv)}><span className="custom ">Download cv</span></button>
+            <button class="downloadbutton" onClick={() => window.open(currentDev.cv)}><span className="custom ">Download cv</span></button>
           </div>
         </div>
         <div className="devsBody">
-          <p className='titleDevAbout'>{this.state.currentDev.about.name}, <span>{this.getAge(this.state.currentDev.about.nasc)}</span></p>
+          <p className='titleDevAbout'>{currentDev.about.name}, <span>{this.getAge(currentDev.about.nasc)}</span></p>
 
           {this.state.devAbout && <div className="devAbout">
-            {this.state.currentDev.about.desc}
+            {currentDev.about.desc}
           </div>}
           {this.state.devResume && <div className="devResume">
             <p>EDUCATION</p>
-            <div className='cards'>{this.state.currentDev.resume.education.map((element) => {
+            <div className='cards'>{currentDev.resume.education.map((element) => {
               return (
                 <div className='cardResume'>
                   <div className='svg'><img src={element.svg}
@@ -233,7 +234,7 @@ class Devs extends React.Component {
             })}</div>
 
             <p>EXPERIENCE</p>
-            <div className='cards'>{this.state.currentDev.resume.professional.map((element) => {
+            <div className='cards'>{currentDev.resume.professional.map((element) => {
               return (
                 <div className='cardResume'>
                   <div className='svg'><img src={element.svg}
@@ -253,7 +254,7 @@ class Devs extends React.Component {
           </div>}
           {this.state.devSkills && <div className="devSkills">
             <p>FRONT END</p>
-            <div className='cards'>{this.state.currentDev.skills.frontend.map((element) => {
+            <div className='cards'>{currentDev.skills.frontend.map((element) => {
               return (
                 <div className='cardSkill'>
                   <div className='svg'><img src={element.svg}
@@ -264,7 +265,9 @@ class Devs extends React.Component {
                     <span>{element.skill}</span>
                     <span><div class="progress">
                       <span class="progress-bar" style={{ "width": element.level }}></span>
-                    </div>{element.level}</span>
+                    </div>
+                    {/* {element.level} */}
+                    </span>
                     <span>{element.xp}</span>
                   </div>
                 </div>
@@ -272,7 +275,7 @@ class Devs extends React.Component {
               )
             })}</div>
             <p>BACK END</p>
-            <div className='cards'>{this.state.currentDev.skills.backend.map((element) => {
+            <div className='cards'>{currentDev.skills.backend.map((element) => {
               return (
                 <div className='cardSkill'>
                   <div className='svg'><img src={element.svg}
@@ -291,7 +294,7 @@ class Devs extends React.Component {
               )
             })}</div>
             <p>OTHER SKILLS</p>
-            <div className='cards'>{this.state.currentDev.skills.other.map((element) => {
+            <div className='cards'>{currentDev.skills.other.map((element) => {
               return (
                 <div className='cardSkill'>
                   <div className='svg'><img src={element.svg}
@@ -314,7 +317,7 @@ class Devs extends React.Component {
         </div>
       </div>
       <div className='somenteMobile downloadMobilebutton'>
-        <button class="downloadbutton" onClick={() => window.open(this.state.currentDev.cv)}><span className="custom ">Download cv</span></button>
+        <button class="downloadbutton" onClick={() => window.open(currentDev.cv)}><span className="custom ">Download cv</span></button>
       </div>
     </div>
   }

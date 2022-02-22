@@ -3,7 +3,7 @@ export default function loader() {
 
     return <div className="loader">
         <div className="loading">
-            <svg id="svgC" width="5000" height="800" viewBox="0 0 10000 10000" fillRule="evenodd">
+            <svg id="svgC" width="5000" height="800" fill="black" viewBox="0 0 10000 10000" fillRule="evenodd">
                 <defs>
                     <radialGradient id="orange">
                         <stop offset="1" stopOpacity="1" stopColor="#ff6600" >
@@ -12,14 +12,14 @@ export default function loader() {
                                 from="1" to="0" dur="0.8s"
                                 begin="8"
                                 fill="freeze" />
-                        </stop>                        
+                        </stop>
                         <stop offset="1" stopOpacity="1" stopColor="transparent" >
-                        <animate 
+                        <animate
                                 attributeName="offset"
                                 from="1" to="0" dur="0.8s"
                                 begin="8"
                                 fill="freeze" />
-                        </stop>                        
+                        </stop>
                         <stop offset="1" stopOpacity="1" stopColor="transparent" />
                     </radialGradient>
                     <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="5347" y1="4500" x2="4605" y2="6096">
@@ -40,16 +40,16 @@ export default function loader() {
                     <linearGradient id="id3" gradientUnits="userSpaceOnUse" xlinkHref="#id2" x1="4980" y1="5133" x2="4705" y2="5223">
                     </linearGradient>
                     <radialGradient id="id4" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.00001 -0 -0 0.999994 0 0)" cx="5002" cy="5009" r="1209" fx="5002" fy="5009">
-                        <stop offset="0" stopOpacity="1" stopColor="#FF9B05" />                        
+                        <stop offset="0" stopOpacity="1" stopColor="#FF9B05" />
                         <stop offset="0" stopOpacity="1" stopColor="#FF6600" >
-                        <animate 
+                        <animate
                                 attributeName="offset"
                                 from="0" to="1" dur="1s"
                                 begin="8"
                                 fill="freeze" />
                         </stop>
                         <stop offset="0" stopOpacity="1" stopColor="white" >
-                        <animate 
+                        <animate
                                 attributeName="offset"
                                 from="0" to="1" dur="1s"
                                 begin="8"
@@ -57,10 +57,10 @@ export default function loader() {
                         </stop>
                     </radialGradient>
                 </defs>
-                
+
                 <g id="eye" transform="
                 translate(3250 3240)
-                
+
                 scale(0.7)">
                     <path id="diskpath1" fill="none" stroke="black" strokeWidth="100" d="M9000 -5000, Q5000, 4000 5500 6400" />
                     <path id="diskpath2" fill="none" stroke="black" strokeWidth="100" d="M5500 6400, Q2500, 4200 3000 6400" />
@@ -73,19 +73,19 @@ export default function loader() {
                             from="0" to="1" dur="0.1ms"
                             begin="3.5"
                             fill="freeze" />
-                    <animateMotion xlinkHref="#disk" dur="0.8s" begin="3.5"                     
+                    <animateMotion xlinkHref="#disk" dur="0.8s" begin="3.5"
                         fill="freeze">
                             <mpath xlinkHref="#diskpath1" />
                             </animateMotion>
-                            <animateMotion xlinkHref="#disk" dur="0.4s" begin="4.3"                     
+                            <animateMotion xlinkHref="#disk" dur="0.4s" begin="4.3"
                         fill="freeze">
                             <mpath xlinkHref="#diskpath2" />
                             </animateMotion>
-                            <animateMotion xlinkHref="#disk" dur="0.3s" begin="4.7"                     
+                            <animateMotion xlinkHref="#disk" dur="0.3s" begin="4.7"
                         fill="freeze">
                             <mpath xlinkHref="#diskpath3" />
                             </animateMotion>
-                            <animateMotion xlinkHref="#disk" dur="1.2s" begin="5.0"                     
+                            <animateMotion xlinkHref="#disk" dur="1.2s" begin="5.0"
                         fill="freeze">
                             <mpath xlinkHref="#diskpath4" />
                             </animateMotion>
@@ -169,7 +169,7 @@ export default function loader() {
                     <animateMotion xlinkHref="#corn1" dur="0.1s" begin="0"
                         fill="freeze">
                             <mpath xlinkHref="#eyepath" />
-                        </animateMotion>                        
+                        </animateMotion>
                         <animateMotion xlinkHref="#corn1" dur="0.8s" begin="4"
                         keyPoints="1;0"
                         keyTimes="0;1"
@@ -180,13 +180,13 @@ export default function loader() {
                         <animateMotion xlinkHref="#corn1" dur="0.8s" begin="5"
                         fill="freeze">
                             <mpath xlinkHref="#eyepath" />
-                        </animateMotion>                        
+                        </animateMotion>
                         <animate attributeName="r"
                             begin="2.4s" dur="0.5s" from="200" to="180"
-                            fill="freeze" />  
+                            fill="freeze" />
                         <animate attributeName="r"
                             begin="6s" dur="0.1s" from="180" to="100"
-                            fill="freeze" />                      
+                            fill="freeze" />
                     </circle>
                     <circle id="corn2" r="450" opacity="0"fill="none" strokeWidth="180" stroke="#003153" >
                     <animate id="animation1"
@@ -197,7 +197,7 @@ export default function loader() {
                     <animateMotion xlinkHref="#corn2" dur="0.1s" begin="0"
                         fill="freeze">
                             <mpath xlinkHref="#eyepath2" />
-                        </animateMotion>                        
+                        </animateMotion>
                         <animateMotion xlinkHref="#corn2" dur="0.8s" begin="4"
                         keyPoints="1;0"
                         keyTimes="0;1"
@@ -211,7 +211,7 @@ export default function loader() {
                         </animateMotion>
                         <animate attributeName="stroke-width"
                             begin="6s" dur="0.1s" from="180" to="100"
-                            fill="freeze" /> 
+                            fill="freeze" />
                     </circle>
 
                     <path id="lowake" fill="none" stroke="black" strokeWidth="1100" strokeLinecap="round" strokeMiterlimit="22.9256" d="M400 2460, Q2500,2600 4600 2460" >
@@ -411,7 +411,7 @@ export default function loader() {
                             from="1" to="0" dur="0.1ms"
                             begin="5"
                             fill="freeze" />
-                        {/* aparece de novo 2*/}                            
+                        {/* aparece de novo 2*/}
                         <animate xlinkHref="#p11"
                             attributeName="d"
                             attributeType="XML"
@@ -758,7 +758,7 @@ export default function loader() {
                             to="M4350 1750, 4600 1550"
                             begin="6"
                             dur="0.1ms"
-                            fill="freeze" />                            
+                            fill="freeze" />
                         <animate id="animation1"
                             attributeName="opacity"
                             from="1" to="0" dur="0.1ms"
@@ -777,22 +777,23 @@ export default function loader() {
         </div>
         <div className="boxOrange">
         <div className="loading">
-            <svg width="5000" height="0" viewBox="0 0 10000 10000" fillRule="evenodd">
+            <svg width="5000" height="800" viewBox="0 20000 10000 10000" fillRule="evenodd">
             <animate
-                            attributeName="height"
+                            attributeName="viewBox"
                             begin="6s"
-                            from="0"
-                            to="800"
+                            from="0 20000 10000 10000"
+                            to="0 0 10000 10000"
                             dur="0.9s"
-                            
+
                             fill="freeze"
                         />
-            <g transform="" opacity="0">
-                <animate id="animation1"
+
+            <g transform=""  opacity="1">
+                {/* <animate id="animation1"
                             attributeName="opacity"
                             from="0" to="1" dur="0.1ms"
                             begin="6.6"
-                            fill="freeze" />
+                            fill="freeze" /> */}
                     <path fill="url(#id1)" d="M4910 4378c93,-1 191,6 273,29 59,16 109,38 150,67 0,0 0,0 1,0 166,105 276,292 276,506 0,143 -49,274 -132,377 -5,7 -6,15 -1,22 5,7 13,10 20,8 329,-91 660,-257 995,-497 5,-3 7,-8 8,-13 1,-6 -1,-11 -5,-15 -995,-1131 -1976,-1129 -2942,7 -6,7 -6,18 0,25 6,7 17,9 24,3 502,-349 946,-522 1332,-519 0,0 0,0 0,0z" />
                     <circle cx="5000" cy="7680" r="3000" stroke="black" strokeWidth="1400" strokeDasharray="0 125% 50%" fill="none">
                         <animate
@@ -815,10 +816,12 @@ export default function loader() {
                             fill="freeze"
                         />
                     </circle>
-                    <circle cx="5000" cy="5000"  fill="url(#orange)" r="10000" >
-                    
-                    </circle>
-                
+                    {/* <circle cx="5000" cy="5000"  fill="url(#orange)" r="10000" >
+
+                    </circle> */}
+                    <rect x="-5000" y="-5000" width="20000" fill="url(#orange)" height="20000" />
+
+
                     <g >
                         <path fill="url(#id4)" d="M5002 5388c-209,0 -379,-170 -379,-379 0,-209 170,-379 379,-379 209,0 379,170 379,379 0,209 -170,379 -379,379zm0 -420c23,0 41,18 41,41 0,23 -18,41 -41,41 -23,0 -41,-18 -41,-41 0,-23 18,-41 41,-41z" />
                         <path fill="url(#id2)" d="M5042 4951l145 -230c69,44 121,110 145,188l-259 83c-6,-18 -17,-32 -32,-41z" />
@@ -835,7 +838,7 @@ export default function loader() {
                     <g
                     transform="
                     translate(3250 3240)
-                    
+
                     scale(0.7)">
                         <animate id="animation1"
                             attributeName="opacity"
@@ -844,7 +847,7 @@ export default function loader() {
                             fill="freeze" />
 
                         <path id="lowake2" fill="none" stroke="#ff6600" strokeWidth="1100" strokeLinecap="round" strokeMiterlimit="22.9256" d="M400 2460, Q2500,2600 4600 2460" >
-                        
+
                         <animate xlinkHref="#lowake2"
                             attributeName="d"
                             attributeType="XML" s
@@ -871,7 +874,7 @@ export default function loader() {
                             attributeName="opacity"
                             from="0" to="1" dur="0.1ms"
                             begin="7.1"
-                            fill="freeze" />                    
+                            fill="freeze" />
                         <animate xlinkHref="#loweye2"
                             attributeName="d"
                             attributeType="XML"
@@ -879,7 +882,7 @@ export default function loader() {
                             to="M891 2537, Q2500,600 4109 2527"
                             begin="7.2s"
                             dur="0.3s"
-                            fill="freeze" />                        
+                            fill="freeze" />
                     </path>
                     <path id="p112" fill="none" stroke="black" strokeWidth="250" opacity="0" strokeLinecap="round" strokeMiterlimit="22.9256" d="M850 1950, 850 1950" >
                         {/* aparece */}
@@ -895,7 +898,7 @@ export default function loader() {
                             attributeName="opacity"
                             from="0" to="1" dur="0.1ms"
                             begin="7.2"
-                            fill="freeze" />                        
+                            fill="freeze" />
 
                     </path>
                     <path id="p222" fill="none" stroke="black" strokeWidth="250" opacity="0" strokeLinecap="round" strokeMiterlimit="22.9256" d="M1600 1370, 1600 1370" >
@@ -912,7 +915,7 @@ export default function loader() {
                             from="0" to="1" dur="0.1ms"
                             begin="7.3"
                             fill="freeze" />
-                        
+
                     </path>
                     <path id="p32" fill="none" stroke="black" strokeWidth="250" opacity="0" strokeLinecap="round" strokeMiterlimit="22.9256" d="M2500 1150, 2500 1150" >
                         <animate xlinkHref="#p32"
@@ -928,7 +931,7 @@ export default function loader() {
                             from="0" to="1" dur="0.1ms"
                             begin="7.4"
                             fill="freeze" />
-                        
+
                     </path>
                     <path id="p42" fill="none" stroke="black" strokeWidth="250" opacity="0" strokeLinecap="round" strokeMiterlimit="22.9256" d="M3400 1370, 3400 1370" >
                         <animate xlinkHref="#p42"
@@ -944,7 +947,7 @@ export default function loader() {
                             from="0" to="1" dur="0.1ms"
                             begin="7.5"
                             fill="freeze" />
-                        
+
                     </path>
                     <path id="p52" fill="none" stroke="black" strokeWidth="250" opacity="0" strokeLinecap="round" strokeMiterlimit="22.9256" d="M4150 1950, 4150 1950" >
                         <animate xlinkHref="#p52"
@@ -960,12 +963,12 @@ export default function loader() {
                             from="0" to="1" dur="0.1ms"
                             begin="7.6"
                             fill="freeze" />
-                        
+
                     </path>
 
-                    
+
                 </g>
-                   
+
                 </g>
                 </svg>
             </div>

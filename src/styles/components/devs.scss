@@ -307,19 +307,20 @@ font-weight: 800;
 
 
 .progress
-  {width: 40px;
-  max-width: 100px;
-  height: 3px !important;
+  {
+  width: 70px;
+  max-width: 150px;
+  height: 4px !important;
   margin: 5px 5px 0 0px;
   background: #e1e4e8;
-  border-radius: 3px;
+  border-radius: 2px;
   overflow: hidden;
 }
   
   .progress-bar
     {display: block;
       margin: 0 !important;
-  border-radius: 3px;
+  border-radius: 2px;
   height: 100%;
     background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
 //background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);  
@@ -335,13 +336,15 @@ background-size: 300% 100%;
       display: flex;
       flex-wrap:wrap;
       overflow-y: auto;
-      height: 22%;
+      height: 18%;
+      padding: 10px 0 10px 0;
       margin:0 10px 0 10px;
     }
+   
 .cardSkill{
   background-color: transparent;
   height: 50px;
-  width: 122px; 
+  width: 150px; 
   transition: 0.3s;
   display: flex;
   align-items: center;
