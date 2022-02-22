@@ -7,7 +7,7 @@ class ScrollUp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            progress: "0%",
+            progress: "0",
             text: <> &nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;•&nbsp;&nbsp;stackview&nbsp;&nbsp;•&nbsp;&nbsp; •&nbsp;&nbsp; •&nbsp; scroll&nbsp; down&nbsp; to &nbsp;see&nbsp; more</>,
             rotate: 0,
             show_controls: false,
@@ -86,8 +86,7 @@ class ScrollUp extends React.Component {
             }
             return new_state;
         });
-        //chato pa bune 
-        //console.log(this.state.progress);
+     
 
     };
 
@@ -98,7 +97,7 @@ class ScrollUp extends React.Component {
                 <svg width="200" height="200" fillRule="evenodd">
                     <defs>
                         <radialGradient id="radial">
-                            <stop offset="0%" stopColor="#ff6600" />
+                            <stop offset="0" stopColor="#ff6600" />
                             <stop offset= {Math.round(this.state.progress/4) +"%"} stopColor="#ff6600" />
                             <stop offset={Math.round(this.state.progress/4)+10 +"%"} stopColor="white" />                            
                         </radialGradient>

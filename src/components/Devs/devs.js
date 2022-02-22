@@ -185,9 +185,9 @@ class Devs extends React.Component {
         </div>
       </div>
       <div className='somenteMobile tabsDevs'>
-        <button onClick={this.showAbout} class={this.state.devAbout ? "octActv" : "oct"}><span className='custom'>About</span></button>
-        <button onClick={this.showResume} class={this.state.devResume ? "octActv" : "oct"}><span className="custom">Resume</span></button>
-        <button onClick={this.showSkills} class={this.state.devSkills ? "octActv" : "oct"}><span className="custom">Skills</span></button>
+        <button onClick={this.showAbout} className={this.state.devAbout ? "octActv" : "oct"}><span className='custom'>About</span></button>
+        <button onClick={this.showResume} className={this.state.devResume ? "octActv" : "oct"}><span className="custom">Resume</span></button>
+        <button onClick={this.showSkills} className={this.state.devSkills ? "octActv" : "oct"}><span className="custom">Skills</span></button>
       </div>
       <div className="aboutDevs">
         <div className="devsSide">
@@ -202,15 +202,15 @@ class Devs extends React.Component {
           </div>
           <div className="devsMenu">
 
-            <button onClick={this.showAbout} class={this.state.devAbout ? "octagonActv" : "octagon"}><span className='custom'>About</span></button>
-            <button onClick={this.showResume} class={this.state.devResume ? "octagonActv" : "octagon"}><span className="custom">Resume</span></button>
-            <button onClick={this.showSkills} class={this.state.devSkills ? "octagonActv" : "octagon"}><span className="custom">Skills</span></button>
+            <button onClick={this.showAbout} className={this.state.devAbout ? "octagonActv" : "octagon"}><span className='custom'>About</span></button>
+            <button onClick={this.showResume} className={this.state.devResume ? "octagonActv" : "octagon"}><span className="custom">Resume</span></button>
+            <button onClick={this.showSkills} className={this.state.devSkills ? "octagonActv" : "octagon"}><span className="custom">Skills</span></button>
 
-            <button class="downloadbutton" onClick={() => window.open(currentDev.cv)}><span className="custom ">Download cv</span></button>
+            <button className="downloadbutton" onClick={() => window.open(currentDev.cv)}><span className="custom ">Download cv</span></button>
           </div>
         </div>
         <div className="devsBody">
-          <p className='titleDevAbout'>{currentDev.about.name}, <span>{this.getAge(currentDev.about.nasc)}</span></p>
+          <p className='titleDevAbout'>{currentDev.about.name}, <span>{currentDev.about.nasc !== ""? this.getAge(currentDev.about.nasc): ""}</span></p>
 
           {this.state.devAbout && <div className="devAbout">
             {currentDev.about.desc}
@@ -263,10 +263,10 @@ class Devs extends React.Component {
                     height={30}></img></div>
                   <div className='content'>
                     <span>{element.skill}</span>
-                    <span><div class="progress">
-                      <span class="progress-bar" style={{ "width": element.level }}></span>
+                    <span><div className="progress">
+                      <span className="progress-bar" style={{ "width": element.level }}></span>
                     </div>
-                    {/* {element.level} */}
+                    {element.level}
                     </span>
                     <span>{element.xp}</span>
                   </div>
@@ -284,8 +284,8 @@ class Devs extends React.Component {
                     height={30}></img></div>
                   <div className='content'>
                     <span>{element.skill}</span>
-                    <span><div class="progress">
-                      <span class="progress-bar" style={{ "width": element.level }}></span>
+                    <span><div className="progress">
+                      <span className="progress-bar" style={{ "width": element.level }}></span>
                     </div>{element.level}</span>
                     <span>{element.xp}</span>
                   </div>
@@ -303,8 +303,8 @@ class Devs extends React.Component {
                     height={30}></img></div>
                   <div className='content'>
                     <span>{element.skill}</span>
-                    <span><div class="progress">
-                      <span class="progress-bar" style={{ "width": element.level }}></span>
+                    <span><div className="progress">
+                      <span className="progress-bar" style={{ "width": element.level }}></span>
                     </div>{element.level}</span>
                     <span>{element.xp}</span>
                   </div>
@@ -317,7 +317,7 @@ class Devs extends React.Component {
         </div>
       </div>
       <div className='somenteMobile downloadMobilebutton'>
-        <button class="downloadbutton" onClick={() => window.open(currentDev.cv)}><span className="custom ">Download cv</span></button>
+        <button className="downloadbutton" onClick={() => window.open(currentDev.cv)}><span className="custom ">Download cv</span></button>
       </div>
     </div>
   }

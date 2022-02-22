@@ -233,7 +233,7 @@ export default function loader() {
                             fill="freeze" />
                         <animate xlinkHref="#lowake"
                             attributeName="d"
-                            attributeType="XML" s
+                            attributeType="XML" 
                             from="M400 2460, Q2500,2600 4600 2460"
                             to="M400 2460, Q2500,0 4600 2460"
                             begin="2.0"
@@ -249,7 +249,7 @@ export default function loader() {
                             fill="freeze" />
                         <animate xlinkHref="#lowake"
                             attributeName="d"
-                            attributeType="XML" s
+                            attributeType="XML" 
                             from="M400 2460, Q2500,2600 4600 2460"
                             to="M400 2460, Q2500,0 4600 2460"
                             begin="5.3"
@@ -850,7 +850,7 @@ export default function loader() {
 
                         <animate xlinkHref="#lowake2"
                             attributeName="d"
-                            attributeType="XML" s
+                            attributeType="XML" 
                             from="M400 2460, Q2500,2600 4600 2460"
                             to="M400 2460, Q2500,0 4600 2460"
                             begin="7.2"
