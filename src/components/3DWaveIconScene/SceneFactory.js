@@ -25,7 +25,7 @@ class SceneFactory{
         iScene.cameras.push(camera);
         iScene.active_camera = 0;
         
-        let g_model= new ModelImporter(process.env.PUBLIC_URL+ '/3DAssets/main-scene-flat-wave.gltf');
+        let g_model= new ModelImporter(process.env.PUBLIC_URL+ '/3DAssets/main-scene-flat-wave.glb');
         await g_model.loadModel();
         g_model.scene.position.set(-10,0,700);
         iScene.imported_scenes['ground']=g_model.scene;
@@ -38,7 +38,7 @@ class SceneFactory{
         anim.setLoop(THREE.LoopOnce);
         iScene.animations.controled['wave']=anim;
 
-        let icon_model= new ModelImporter(process.env.PUBLIC_URL+ '/3DAssets/SV-icon-3D-light-low.gltf');
+        let icon_model= new ModelImporter(process.env.PUBLIC_URL+ '/3DAssets/SV-icon-3D-light-low.glb');
         await icon_model.loadModel();
         icon_model.scene.rotation.x=90*Math.PI/180;
         icon_model.scene.scale.set(5,5,5);
