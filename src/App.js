@@ -30,7 +30,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        {/* <IconScene ref={this.iconRef} />
+        <IconScene ref={this.iconRef} />
         <Loader />
         <Header />
         <ScrollUp ref={this.scrollRef}/>
@@ -50,7 +50,7 @@ class App extends React.Component {
         }}/>
 
         <Clients />
-        <Footer /> */}
+        <Footer />
       </div>
     );
   }
