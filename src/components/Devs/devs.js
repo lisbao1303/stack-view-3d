@@ -151,7 +151,7 @@ class Devs extends React.Component {
     return <div className="devs">
       <div className="listDevs">
         <div className="title sv">We,</div>
-        <div id="elisbao" className={currentDev.avatar !== "/devs/elisbao.jpeg"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
+        <div id="elisbao" className={currentDev.avatar !== "/devs/elisbao.png"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
        <img
               id="elisbao"
               src="/viewicons/iconStackView.svg"
@@ -161,13 +161,13 @@ class Devs extends React.Component {
             />
             <img
               id="elisbao"
-              src="/devs/elisbao.jpeg"
+              src="/devs/elisbao.png"
               alt="elisbao"
               width={120}
               height={120}
             />
         </div>
-        <div id="thiagao" className={currentDev.avatar !== "/devs/thiagao.jpg"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
+        <div id="thiagao" className={currentDev.avatar !== "/devs/thiagao.png"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
 <img
               id="thiagao"
               src="/viewicons/iconStackView.svg"
@@ -177,7 +177,7 @@ class Devs extends React.Component {
             />    
           <img
             id="thiagao"
-            src="/devs/thiagao.jpg"
+            src="/devs/thiagao.png"
             alt="thiagao"
             width={120}
             height={120}
