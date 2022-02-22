@@ -22,18 +22,7 @@ class ThreeController extends React.Component {
       }
     };
   }
-  
-  // ******************* COMPONENT LIFECYCLE ******************* //
-  //LifeCycle Methods
-  componentDidMount() {
-  
-  }
-  
-  componentWillUnmount() {
-    
-  }
-  // ******************* COMPONENT LIFECYCLE ******************* //
-  
+
   showControllers(){
     const controller_stylesheet = this.controlerRef.current.style;
     controller_stylesheet.visibility= 'visible';
@@ -59,8 +48,8 @@ class ThreeController extends React.Component {
         >
           <div className="controller" ref={this.controlerRef}>
             
-            <text className="tooltip" ref={this.tooltipRef}>Enjoy Area - &#128512;</text>
-            <img className='control-mode' ref={this.sgvRef}  width="200" height="100"
+            <span className="tooltip" ref={this.tooltipRef}>Enjoy Area - &#128512;</span>
+            <img className='control-mode' alt='controlsvg' ref={this.sgvRef}  width="200" height="100"
             xmlns="http://www.w3.org/2000/svg" src={process.env.PUBLIC_URL + '/Assets/ControllerGuide.svg'}/>
           
           </div>
@@ -76,8 +65,8 @@ class ThreeController extends React.Component {
         >
           <div className="controller" ref={this.controlerRef}>
             
-            <text className="tooltip" ref={this.tooltipRef}>You can use this area for iteract with the scene - Enjoy it - &#128512;</text>
-            <img className='control-mode' ref={this.sgvRef}  width="200" height="100"
+            <span className="tooltip" ref={this.tooltipRef}>You can use this area for iteract with the scene - Enjoy it - &#128512;</span>
+            <img className='control-mode' alt='controlsvg' ref={this.sgvRef}  width="200" height="100"
             xmlns="http://www.w3.org/2000/svg" src={process.env.PUBLIC_URL + '/Assets/ControllerGuide.svg'}/>
           
           </div>
