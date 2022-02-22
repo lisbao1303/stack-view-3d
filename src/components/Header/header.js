@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import * as Scroll from 'react-scroll';
 
 class Header extends React.Component {
