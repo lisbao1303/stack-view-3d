@@ -30,14 +30,13 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <IconScene ref={this.iconRef} />
+        {/* <IconScene ref={this.iconRef} />
         <Loader />
         <Header />
         <ScrollUp ref={this.scrollRef}/>
         <Front />
         <ThreeController ref={this.backController} />
 
-        {/* so pra dar espaco se quiser mudar, a vontade */}
         <div style={{
           width: '100%',
           height: '100px'
@@ -45,14 +44,13 @@ class App extends React.Component {
         
         <Devs />
 
-        {/* so pra dar espaco se quiser mudar, a vontade */}
         <div style={{
           width: '100%',
           height: '100px'
         }}/>
 
         <Clients />
-        <Footer />
+        <Footer /> */}
       </div>
     );
   }
