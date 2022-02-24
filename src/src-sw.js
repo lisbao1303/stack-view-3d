@@ -44,7 +44,85 @@ registerRoute(
   }),
 );
 
-// @see https://developers.google.com/web/tools/workbox/guides/common-recipes#cache_css_and_javascript_files
+registerRoute(
+  ({request}) => request.destination === 'static',
+  new CacheFirst({
+    cacheName: 'static',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+      new ExpirationPlugin({
+        maxEntries: 60,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+      }),
+    ],
+  }),
+);
+
+
+registerRoute(
+  ({request}) => request.destination === 'media',
+  new CacheFirst({
+    cacheName: 'media',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+      new ExpirationPlugin({
+        maxEntries: 60,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+      }),
+    ],
+  }),
+);
+registerRoute(
+  ({request}) => request.destination === 'js',
+  new CacheFirst({
+    cacheName: 'js',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+      new ExpirationPlugin({
+        maxEntries: 60,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+      }),
+    ],
+  }),
+);
+registerRoute(
+  ({request}) => request.destination === 'css',
+  new CacheFirst({
+    cacheName: 'css',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+      new ExpirationPlugin({
+        maxEntries: 60,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+      }),
+    ],
+  }),
+);
+
+registerRoute(
+  ({request}) => request.destination === 'fonts',
+  new CacheFirst({
+    cacheName: 'fonts',
+    plugins: [
+      new CacheableResponsePlugin({
+        statuses: [0, 200],
+      }),
+      new ExpirationPlugin({
+        maxEntries: 60,
+        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+      }),
+    ],
+  }),
+);
+
 registerRoute(
   ({request}) => request.destination === 'script' ||
     request.destination === 'style',
