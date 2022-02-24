@@ -9,7 +9,7 @@ class Devs extends React.Component {
       devResume: false,
       devSkills: false,
       currentDev: {
-        avatar: "/devs/elisbao.jpeg",
+        avatar: "/devs/elisbao.png",
         about: {
           name: "",
           nasc: "",
