@@ -16,11 +16,9 @@ class IconScene extends React.Component {
         const canvas = this.canvasRef.current;
         const creator = SceneFactory.IconScene;        
         this.handler =new ThreeJSRender(canvas,creator);
-        setTimeout(() => {
             this.handler.init(ThreeJSRender.RENDER_MODE_BEHIND).then(
             window.addEventListener('resize', this.handler.onResize.bind(this.handler))
         )            
-        }, 8000); 
     }
 
     componentDidUpdate(prevProps, prevState) {
