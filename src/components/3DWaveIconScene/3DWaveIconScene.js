@@ -1,5 +1,5 @@
 import React from 'react';
-import {ThreeJSRender} from '../../js-3D/MainAmbiente.js';
+import { ThreeJSRender } from '../../js-3D/MainAmbiente.js';
 import { SceneFactory } from './SceneFactory.js';
 
 class IconScene extends React.Component {
@@ -14,11 +14,11 @@ class IconScene extends React.Component {
     componentDidMount() {
         // Get canvas, pass to custom class
         const canvas = this.canvasRef.current;
-        const creator = SceneFactory.IconScene;        
-        this.handler =new ThreeJSRender(canvas,creator);
-            this.handler.init(ThreeJSRender.RENDER_MODE_BEHIND).then(
+        const creator = SceneFactory.IconScene;
+        this.handler = new ThreeJSRender(canvas, creator);
+        this.handler.init(ThreeJSRender.RENDER_MODE_BEHIND).then(
             window.addEventListener('resize', this.handler.onResize.bind(this.handler))
-        )            
+        )
     }
 
     componentDidUpdate(prevProps, prevState) {
@@ -34,9 +34,9 @@ class IconScene extends React.Component {
     render() {
         return (
             <div className="canvasContainer">
-                <canvas ref={this.canvasRef} width={window.innerWidth} height={window.innerHeight}/>
+                <canvas ref={this.canvasRef} width={window.innerWidth} height={window.innerHeight} />
             </div>
         );
     }
-} 
+}
 export default IconScene;
