@@ -28,104 +28,25 @@ precacheAndRoute(self.__WB_MANIFEST);
  * Caches at: runtime
  */
 
-registerRoute(
-  ({request}) => request.destination === 'image',
-  new CacheFirst({
-    cacheName: 'images',
-    plugins: [
-      new CacheableResponsePlugin({
-        statuses: [0, 200],
-      }),
-      new ExpirationPlugin({
-        maxEntries: 60,
-        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-      }),
-    ],
-  }),
-);
-
-registerRoute(
-  ({request}) => request.destination === 'static',
-  new CacheFirst({
-    cacheName: 'static',
-    plugins: [
-      new CacheableResponsePlugin({
-        statuses: [0, 200],
-      }),
-      new ExpirationPlugin({
-        maxEntries: 60,
-        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-      }),
-    ],
-  }),
-);
-
-
-registerRoute(
-  ({request}) => request.destination === 'media',
-  new CacheFirst({
-    cacheName: 'media',
-    plugins: [
-      new CacheableResponsePlugin({
-        statuses: [0, 200],
-      }),
-      new ExpirationPlugin({
-        maxEntries: 60,
-        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-      }),
-    ],
-  }),
-);
-registerRoute(
-  ({request}) => request.destination === 'js',
-  new CacheFirst({
-    cacheName: 'js',
-    plugins: [
-      new CacheableResponsePlugin({
-        statuses: [0, 200],
-      }),
-      new ExpirationPlugin({
-        maxEntries: 60,
-        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-      }),
-    ],
-  }),
-);
-registerRoute(
-  ({request}) => request.destination === 'css',
-  new CacheFirst({
-    cacheName: 'css',
-    plugins: [
-      new CacheableResponsePlugin({
-        statuses: [0, 200],
-      }),
-      new ExpirationPlugin({
-        maxEntries: 60,
-        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-      }),
-    ],
-  }),
-);
-
-registerRoute(
-  ({request}) => request.destination === 'fonts',
-  new CacheFirst({
-    cacheName: 'fonts',
-    plugins: [
-      new CacheableResponsePlugin({
-        statuses: [0, 200],
-      }),
-      new ExpirationPlugin({
-        maxEntries: 60,
-        maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
-      }),
-    ],
-  }),
-);
+// registerRoute(
+//   ({request}) => request.destination === 'image',
+//   new CacheFirst({
+//     cacheName: 'images',
+//     plugins: [
+//       new CacheableResponsePlugin({
+//         statuses: [0, 200],
+//       }),
+//       new ExpirationPlugin({
+//         maxEntries: 60,
+//         maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+//       }),
+//     ],
+//   }),
+// );
 
 registerRoute(
   ({request}) => request.destination === 'script' ||
-    request.destination === 'style',
+    request.destination === 'styles',
   new StaleWhileRevalidate({
     cacheName: 'static-resources',
   })
