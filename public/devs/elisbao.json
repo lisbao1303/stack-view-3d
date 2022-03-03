@@ -93,7 +93,7 @@
     ],
     "backend": [
       {
-        "svg": "/devs/skills/nodejs.svg",
+        "svg": "/devs/skills/node.svg",
         "skill": "NodeJs",
         "level": "75%",
         "xp": "3 years"
@@ -111,7 +111,7 @@
         "xp": "3 years"
       },
       {
-        "svg": "/devs/skills/mysql.svg",
+        "svg": "/devs/skills/sql.svg",
         "skill": "MySql",
         "level": "75%",
         "xp": "3 years"
@@ -180,7 +180,7 @@
         "xp": "3 years"
       },
       {
-        "svg": "/devs/skills/embedded.svg",
+        "svg": "/devs/skills/ed.svg",
         "skill": "Embedded systems",
         "level": "75%",
         "xp": "3 years"

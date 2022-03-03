@@ -31,7 +31,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <IconScene ref={this.iconRef} />
-        <Loader />
+        {/* <Loader /> */}
         <Header />
         <ScrollUp ref={this.scrollRef}/>
         <Front />
