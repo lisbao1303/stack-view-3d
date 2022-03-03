@@ -20,22 +20,26 @@ class  ModelImporter  {
         
         let _this = this;
         return new Promise((resolvePromiss)=>{
-            GLTF.load( _this.path, function ( gltf ) {        
-                let mesh = gltf.scene.children;
-                mesh.forEach(element => {
-                    if (typeof(element) != undefined){
-                        _this.mesh_list.push(element);
-                        element.castShadow = true;
-                        element.receiveShadow = true;  
-                    }
-                });
-                resolvePromiss();
-                _this.scene=gltf.scene;
-                _this.animations=gltf.animations;
-            }, undefined, function ( error ) {
-                
-                console.error( error );
-            });
+
+            GLTF.loadAsync(_this.path, undefined).then(
+                (gltf) => {
+    
+                    let mesh = gltf.scene.children;
+                    mesh.forEach(element => {
+                        if (typeof (element) != undefined) {
+                            _this.mesh_list.push(element);
+                            element.castShadow = true;
+                            element.receiveShadow = true;
+                        }
+                    });
+                    _this.scene = gltf.scene;
+                    _this.animations = gltf.animations;
+    
+                    resolvePromiss();
+    
+                }
+            )    
+           
         });
     }
 
