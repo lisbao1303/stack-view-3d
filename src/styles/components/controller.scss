@@ -74,7 +74,7 @@ $controller-primary: #FFFFFFFF;
         cursor 1s step-end paused 10;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .tooltip{
     text-align: left;
     color: $controller-trransparent;
@@ -89,7 +89,7 @@ $controller-primary: #FFFFFFFF;
     white-space: nowrap;
     letter-spacing: .1em; 
       animation:
-        tooltip 10s steps(80, end) paused , 
+        tooltip 7s steps(80, end) paused , 
         cursor paused;
     }
   }
@@ -101,9 +101,9 @@ $controller-primary: #FFFFFFFF;
         width: 0 }
     50% {
         color: $controller-primary; 
-        width: 70ex }
+        width: 50% }
     to {color: $controller-primary; 
-        width: 70ex }
+        width: calc(100% - 30px) }
 }
 
 @keyframes cursor {
