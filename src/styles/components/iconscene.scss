@@ -2,7 +2,13 @@
     z-index: -1;
     position:fixed;
     left:0;
-    top:0;
+    bottom: 0;
     width: 100% !important;;
-    height:100% !important;
+    height:900px !important;
+    justify-content: end;
+    display: flex;
+    align-items: flex-end;
+}
+.canvasContainer canvas{
+    bottom: 0;
 }
