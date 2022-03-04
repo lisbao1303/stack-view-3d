@@ -10,7 +10,7 @@ class Header extends React.Component {
       back: "rgba(0,0,0,0.1)",
       flip: "rgba(0,0,0,0.1)",
       open: false,
-      offset: "-100%",
+      offset: "-150%",
       to: "i",
       to2: "i",
       rotate: "-90",
@@ -38,7 +38,7 @@ class Header extends React.Component {
     if (this.state.open) {
       this.setState({
         open: false,
-        offset: "-100%",
+        offset: "-150%",
         to: "i",
         to2: "i",
         rotate: "-90",

@@ -74,7 +74,7 @@ $controller-primary: #FFFFFFFF;
         cursor 1s step-end paused 10;
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .tooltip{
     text-align: left;
     color: $controller-trransparent;
@@ -82,18 +82,27 @@ $controller-primary: #FFFFFFFF;
     font-weight: normal;
     font-size: 20px;
     margin: 20px 30px;  
-    opacity: 1;  
-
+    opacity: 1;
     overflow: hidden; 
     border-right: .15em solid #{$controller-trransparent}; 
     white-space: nowrap;
     letter-spacing: .1em; 
       animation:
-        tooltip 7s steps(80, end) paused , 
-        cursor paused;
+        tooltipDevice 5s steps(80, end) paused , 
+        cursor 1s step-end paused 10;
     }
   }
 
+  @keyframes tooltipDevice {
+    from {
+        color: $controller-primary; 
+        width: 0 }
+    50% {
+        color: $controller-primary; 
+        width: 18ex }
+    to {color: $controller-primary; 
+        width: 18ex }
+}
 
 @keyframes tooltip {
     from {
@@ -101,9 +110,9 @@ $controller-primary: #FFFFFFFF;
         width: 0 }
     50% {
         color: $controller-primary; 
-        width: 50% }
+        width: 70ex }
     to {color: $controller-primary; 
-        width: calc(100% - 30px) }
+        width: 70ex }
 }
 
 @keyframes cursor {
