@@ -1,4 +1,5 @@
 import React from 'react';
+import CardSkill from './devCards/cardSkill'
 
 class Devs extends React.Component {
 
@@ -254,61 +255,20 @@ class Devs extends React.Component {
           </div>}
           {this.state.devSkills && <div className="devSkills">
             <p>FRONT END</p>
-            <div className='cards'>{currentDev.skills.frontend.map((element) => {
-              return (
-                <div className='cardSkill'>
-                  <div className='svg'><img src={element.svg}
-                    alt="icon"
-                    width={30}
-                    height={30}></img></div>
-                  <div className='content'>
-                    <span>{element.skill}</span>
-                    <span><div className="progress">
-                      <span className="progress-bar" style={{ "width": element.level }}></span>
-                    </div>
-                    {element.level}
-                    </span>
-                    <span>{element.xp}</span>
-                  </div>
-                </div>
-
-              )
-            })}</div>
-            <p>BACK END</p>
+            <div className='cards'>{currentDev.skills.frontend.map((element) => 
+                <CardSkill {...element} />
+            )}</div>
+            <p>BACK END / Databases</p>
             <div className='cards'>{currentDev.skills.backend.map((element) => {
               return (
-                <div className='cardSkill'>
-                  <div className='svg'><img src={element.svg}
-                    alt="icon"
-                    width={30}
-                    height={30}></img></div>
-                  <div className='content'>
-                    <span>{element.skill}</span>
-                    <span><div className="progress">
-                      <span className="progress-bar" style={{ "width": element.level }}></span>
-                    </div>{element.level}</span>
-                    <span>{element.xp}</span>
-                  </div>
-                </div>
+                <CardSkill {...element} />
 
               )
             })}</div>
-            <p>OTHER SKILLS</p>
+            <p>OTHER SKILLS / services / os</p>
             <div className='cards'>{currentDev.skills.other.map((element) => {
               return (
-                <div className='cardSkill'>
-                  <div className='svg'><img src={element.svg}
-                    alt="icon"
-                    width={30}
-                    height={30}></img></div>
-                  <div className='content'>
-                    <span>{element.skill}</span>
-                    <span><div className="progress">
-                      <span className="progress-bar" style={{ "width": element.level }}></span>
-                    </div>{element.level}</span>
-                    <span>{element.xp}</span>
-                  </div>
-                </div>
+                <CardSkill {...element} />
 
               )
             })}</div>

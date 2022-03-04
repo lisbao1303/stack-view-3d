@@ -256,7 +256,7 @@
   display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
-  max-height: 37%;
+  max-height: 50%;
   margin-left: 10px;
 }
 
@@ -326,8 +326,8 @@
   display: flex;
   flex-wrap: wrap;
   overflow-y: auto;
-  height: 18%;
-  padding: 10px 0 10px 0;
+  max-height: 20%;
+  padding: 10px 0 10px 10px;
   margin: 0 10px 0 10px;
 }
 
@@ -355,12 +355,12 @@
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .cardSkill .content span {
-  margin: 0 0 0 52px;
-  height: 15px;
+  margin: 0 0px 0 52px;
 }
 
 .cardSkill .content span:nth-child(1) {
   margin-top: 2px;
+  margin-right: 20px;
   font-weight: 800;
 }
 .cardSkill .content span:nth-child(2) {
@@ -369,21 +369,46 @@
   margin-right: 4px;
   font-weight: 800;
   //background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
-  background: linear-gradient(
-    90deg,
-    rgba(228, 85, 2, 1) 0%,
-    rgba(94, 0, 226, 1) 17%,
-    rgba(13, 0, 154, 1) 31%,
-    rgba(6, 87, 173, 1) 48%,
-    rgba(255, 119, 0, 1) 65%,
-    rgba(124, 0, 255, 1) 84%,
-    rgba(8, 0, 255, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  // background: linear-gradient(
+  //   90deg,
+  //   rgba(228, 85, 2, 1) 0%,
+  //   rgba(94, 0, 226, 1) 17%,
+  //   rgba(13, 0, 154, 1) 31%,
+  //   rgba(6, 87, 173, 1) 48%,
+  //   rgba(255, 119, 0, 1) 65%,
+  //   rgba(124, 0, 255, 1) 84%,
+  //   rgba(8, 0, 255, 1) 100%,
+  //   rgba(0, 212, 255, 1) 100%
+  // );
+  background: gray;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
+.cardSkill .content .badge {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+}
+.cardSkill .content .badge div{
+  position: absolute;
+}
+.cardSkill .content .badge #goldScabuloso{
+  font-weight: 1000;
+  font-size: 15px;
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+  //background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);
+  background-size: 300% 100%;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  animation: progress-animation 2s linear infinite;
+}
+.cardSkill .content .badge #normal{
+  color: white;
+  font-weight: 1000;
+  font-size: 15px;
+}
 .cardSkill .content:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
@@ -394,8 +419,8 @@
   justify-content: center;
   align-items: center;
   display: flex !important;
-  background-color: rgb(36, 59, 85);
-  //box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -10px inset, rgba(0, 0, 0, 0.3) 0px 16px 30px -16px inset;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 20px 50px -10px inset, rgba(0, 0, 0, 0.3) 0px 16px 30px -16px inset;
   //border-radius: 16px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 20px;

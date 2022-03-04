@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 511.984 511.984" style="enable-background:new 0 0 511.984 511.984;" xml:space="preserve">
+<defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:linear-gradient(
+    90deg,
+    rgba(228, 85, 2, 1) 0%,
+    rgba(94, 0, 226, 1) 17%,
+    rgba(13, 0, 154, 1) 31%,
+    rgba(6, 87, 173, 1) 48%,
+    rgba(255, 119, 0, 1) 65%,
+    rgba(124, 0, 255, 1) 84%,
+    rgba(8, 0, 255, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  )}
+    .fil1 {fill:#DD0031}
+    .fil2 {fill:white}
+   ]]>
+  </style>
+ </defs>
+<polygon class="fil4" points="511.984,255.992 473.188,197.791 477.688,127.996 414.987,96.981 383.988,34.296 
+	314.193,38.795 255.992,0 197.806,38.795 127.996,34.296 96.997,96.981 34.31,127.996 38.81,197.791 0,255.992 38.81,314.178 
+	34.31,383.988 96.997,414.987 127.996,477.674 197.806,473.174 255.992,511.984 314.193,473.174 383.988,477.674 415.003,414.987 
+	477.688,383.988 473.188,314.178 "/>
+
+</svg>

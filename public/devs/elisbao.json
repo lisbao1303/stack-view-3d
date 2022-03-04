@@ -37,7 +37,13 @@
         "svg": "/devs/resume/kyros.svg",
         "title": "System Development Analyst",
         "where": "Kyros Tecnologia",
-        "period": "Aug 2021 - Present"
+        "period": "Aug 2021 - Mar 2022"
+      },
+      {
+        "svg": "/devs/resume/stefanini.svg",
+        "title": "System Development Analyst",
+        "where": "Stefanini",
+        "period": "Mar 2022 - Present"
       }
     ]
   },
@@ -46,34 +52,137 @@
       {
         "svg": "/devs/skills/react.svg",
         "skill": "React",
-        "level": "75%",
+        "level": "S",
         "xp": "3 years"
       },{
-        "svg": "/devs/skills/react.svg",
-        "skill": "React",
-        "level": "75%",
+        "svg": "/devs/skills/angular.svg",
+        "skill": "Angular",
+        "level": "B",
         "xp": "3 years"
       },
       {
-        "svg": "/devs/skills/angular.svg",
-        "skill": "Angular",
-        "level": "50%",
-        "xp": "3 years"
+        "svg": "/devs/skills/next.svg",
+        "skill": "Next.js",
+        "level": "S",
+        "xp": "1 year"
+      },
+      {
+        "svg": "/devs/skills/bootstrap.svg",
+        "skill": "Bootstrap",
+        "level": "B",
+        "xp": "4 years"
+      },
+      {
+        "svg": "/devs/skills/ionic.svg",
+        "skill": "Ionic",
+        "level": "B",
+        "xp": "4 years"
+      },
+      {
+        "svg": "/devs/skills/vue.svg",
+        "skill": "Vue.js",
+        "level": "C",
+        "xp": "4 years"
+      },
+      {
+        "svg": "/devs/skills/net.svg",
+        "skill": "Razor ASP.NET",
+        "level": "B",
+        "xp": "4 years"
       }
     ],
     "backend": [
       {
         "svg": "/devs/skills/node.svg",
         "skill": "NodeJs",
-        "level": "75%",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/java.svg",
+        "skill": "Java",
+        "level": "A",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/spring.svg",
+        "skill": "Spring MVC/Boot",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/sql.svg",
+        "skill": "MySql",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/oracle.svg",
+        "skill": "Oracle",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/postsql.svg",
+        "skill": "PostgreSQL",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/firebase.svg",
+        "skill": "Firebase",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/mongo.svg",
+        "skill": "MongoDB",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/graph.svg",
+        "skill": "GraphQL",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/net.svg",
+        "skill": "ASP.NET",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/python.svg",
+        "skill": "Python",
+        "level": "A",
         "xp": "3 years"
       }
+
     ],
     "other": [
       {
+        "svg": "/devs/skills/aws.svg",
+        "skill": "AWS Services",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
         "svg": "/devs/skills/matlab.svg",
         "skill": "MATLAB",
-        "level": "75%",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/cc.svg",
+        "skill": "C/C++",
+        "level": "B",
+        "xp": "3 years"
+      },
+      {
+        "svg": "/devs/skills/ed.svg",
+        "skill": "Embedded systems",
+        "level": "B",
         "xp": "3 years"
       }
     ]

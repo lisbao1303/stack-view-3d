@@ -35,9 +35,15 @@ class ThreeJSRender{
 
     async init(render_mode){
         //just set the render pass scene
+        
         this.renderer = new THREE.WebGLRenderer({
             canvas: this.r_canvas,
-            antialias: true}
+            stencil: true,
+            antialias: true,
+            
+            powerPreference: "high-performance",
+            logarithmicDepthBuffer: true,
+            desynchronized: true}
         );  
         this.renderer.setSize( this.r_canvas.width, this.r_canvas.height );
 
