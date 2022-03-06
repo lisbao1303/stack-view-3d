@@ -3,7 +3,10 @@
     "about": {
       "name": "Thiago Souza",
       "nasc": "1999-11-30",
-      "desc": "I'm interested in everything that involves machines and how they work from scratch. Nowadays I spent most of my leisure time studying modern languages, frameworks and cloud solutions. It's not a surprise how can I understand machines without speack its language? Furthermore, I work well in big and small teams and I can't live without playing sports"
+      "desc": ["I'm interested in everything that involves machines and how they work from scratch. Nowadays I spent ", 
+        "most of my leisure time studying modern languages, frameworks and cloud solutions. It's not a surprise how ",
+        "can I understand machines without speack its language? Furthermore, I work well in big and small teams and ",
+        "I can't live without playing sports."]
     },
     "resume": {
       "education": [
@@ -11,7 +14,7 @@
           "svg": "/devs/resume/ufu.svg",
           "title": "Mechatronics Engineering",
           "where": "Federal University of Uberlândia",
-          "period": "2017 - 2022"
+          "period": "2017 - 2021"
         },
         {
           "svg": "/devs/resume/senai-logo.svg",
@@ -22,36 +25,144 @@
       ],
       "professional": [
         {
+            "svg": "/devs/resume/meta.svg",
+            "title": "Project Manager (Jr. company member)",
+            "where": "Meta Consultoria",
+            "period": "2018 - 2019"
+        },
+        {
           "svg": "/devs/resume/meta.svg",
           "title": "Project Director (Jr. company member)",
           "where": "Meta Consultoria",
-          "period": "2018 - 2020"
+          "period": "2019 - 2020"
+        },
+        {
+            "svg": "/devs/resume/souza-cruz.svg",
+            "title": "IWS Operations Intern",
+            "where": "British American Tobacco",
+            "period": "2018 - 2020"
+        },
+        {
+            "svg": "/devs/resume/embraer.svg",
+            "title": "DIP Project Managment Intern - Commercial Aviation",
+            "where": "Embraer",
+            "period": "2021 - Present"
         }
       ]
     },
     "skills": {
       "frontend": [
         {
+              "svg": "/devs/skills/js_logo.svg",
+              "skill": "Javascript",
+              "level": "B",
+              "xp": "1 year"
+        },
+        {
           "svg": "/devs/skills/react.svg",
           "skill": "React",
-          "level": "B",
-          "xp": "3 years"
+          "level": "C",
+          "xp": "1 year"
+        },
+        {
+          "svg": "/devs/skills/bootstrap.svg",
+          "skill": "Bootstrap",
+          "level": "C",
+          "xp": "1 year"
+        },
+        {
+            "svg": "/devs/skills/three.svg",
+            "skill": "Three.js",
+            "level": "B",
+            "xp": "1 year"
         }
-      ],
+    ],
       "backend": [
+        {
+            "svg": "/devs/skills/java.svg",
+            "skill": "Java",
+            "level": "A",
+            "xp": "5 years"
+        },
+        {
+            "svg": "/devs/skills/python.svg",
+            "skill": "Python",
+            "level": "A",
+            "xp": "2 years"
+        },
+        {
+           "svg": "/devs/skills/sqlite.svg",
+            "skill": "SQLite",
+            "level": "A",
+            "xp": "3 years"
+        },
         {
           "svg": "/devs/skills/node.svg",
           "skill": "NodeJs",
-          "level": "B",
-          "xp": "3 years"
+          "level": "C",
+          "xp": "1 years"
+        },
+        {
+            "svg": "/devs/skills/android.svg",
+            "skill": "Android",
+            "level": "B",
+            "xp": "3 years"
+        },
+        {
+            "svg": "/devs/skills/postsql.svg",
+            "skill": "PostgreSQL",
+            "level": "B",
+            "xp": "2 years"
+        },
+        {
+            "svg": "/devs/skills/microsoft-logo.svg",
+            "skill": "M. Power Platform",
+            "level": "B",
+            "xp": "2 years"
+        },
+        {
+            "svg": "/devs/skills/freeRTOS.svg",
+            "skill": "FreeRTOS",
+            "level": "B",
+            "xp": "1 years"
         }
       ],
       "other": [
         {
-          "svg": "/devs/skills/matlab.svg",
-          "skill": "MATLAB",
-          "level": "B",
-          "xp": "3 years"
+            "svg": "/devs/skills/matlab.svg",
+            "skill": "MATLAB",
+            "level": "B",
+            "xp": "3 years"
+        },
+        {
+            "svg": "/devs/skills/ed.svg",
+            "skill": "Embbedded Systems",
+            "level": "B",
+            "xp": "3 years"
+        },
+        {
+            "svg": "/devs/skills/esp.svg",
+            "skill": "ESP IOT",
+            "level": "B",
+            "xp": "1 years"
+        },
+        {
+            "svg": "/devs/skills/mqtt.svg",
+            "skill": "MQTT",
+            "level": "B",
+            "xp": "1 years"
+        },
+        {
+            "svg": "/devs/skills/aws.svg",
+            "skill": "AWS Services",
+            "level": "B",
+            "xp": "1 years"
+        },
+        {
+            "svg": "/devs/skills/azure.svg",
+            "skill": "Azure Services",
+            "level": "B",
+            "xp": "1 years"
         }
       ]
     },
