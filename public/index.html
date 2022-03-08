@@ -11,7 +11,7 @@
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
     <!-- <link rel="prefetch" as="object" href="/3DAssets/main-scene-flat-wave.gltf"/>
     <link rel="prerender" as="object" href="/3DAssets/main-scene-flat-wave.gltf"/>
     <link rel="prefetch" as="object" href="/3DAssets/SV-icon-3D-light-low.gltf"/>
@@ -20,6 +20,31 @@
     <title>StackView</title>
   </head>
   <body>
-    <div id="root"></div>    
+    <div id="root">
+
+    </div>
+    <span>%NODE_ENV%</span>
+    <script>
+      const isProduction = ('%NODE_ENV%' === 'production');
+  
+      if (isProduction && 'serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js')
+          .then(registration => {
+            const channel = new BroadcastChannel('service-worker-channel');
+  
+            channel.onmessage = (message) => {
+              if (message.data.promptToReload) {
+                if (confirm('Updates available. Would you like to reload?')) {
+                  channel.postMessage({ skipWaiting: true });
+                };
+              }
+            }
+  
+            navigator.serviceWorker.addEventListener('controllerchange', () => {
+              window.location.reload();
+            });
+          });
+      }
+    </script>    
   </body>
 </html>
