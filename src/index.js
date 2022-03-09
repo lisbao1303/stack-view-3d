@@ -10,4 +10,4 @@ ReactDOM.render(
 );
 
 registerServiceWorker();
-reportWebVitals();
+//reportWebVitals();
