@@ -35,9 +35,28 @@
     "workbox-precaching": "^6.1.5",
     "workbox-routing": "^6.1.5",
     "workbox-strategies": "^6.1.5",
-    "workbox-window": "^6.1.5"
+    "workbox-window": "^6.1.5",
+    "axios": "^0.21.1",
+    "css-loader": "^5.2.6",
+    "dotenv": "^10.0.0",
+    "file-loader": "^6.2.0",    
+    "style-loader": "^2.0.0"    
   },
   "devDependencies": {
-    "webpack-cli": "^4.9.2"
+    "@babel/core": "^7.14.3",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/preset-env": "^7.14.4",
+    "@babel/preset-react": "^7.13.13",
+    "@svgr/cli": "^5.5.0",
+    "babel-loader": "^8.2.2",
+    "copy-webpack-plugin": "^9.0.0",
+    "dotenv-webpack": "^7.0.2",
+    "html-webpack-plugin": "^5.3.1",
+    "path": "^0.12.7",
+    "serve": "^11.3.2",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2",
+    "workbox-webpack-plugin": "^6.1.5"
   }
 }
