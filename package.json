@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",  
   "scripts": {
-    "start": "react-scripts start",
-    "build": "CI=false && NODE_ENV=production webpack --mode=production && react-scripts build",
+    "webpack-dev-server": "webpack-dev-server",
+    "dev": "webpack serve --mode=development",
     "prod": "NODE_ENV=production webpack --mode=production",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "serve": "npm run prod && serve -s dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisbao1303/stack-view-3d"
   },
   "keywords": [],
   "author": "",
