@@ -43,11 +43,7 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        loader: 'babel-loader',
-            test: /\.js$|jsx/,
-      },
-      {
+            {
         test: /\.css?$/,
         use: [ 'style-loader', 'css-loader' ],
       },
