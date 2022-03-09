@@ -41,17 +41,5 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
   },
-  module: {
-    rules: [
-            {
-        test: /\.css?$/,
-        use: [ 'style-loader', 'css-loader' ],
-      },
-      {
-        test: /\.(png|j?g|svg|gif)?$/,
-        use: 'file-loader?name=./images/[name].[ext]',
-      },
-    ],
-  },
   plugins: webpackPlugins,
 };
