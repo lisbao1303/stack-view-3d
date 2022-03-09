@@ -12,7 +12,20 @@ const webpackPlugins = [
   new Dotenv( {
     path: './.env', // Path to .env file (this is the default)
     systemvars: true,
-  } ), 
+  } ),
+   new CopyPlugin( {
+    patterns: [
+      { from: 'public/3DAssets', to: '3DAssets' },
+      { from: 'public/fonts', to: 'fonts' },
+      { from: 'public/Assets', to: 'Assets' },
+      { from: 'public/clientes', to: 'clientes' },
+      { from: 'public/devs', to: 'devs' },
+      { from: 'public/icons', to: 'icons' },
+      { from: 'public/viewicons', to: 'viewicons' },
+      { from: 'public/favicon.ico', to: '' },
+      { from: 'public/manifest.json', to: '' }      
+    ],
+  } ),
 ];
 
 if ( 'production' === process.env.NODE_ENV ) {
@@ -52,9 +65,17 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|j?g|svg|gif)?$/,
-        use: 'file-loader?name=./images/[name].[ext]',
-      },
+        test: /\.(jpe?g|png|gif|woff|woff2|otf|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        use: [
+            {
+                loader: 'url-loader',
+                options: {
+                    limit: 1000,
+                    name : 'assets/img/[name].[ext]'
+                }
+            }
+        ]
+    }
     ],
   },
   plugins: webpackPlugins,
