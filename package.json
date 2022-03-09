@@ -2,6 +2,7 @@
   "name": "stack-view-3d",
   "version": "0.1.0",
   "description": "",
+  "main": "index.js",  
   "scripts": {
     "start": "react-scripts start",
     "build": "CI=false && NODE_ENV=production webpack --mode=production && react-scripts build",
