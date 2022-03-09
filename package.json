@@ -6,7 +6,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "CI=false && NODE_ENV=production webpack --mode=production && react-scripts build",
-    "prod": "CI=false && NODE_ENV=production webpack --mode=production",
+    "prod": "NODE_ENV=production webpack --mode=production",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
