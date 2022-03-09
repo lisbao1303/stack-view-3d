@@ -24,7 +24,8 @@ if ( 'production' === process.env.NODE_ENV ) {
 
 module.exports = {
   context: __dirname,
-  entry: './src/index.js',
+  // entry: './src/index.js',
+  entry: ['babel-polyfill', './src/index.js'],
   output: {
     path: path.resolve( __dirname, 'dist' ),
     filename: 'main.js',
