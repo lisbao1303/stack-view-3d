@@ -4,7 +4,7 @@
     font-style: normal;
     font-display: swap; /* Read next point */
     unicode-range: U+000-5FF; /* Download only latin glyphs */
-    src: local("Icon Font"), url("/styles/fonts/REZ.woff") format("woff");
+    src: local("Icon Font"), url("//stackview.com/fonts/REZ.woff") format("woff");
   }
   @font-face {
     font-family: "Icon Font";
@@ -12,7 +12,7 @@
     font-style: normal;
     font-display: swap; /* Read next point */
     unicode-range: U+000-5FF; /* Download only latin glyphs */
-    src: local("Icon Font"), url("/styles/fonts/XXIX.woff") format("woff");
+    src: local("Icon Font"), url("//stackview.com/fonts/XXIX.woff") format("woff");
   }
   @font-face {
     font-family: "Roboto Font";
@@ -20,5 +20,5 @@
     font-style: normal;
     font-display: swap; /* Read next point */
     unicode-range: U+000-5FF; /* Download only latin glyphs */
-    src: local("Roboto Font"), url("/styles/fonts/Roboto.ttf") format("truetype");
+    src: local("Roboto Font"), url("//stackview.com/fonts/Roboto.ttf") format("truetype");
   }
