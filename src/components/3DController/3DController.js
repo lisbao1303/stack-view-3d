@@ -50,7 +50,7 @@ class ThreeController extends React.Component {
             
             <span className="tooltip" ref={this.tooltipRef}>Enjoy Area - &#128512;</span>
             <img className='control-mode' alt='controlsvg' ref={this.sgvRef}  width="200" height="100"
-            xmlns="http://www.w3.org/2000/svg" src={process.env.PUBLIC_URL + '/Assets/ControllerGuide.svg'}/>
+            xmlns="http://www.w3.org/2000/svg" src='/Assets/ControllerGuide.svg'/>
           
           </div>
 
@@ -67,7 +67,7 @@ class ThreeController extends React.Component {
             
             <span className="tooltip" ref={this.tooltipRef}>You can use this area for iteract with the scene - Enjoy it - &#128512;</span>
             <img className='control-mode' alt='controlsvg' ref={this.sgvRef}  width="200" height="100"
-            xmlns="http://www.w3.org/2000/svg" src={process.env.PUBLIC_URL + '/Assets/ControllerGuide.svg'}/>
+            xmlns="http://www.w3.org/2000/svg" src='/Assets/ControllerGuide.svg'/>
           
           </div>
 

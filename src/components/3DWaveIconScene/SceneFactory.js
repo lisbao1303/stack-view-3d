@@ -25,9 +25,9 @@ class SceneFactory {
         iScene.cameras.push(camera);
         iScene.active_camera = 0;
 
-        let icon_model = new ModelImporter(process.env.PUBLIC_URL + '/3DAssets/SV-icon-3D-light-low.glb');
+        let icon_model = new ModelImporter ('/3DAssets/SV-icon-3D-light-low.glb');
 
-        let g_model = new ModelImporter(process.env.PUBLIC_URL + '/3DAssets/main-scene-flat-wave.glb');
+        let g_model = new ModelImporter('/3DAssets/main-scene-flat-wave.glb');
 
         // var startTime = performance.now()
         // await Promise.all([g_model.loadModel(), icon_model.loadModel()])
