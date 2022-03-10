@@ -382,7 +382,7 @@
   //   rgba(0, 212, 255, 1) 100%
   // );
   background: gray;
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .cardSkill .content .badge {
@@ -401,7 +401,7 @@
   background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
   //background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);
   background-size: 300% 100%;
-  background-clip: text !important;
+  -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent;
   animation: progress-animation 2s linear infinite;
 }
