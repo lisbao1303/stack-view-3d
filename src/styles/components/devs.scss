@@ -445,3 +445,29 @@
     background-position: 0;
   }
 }
+
+
+///correções
+
+.stackfoot{
+  font-family: "Icon Font", "Arial", sans-serif ;
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+
+  background: linear-gradient(90deg, $our-orange, $our-orange 17%, #f09000 34%, #ffaf01 51%,  $our-orange 68%, $our-orange 85%, #f09000);
+  //background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  animation: progress-animation 2s linear infinite;
+}
+.viewfoot{
+  font-family: "Icon Font", "Arial", sans-serif ;
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+
+  background: linear-gradient(90deg, $our-blue, $our-blue 17%, #2000ad 34%, #0105ff 51%,  $our-blue 68%, $our-blue 85%, #2000ad);
+  //background: linear-gradient(90deg, rgba(255,115,0,1) 0%, rgba(255,179,0,1) 17%, rgba(255,89,0,1) 31%, rgba(255,0,0,1) 47%, rgba(255,179,0,1) 65%, rgba(255,244,0,1) 84%, rgba(255,158,0,1) 100%, rgba(0,212,255,1) 100%);
+  background-size: 300% 100%;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  animation: 2s progress-animation 2s linear infinite;
+}
