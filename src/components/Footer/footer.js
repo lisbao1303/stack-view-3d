@@ -140,7 +140,7 @@ export default function Footer() {
 
         <div className="rodape">
             <div className="rights">&copy;2021+ Stackview BR | All rights reserved.</div>
-            <div className="made" ><span className="custom">made by </span><span className="stack"> Stack</span><span className="view esse aki">View</span></div>
+            <div className="made" ><span className="custom">made by </span><span className="stackfoot"> Stack</span><span className="viewfoot">View</span></div>
         </div>
         <div className='floatWhatsTele somenteMobile'>
             <a
