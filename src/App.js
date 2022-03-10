@@ -32,7 +32,7 @@ class App extends React.Component {
       <div className="App">
         <div className='bodyFixed'></div>
         <IconScene ref={this.iconRef} />
-        {/* <Loader /> */}
+        <Loader />
         <Header />
         <ScrollUp ref={this.scrollRef}/>
         <Front />
