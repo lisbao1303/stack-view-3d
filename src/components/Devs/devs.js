@@ -211,7 +211,11 @@ class Devs extends React.Component {
           </div>
         </div>
         <div className="devsBody">
-          <p className='titleDevAbout'>{currentDev.about.name}, <span>{currentDev.about.nasc !== ""? this.getAge(currentDev.about.nasc): ""}</span></p>
+          <p className='titleDevAbout'>{currentDev.about.name}, <span>{currentDev.about.nasc !== ""? this.getAge(currentDev.about.nasc): ""}</span> <img src='devs/goldFullstack.svg'
+                    alt="icon"
+                    width={30}
+                    height={30}></img></p>
+         
 
           {this.state.devAbout && <div className="devAbout">
             {currentDev.about.desc}
