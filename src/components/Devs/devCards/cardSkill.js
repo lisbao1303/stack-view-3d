@@ -1,7 +1,7 @@
 
 
 export default function CardSkill(element) {
-  const fillColor = (element.level === "S" || element.level === "A" ) ? "url(#id0)":(element.level === "B"? "url(#id1)":"url(#id2)")
+  const fillColor = (element.level === "S" || element.level === "A" ) ? "url(#goldColor)":(element.level === "B"? "url(#grennColor)":"url(#redColor)")
   return <div className='cardSkill'>
     <div className='svg'><img src={element.svg}
       alt="icon"
@@ -12,19 +12,19 @@ export default function CardSkill(element) {
       <span>{element.xp}</span>
       <div className='badge'>{<svg id="svgC" width="30" height="30" fill="black" viewBox="0 0 511.984 511.984" fillRule="evenodd">
         <defs>
-          <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="42.32" y1="707.79" x2="500.98" y2="707.79">
+          <linearGradient id="goldColor" gradientUnits="userSpaceOnUse" x1="42.32" y1="707.79" x2="500.98" y2="707.79">
             <stop offset="0" stopOpacity="1" stopColor="#B2803C" />
             <stop offset="0.25098" stopOpacity="1" stopColor="#B2803C" />
             <stop offset="0.580392" stopOpacity="1" stopColor="#E2C758" />
             <stop offset="1" stopOpacity="1" stopColor="#B88C3D" />
           </linearGradient>
-          <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="42.32" y1="707.79" x2="500.98" y2="707.79">
+          <linearGradient id="grennColor" gradientUnits="userSpaceOnUse" x1="42.32" y1="707.79" x2="500.98" y2="707.79">
             <stop offset="0" stopOpacity="1" stopColor="#11998e" />
             <stop offset="0.25098" stopOpacity="1" stopColor="#11998e" />
             <stop offset="0.580392" stopOpacity="1" stopColor="#11998e" />
             <stop offset="1" stopOpacity="1" stopColor="#38ef7d" />
           </linearGradient>
-          <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="42.32" y1="707.79" x2="500.98" y2="707.79">
+          <linearGradient id="redColor" gradientUnits="userSpaceOnUse" x1="42.32" y1="707.79" x2="500.98" y2="707.79">
             <stop offset="0" stopOpacity="1" stopColor="#c31432" />
             <stop offset="0.40098" stopOpacity="1" stopColor="#240b36" />
             <stop offset="0.580392" stopOpacity="1" stopColor="#240b36" />
