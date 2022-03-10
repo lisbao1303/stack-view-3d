@@ -10,7 +10,7 @@ class Devs extends React.Component {
       devResume: false,
       devSkills: false,
       currentDev: {
-        avatar: "/devs/elisbao.png",
+        avatar: "/devs/elisbao.webp",
         about: {
           name: "",
           nasc: "",
@@ -152,7 +152,7 @@ class Devs extends React.Component {
     return <div className="devs">
       <div className="listDevs">
         <div className="title sv">We,</div>
-        <div id="elisbao" className={currentDev.avatar !== "/devs/elisbao.png"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
+        <div id="elisbao" className={currentDev.avatar !== "/devs/elisbao.webp"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
             <img
               id="elisbao"
               src="/viewicons/iconStackView.svg"
@@ -162,13 +162,13 @@ class Devs extends React.Component {
             />
             <img
               id="elisbao"
-              src="/devs/elisbao.png"
+              src="/devs/elisbao.webp"
               alt="elisbao"
               width={120}
               height={120}
             />
         </div>
-        <div id="thiagao" className={currentDev.avatar !== "/devs/thiagao.png"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
+        <div id="thiagao" className={currentDev.avatar !== "/devs/thiagao.webp"? 'devFotoAct':'devFoto'} onClick={this.showDevInfo}>
             <img
               id="thiagao"
               src="/viewicons/iconStackView.svg"
@@ -178,7 +178,7 @@ class Devs extends React.Component {
             />    
             <img
             id="thiagao"
-            src="/devs/thiagao.png"
+            src="/devs/thiagao.webp"
             alt="thiagao"
             width={120}
             height={120}
