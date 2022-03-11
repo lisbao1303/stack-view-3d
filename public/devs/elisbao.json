@@ -63,7 +63,7 @@
       {
         "svg": "/devs/skills/next.svg",
         "skill": "Next.js",
-        "level": "S",
+        "level": "A",
         "xp": "1 year"
       },
       {
@@ -76,88 +76,95 @@
         "svg": "/devs/skills/ionic.svg",
         "skill": "Ionic",
         "level": "B",
-        "xp": "4 years"
+        "xp": "1 year"
       },
       {
         "svg": "/devs/skills/vue.svg",
         "skill": "Vue.js",
         "level": "C",
-        "xp": "4 years"
+        "xp": ">1 year"
       },
       {
         "svg": "/devs/skills/net.svg",
         "skill": "Razor ASP.NET",
         "level": "B",
+        "xp": "1 year"
+      },
+      {
+        "svg": "/devs/skills/js_logo.svg",
+        "skill": "Javascript",
+        "level": "S",
         "xp": "4 years"
-      }
+  }
     ],
     "backend": [
       {
         "svg": "/devs/skills/node.svg",
         "skill": "NodeJs",
-        "level": "B",
+        "level": "A",
         "xp": "3 years"
       },
       {
         "svg": "/devs/skills/java.svg",
         "skill": "Java",
         "level": "A",
-        "xp": "3 years"
+        "xp": "5 years"
       },
       {
         "svg": "/devs/skills/spring.svg",
         "skill": "Spring MVC/Boot",
         "level": "B",
-        "xp": "3 years"
+        "xp": "2,5 years"
       },
       {
         "svg": "/devs/skills/sql.svg",
         "skill": "MySql",
-        "level": "B",
-        "xp": "3 years"
+        "level": "S",
+        "xp": "5 years"
       },
       {
         "svg": "/devs/skills/oracle.svg",
         "skill": "Oracle",
         "level": "B",
-        "xp": "3 years"
+        "xp": "2 years"
       },
       {
         "svg": "/devs/skills/postsql.svg",
         "skill": "PostgreSQL",
-        "level": "B",
-        "xp": "3 years"
-      },
-      {
-        "svg": "/devs/skills/firebase.svg",
-        "skill": "Firebase",
-        "level": "B",
-        "xp": "3 years"
-      },
-      {
-        "svg": "/devs/skills/mongo.svg",
-        "skill": "MongoDB",
-        "level": "B",
-        "xp": "3 years"
-      },
-      {
-        "svg": "/devs/skills/graph.svg",
-        "skill": "GraphQL",
-        "level": "B",
-        "xp": "3 years"
-      },
-      {
-        "svg": "/devs/skills/net.svg",
-        "skill": "ASP.NET",
-        "level": "B",
-        "xp": "3 years"
+        "level": "A",
+        "xp": "2 years"
       },
       {
         "svg": "/devs/skills/python.svg",
         "skill": "Python",
         "level": "A",
-        "xp": "3 years"
+        "xp": "2 years"
+      },
+      {
+        "svg": "/devs/skills/firebase.svg",
+        "skill": "Firebase",
+        "level": "B",
+        "xp": "1 year"
+      },
+      {
+        "svg": "/devs/skills/mongo.svg",
+        "skill": "MongoDB",
+        "level": "B",
+        "xp": "1 year"
+      },
+      {
+        "svg": "/devs/skills/graph.svg",
+        "skill": "GraphQL",
+        "level": "B",
+        "xp": ">1 year"
+      },
+      {
+        "svg": "/devs/skills/net.svg",
+        "skill": "ASP.NET",
+        "level": "B",
+        "xp": "1 year"
       }
+      
 
     ],
     "other": [
@@ -165,7 +172,7 @@
         "svg": "/devs/skills/aws.svg",
         "skill": "AWS Services",
         "level": "B",
-        "xp": "3 years"
+        "xp": "1 year"
       },
       {
         "svg": "/devs/skills/matlab.svg",
@@ -184,7 +191,13 @@
         "skill": "Embedded systems",
         "level": "B",
         "xp": "3 years"
-      }
+      },
+      {
+        "svg": "/devs/skills/android.svg",
+        "skill": "Android",
+        "level": "B",
+        "xp": "3 years"
+    }
     ]
   },
   "cv": "/devs/GabrielElisbao.pdf"
