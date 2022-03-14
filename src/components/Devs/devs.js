@@ -156,14 +156,14 @@ class Devs extends React.Component {
             <img
               id="elisbao"
               src="/viewicons/iconStackView.svg"
-              alt="elisbao"
+              alt="Gabriel Elisbao"
               width={90}
               height={90}
             />
             <img
               id="elisbao"
               src="/devs/elisbao.webp"
-              alt="elisbao"
+              alt="Gabriel Elisbao"
               width={120}
               height={120}
             />
@@ -172,7 +172,7 @@ class Devs extends React.Component {
             <img
               id="thiagao"
               src="/viewicons/iconStackView.svg"
-              alt="elisbao"
+              alt="Gabriel Elisbao"
               width={90}
               height={90}
             />    
@@ -196,7 +196,7 @@ class Devs extends React.Component {
             <img
               id="t"
               src={currentDev.avatar}
-              alt="currentDev"
+              alt="currentDev StackView"
               width={130}
               height={130}
             />
