@@ -24,7 +24,7 @@ const webpackPlugins = [
       { from: 'public/viewicons', to: 'viewicons' },
       { from: 'public/favicon.ico', to: '' },
       { from: 'public/manifest.json', to: '' },
-      { from: 'public/robots.txt', to: '' }
+      { from: 'public/robots.txt', to: '' },
       { from: 'public/sitemap.xml', to: '' }
     ],
   }),
