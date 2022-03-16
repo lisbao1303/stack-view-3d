@@ -105,14 +105,14 @@ class Header extends React.Component {
         <a className="logoname" href="#main">
       
           <span className={!this.state.display? "sv skip-link": "stack skip-link"}>s</span>
-          <span  className="sv t">t</span>
-          <span  className="sv a">a</span>
-          <span  className="sv c">c</span>
-          <span  className="sv k">k</span>
+          <span style={{ display: this.state.display }} className="sv t">t</span>
+          <span style={{ display: this.state.display }} className="sv a">a</span>
+          <span style={{ display: this.state.display }} className="sv c">c</span>
+          <span style={{ display: this.state.display }} className="sv k">k</span>
           <span className={!this.state.display? "sv": "view"}>v</span>
-          <span  className="sv i">i</span>
-          <span  className="sv e">e</span>
-          <span  className="sv w">w</span>
+          <span style={{ display: this.state.display }} className="sv i">i</span>
+          <span style={{ display: this.state.display }} className="sv e">e</span>
+          <span style={{ display: this.state.display }} className="sv w">w</span>
         </a>
         <div className="menu suma">
           <button><a href="/we" className="custom">About</a></button>
