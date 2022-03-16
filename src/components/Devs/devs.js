@@ -4,7 +4,7 @@ import CardSkill from './devCards/cardSkill'
 class Devs extends React.Component {
 
   constructor(props) {
-    super(props);
+    super(props);    
     this.state = {
       devAbout: true,
       devResume: false,
@@ -66,7 +66,9 @@ class Devs extends React.Component {
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
-    this.getJSONFromApi('/devs/elisbao.json').then((json) => {
+    const dev = window.location.pathname === '/thiagao'? "thiagao" : "elisbao"
+
+    this.getJSONFromApi('/devs/'+dev+'.json').then((json) => {
       this.setState({
         currentDev: json
       })
