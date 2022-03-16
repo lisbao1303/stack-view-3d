@@ -25,10 +25,12 @@ const webpackPlugins = [
       { from: 'public/favicon.ico', to: '' },
       { from: 'public/manifest.json', to: '' },
       { from: 'public/robots.txt', to: '' },
-      { from: 'public/sitemap.xml', to: '' }
+      { from: 'public/sitemap.xml', to: '' },
+      { from: 'public/google3066001cf2c2b610.html', to: '' }
     ],
   }),
 ];
+
 
 if ('production' === process.env.NODE_ENV) {
   webpackPlugins.push(new InjectManifest({
