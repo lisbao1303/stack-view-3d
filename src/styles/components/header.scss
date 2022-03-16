@@ -38,6 +38,7 @@
   .header .menu Button :hover {
     background: -webkit-linear-gradient(135deg,v.$our-blue 0,#0d2f46 50%,v.$our-orange 50%,#F16436 100%);
     -webkit-background-clip: text;  
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     }
   .header .logoname{ 
@@ -46,14 +47,9 @@
     font-style: normal;
     padding: 20px 0px 0px 20px;
   }
-  .header .logoname .s{
-    margin-left: -16px;
-  }
-  .header .logoname .v{
-    margin-left: -16px;
-  }
+
   .header .logoname .t{
-    margin-left: -16px;
+    margin-left: -0.66em;
     opacity: 0;
     animation-name: letter;
     animation-duration: 2s;
@@ -62,7 +58,7 @@
     animation-fill-mode: forwards;
   }
   .header .logoname .a{
-    margin-left: -16px;
+    margin-left: -0.66em;
     opacity: 0;
     animation-name: letter;
     animation-duration: 2s;
@@ -71,7 +67,7 @@
     animation-fill-mode: forwards;
   }
   .header .logoname .c{
-    margin-left: -16px;
+    margin-left: -0.66em;
     opacity: 0;
     animation-name: letter;
     animation-duration: 2s;
@@ -80,7 +76,7 @@
     animation-fill-mode: forwards;
   }
   .header .logoname .k{
-    margin-left: -16px;
+    margin-left: -0.66em;
     opacity: 0;
     animation-name: letter;
     animation-duration: 2s;
@@ -89,7 +85,7 @@
     animation-fill-mode: forwards;
   }
   .header .logoname .i{
-    margin-left: -16px;
+    margin-left: -0.66em;
     opacity: 0;
     animation-name: letter;
     animation-duration: 2s;
@@ -98,7 +94,7 @@
     animation-fill-mode: forwards;
   }
   .header .logoname .e{
-    margin-left: -16px;
+    margin-left: -0.66em;
     opacity: 0;
     animation-name: letter;
     animation-duration: 2s;
@@ -107,7 +103,7 @@
     animation-fill-mode: forwards;
   }
   .header .logoname .w{
-    margin-left: -16px;
+    margin-left: -0.66em;
     opacity: 0;
     animation-name: letter;
     animation-duration: 2s;
