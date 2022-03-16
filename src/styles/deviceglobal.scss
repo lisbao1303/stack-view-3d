@@ -93,15 +93,19 @@
     margin-left: -60px !important;
     padding-top: 0vh !important;
   }
+  .collapso .menu .links button{
+    padding: 6px 12.5px 6px 12.5px;
+  }
   .collapso .menu .links button a,
   .collapso .menu .links button span {
-    font-size: 5vh;
+    font-size: 4vh;
     margin: 0 24px 0 0;
   }
   .collapso .menu .info {
     left: 0 !important;
     width: calc(100% - 70px);
     text-align: left;
+    font-size: 2vh;
   }
   .collapso .menu .w {
     display: flex !important;
