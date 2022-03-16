@@ -28,14 +28,14 @@ looking for new challenges. Software and mechatronics engineers, web designers..
   <meta property="og:site_name" content="StackView" />
   <link rel="manifest" href="/manifest.json" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-RJC4JY7V3D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJC4JY7V3D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-RJC4JY7V3D');
-</script>
+    gtag('config', 'G-RJC4JY7V3D');
+  </script>
   <!-- Google Tag Manager -->
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -55,6 +55,8 @@ looking for new challenges. Software and mechatronics engineers, web designers..
   <style>
     body {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       top: 0;
       right: 0;
       font-family: "Roboto Font";
@@ -68,8 +70,10 @@ looking for new challenges. Software and mechatronics engineers, web designers..
 
     .stackBefore {
       width: 100%;
-      margin: 0;
-      height: 100vh;
+      margin: -50px 0 0 0;
+      padding: 0;
+      box-sizing: border-box;
+      height: calc(100vh + 50px);
       background: #ff6600;
     }
   </style>

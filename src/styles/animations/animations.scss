@@ -189,7 +189,7 @@ $our-black: #000000;
   
   @keyframes letter {
     0%{
-      margin-left: -16px;
+      margin-left: -0.66em;
       opacity: 0;
   
     }
@@ -202,7 +202,7 @@ $our-black: #000000;
   /* Firefox < 16 */
   @-moz-keyframes letter {
     0%{
-      margin-left: -16px;
+      margin-left: -0.66em;
       opacity: 0;
   
     }
@@ -215,7 +215,7 @@ $our-black: #000000;
   /* Safari, Chrome and Opera > 12.1 */
   @-webkit-keyframes letter {
     0%{
-      margin-left: -16px;
+      margin-left: -0.66em;
       opacity: 0;
   
     }

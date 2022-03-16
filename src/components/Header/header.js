@@ -103,14 +103,13 @@ class Header extends React.Component {
       <div className="header" style={{ backgroundColor: this.state.back }} position="fixed">
 
         <a className="logoname" style={{ fontSize: "x-large" }} href="#main">
-          <span className="stack skip-link" >s</span >
-          <span style={{ display: this.state.display }} className="sv s">s</span>
+      
+          <span className={!this.state.display? "sv skip-link": "stack skip-link"}>s</span>
           <span style={{ display: this.state.display }} className="sv t">t</span>
           <span style={{ display: this.state.display }} className="sv a">a</span>
           <span style={{ display: this.state.display }} className="sv c">c</span>
           <span style={{ display: this.state.display }} className="sv k">k</span>
-          <span className="view">v</span>
-          <span style={{ display: this.state.display }} className="sv v">v</span>
+          <span className={!this.state.display? "sv": "view"}>v</span>
           <span style={{ display: this.state.display }} className="sv i">i</span>
           <span style={{ display: this.state.display }} className="sv e">e</span>
           <span style={{ display: this.state.display }} className="sv w">w</span>
