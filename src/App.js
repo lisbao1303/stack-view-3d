@@ -30,11 +30,6 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div className='bodyFixed'>
-        <h1>
-        Gabriel Elisbao and Thiago de Souza are Full-stack Developers looking for new challenges. Software and mechatronics engineers, web designers... Learning constantly. There are no limits to what we can do.
-        </h1>
-        </div>
         <IconScene ref={this.iconRef} />
         <Loader />
         <Header />
