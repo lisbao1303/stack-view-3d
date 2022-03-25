@@ -1,3 +1,17 @@
+let getAge = (dateString) => {
+  var today = new Date();
+  var birthDate = new Date(dateString);
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  if (age>1) return age + " years"
+  if (age<1) return "< 1 year" 
+  
+
+  return age + " year";
+}
 
 
 export default function CardSkill(element) {
@@ -9,7 +23,7 @@ export default function CardSkill(element) {
       height={30}></img></div>
     <div className='content'>
       <span>{element.skill}</span>
-      <span>{element.xp}</span>
+      <span>{getAge(element.xp)}</span>
       <div className='badge'>{<svg id="svgC" width="30" height="30" fill="black" viewBox="0 0 511.984 511.984" fillRule="evenodd">
         <defs>
           <linearGradient id="goldColor" gradientUnits="userSpaceOnUse" x1="42.32" y1="707.79" x2="500.98" y2="707.79">

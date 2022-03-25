@@ -53,48 +53,48 @@
         "svg": "/devs/skills/react.svg",
         "skill": "React",
         "level": "S",
-        "xp": "3 years"
+        "xp": "2019-03-13"
       },{
         "svg": "/devs/skills/angular.svg",
         "skill": "Angular",
         "level": "B",
-        "xp": "3 years"
+        "xp": "2019-03-13"
       },
       {
         "svg": "/devs/skills/next.svg",
         "skill": "Next.js",
         "level": "A",
-        "xp": "1 year"
+        "xp": "2021-03-13"
       },
       {
         "svg": "/devs/skills/bootstrap.svg",
         "skill": "Bootstrap",
         "level": "B",
-        "xp": "4 years"
+        "xp": "2018-03-13"
       },
       {
         "svg": "/devs/skills/ionic.svg",
         "skill": "Ionic",
         "level": "B",
-        "xp": "1 year"
+        "xp": "2021-03-13"
       },
       {
         "svg": "/devs/skills/vue.svg",
         "skill": "Vue.js",
         "level": "C",
-        "xp": ">1 year"
+        "xp": ">2021-03-13"
       },
       {
         "svg": "/devs/skills/net.svg",
         "skill": "Razor ASP.NET",
         "level": "B",
-        "xp": "1 year"
+        "xp": "2021-03-13"
       },
       {
         "svg": "/devs/skills/js_logo.svg",
         "skill": "Javascript",
         "level": "S",
-        "xp": "4 years"
+        "xp": "2018-03-13"
   }
     ],
     "backend": [
@@ -102,67 +102,67 @@
         "svg": "/devs/skills/node.svg",
         "skill": "NodeJs",
         "level": "A",
-        "xp": "3 years"
+        "xp": "2019-03-13"
       },
       {
         "svg": "/devs/skills/java.svg",
         "skill": "Java",
         "level": "A",
-        "xp": "5 years"
+        "xp": "2016-03-13"
       },
       {
         "svg": "/devs/skills/spring.svg",
         "skill": "Spring MVC/Boot",
         "level": "B",
-        "xp": "2,5 years"
+        "xp": "2019-11-13"
       },
       {
         "svg": "/devs/skills/sql.svg",
         "skill": "MySql",
         "level": "S",
-        "xp": "5 years"
+        "xp": "2016-03-13"
       },
       {
         "svg": "/devs/skills/oracle.svg",
         "skill": "Oracle",
         "level": "B",
-        "xp": "2 years"
+        "xp": "2019-11-13"
       },
       {
         "svg": "/devs/skills/postsql.svg",
         "skill": "PostgreSQL",
         "level": "A",
-        "xp": "2 years"
+        "xp": "2019-11-13"
       },
       {
         "svg": "/devs/skills/python.svg",
         "skill": "Python",
         "level": "A",
-        "xp": "2 years"
+        "xp": "2019-11-13"
       },
       {
         "svg": "/devs/skills/firebase.svg",
         "skill": "Firebase",
         "level": "B",
-        "xp": "1 year"
+        "xp": "2021-03-13"
       },
       {
         "svg": "/devs/skills/mongo.svg",
         "skill": "MongoDB",
         "level": "B",
-        "xp": "1 year"
+        "xp": "2021-03-13"
       },
       {
         "svg": "/devs/skills/graph.svg",
         "skill": "GraphQL",
         "level": "B",
-        "xp": ">1 year"
+        "xp": ">2021-03-13"
       },
       {
         "svg": "/devs/skills/net.svg",
         "skill": "ASP.NET",
         "level": "B",
-        "xp": "1 year"
+        "xp": "2021-03-13"
       }
       
 
@@ -172,31 +172,37 @@
         "svg": "/devs/skills/aws.svg",
         "skill": "AWS Services",
         "level": "B",
-        "xp": "1 year"
+        "xp": "2021-03-13"
       },
       {
         "svg": "/devs/skills/matlab.svg",
         "skill": "MATLAB",
         "level": "B",
-        "xp": "3 years"
+        "xp": "2019-03-13"
       },
       {
         "svg": "/devs/skills/cc.svg",
         "skill": "C/C++",
         "level": "B",
-        "xp": "3 years"
+        "xp": "2019-03-13"
+      },
+      {
+        "svg": "/devs/skills/rust.svg",
+        "skill": "Rust",
+        "level": "B",
+        "xp": "2022-01-13"
       },
       {
         "svg": "/devs/skills/ed.svg",
         "skill": "Embedded systems",
         "level": "B",
-        "xp": "3 years"
+        "xp": "2019-03-13"
       },
       {
         "svg": "/devs/skills/android.svg",
         "skill": "Android",
         "level": "B",
-        "xp": "3 years"
+        "xp": "2019-03-13"
     }
     ]
   },

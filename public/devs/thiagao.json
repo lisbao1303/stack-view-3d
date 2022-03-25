@@ -56,25 +56,25 @@
               "svg": "/devs/skills/js_logo.svg",
               "skill": "Javascript",
               "level": "B",
-              "xp": "1 year"
+              "xp": "2021-03-13"
         },
         {
           "svg": "/devs/skills/react.svg",
           "skill": "React",
           "level": "C",
-          "xp": "1 year"
+          "xp": "2021-03-13"
         },
         {
           "svg": "/devs/skills/bootstrap.svg",
           "skill": "Bootstrap",
           "level": "C",
-          "xp": "1 year"
+          "xp": "2021-03-13"
         },
         {
             "svg": "/devs/skills/three.svg",
             "skill": "Three.js",
             "level": "B",
-            "xp": "1 year"
+            "xp": "2021-03-13"
         }
     ],
       "backend": [
@@ -82,49 +82,49 @@
             "svg": "/devs/skills/java.svg",
             "skill": "Java",
             "level": "A",
-            "xp": "5 years"
+            "xp": "2017-03-13"
         },
         {
             "svg": "/devs/skills/python.svg",
             "skill": "Python",
             "level": "A",
-            "xp": "2 years"
+            "xp": "2020-03-13"
         },
         {
            "svg": "/devs/skills/sqlite.svg",
             "skill": "SQLite",
             "level": "A",
-            "xp": "3 years"
+            "xp": "2019-03-13"
         },
         {
           "svg": "/devs/skills/node.svg",
           "skill": "NodeJs",
           "level": "C",
-          "xp": "1 years"
+          "xp": "2021-03-13"
         },
         {
             "svg": "/devs/skills/android.svg",
             "skill": "Android",
             "level": "B",
-            "xp": "3 years"
+            "xp": "2019-03-13"
         },
         {
             "svg": "/devs/skills/postsql.svg",
             "skill": "PostgreSQL",
             "level": "B",
-            "xp": "2 years"
+            "xp": "2020-03-13"
         },
         {
             "svg": "/devs/skills/microsoft-logo.svg",
             "skill": "M. Power Platform",
             "level": "B",
-            "xp": "2 years"
+            "xp": "2020-03-13"
         },
         {
             "svg": "/devs/skills/freeRTOS.svg",
             "skill": "FreeRTOS",
             "level": "B",
-            "xp": "1 years"
+            "xp": "2021-03-13"
         }
       ],
       "other": [
@@ -132,37 +132,37 @@
             "svg": "/devs/skills/matlab.svg",
             "skill": "MATLAB",
             "level": "B",
-            "xp": "3 years"
+            "xp": "2019-03-13"
         },
         {
             "svg": "/devs/skills/ed.svg",
             "skill": "Embbedded Systems",
             "level": "B",
-            "xp": "3 years"
+            "xp": "2019-03-13"
         },
         {
             "svg": "/devs/skills/esp.svg",
             "skill": "ESP IOT",
             "level": "B",
-            "xp": "1 years"
+            "xp": "2021-03-13"
         },
         {
             "svg": "/devs/skills/mqtt.svg",
             "skill": "MQTT",
             "level": "B",
-            "xp": "1 years"
+            "xp": "2021-03-13"
         },
         {
             "svg": "/devs/skills/aws.svg",
             "skill": "AWS Services",
             "level": "B",
-            "xp": "1 years"
+            "xp": "2021-03-13"
         },
         {
             "svg": "/devs/skills/azure.svg",
             "skill": "Azure Services",
             "level": "B",
-            "xp": "1 years"
+            "xp": "2021-03-13"
         }
       ]
     },
