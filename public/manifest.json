@@ -3,7 +3,7 @@
     "name":"StackView",
     "background_color": "#003153",
     "display": "standalone",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "scope": "/",
     "start_url": "/",
     "app_name": "StackView",
