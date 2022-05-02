@@ -193,6 +193,30 @@
         "xp": "2022-01-13"
       },
       {
+        "svg": "/devs/skills/quarkus.svg",
+        "skill": "Quarkus",
+        "level": "B",
+        "xp": "2022-01-13"
+      },
+      {
+        "svg": "/devs/skills/kubernetes.svg",
+        "skill": "Kubernetes",
+        "level": "B",
+        "xp": "2022-01-13"
+      },
+      {
+        "svg": "/devs/skills/linux.svg",
+        "skill": "Linux",
+        "level": "B",
+        "xp": "2019-01-13"
+      },
+      {
+        "svg": "/devs/skills/docker.svg",
+        "skill": "Docker",
+        "level": "B",
+        "xp": "2021-08-13"
+      },
+      {
         "svg": "/devs/skills/ed.svg",
         "skill": "Embedded systems",
         "level": "B",
