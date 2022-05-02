@@ -15,10 +15,12 @@ html,
 body {  
   height: 100%;
   margin: 0;
+  overflow: hidden;
+  transform-origin: right;
+  transform: translate(-100vw, 0) rotate(180deg);
+  writing-mode: vertical-rl;
   font-family: "Roboto Font";
   color: black; 
-  transform: scaleX(-1);
-
 }
 .bodyFixed{
   position: fixed;
